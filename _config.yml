@@ -36,7 +36,13 @@ plugins:
   - jekyll-feed
 
 plainwhite:
+  portfolio_image:  "assets/adamsapple_thumbnail.png"
   disqus_shortname: aballif
+  name: adamsapple
+  tagline: Technology tips for the Apple centric.
+  date_format: "%b %-d, %Y"
+  social_links:
+    github: adamsappletech
 
 # Exclude from processing.
 # The following items will not be processed, by default.
