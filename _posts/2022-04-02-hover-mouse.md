@@ -19,3 +19,9 @@ I recently learned that if you hover your mouse over the circular progress indic
 [1]:	https://developer.apple.com
 
 [image-1]: /assets/hover-mouse-mac-app-store_edited.png
+
+
+
+{% if site.disqus_shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
