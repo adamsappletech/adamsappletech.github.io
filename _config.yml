@@ -38,11 +38,19 @@ plugins:
 plainwhite:
   portfolio_image:  "assets/adamsapple_thumbnail.png"
   disqus_shortname: aballif
+  search: true
   name: adamsapple
   tagline: Technology tips for the Apple centric.
   date_format: "%b %-d, %Y"
   social_links:
     github: adamsappletech
+  navigation:
+    - title: Video
+      url: "/video"
+    - title: Podcast
+      url: "/podcast"
+    - title: "Contact"
+      url: "/about"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
