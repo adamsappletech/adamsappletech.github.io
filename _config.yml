@@ -29,8 +29,8 @@ github_username:  adamsappletech
 
 # Build settings
 # theme: minima
+# theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
-theme: plainwhite
 show_excerpts: true
 plugins:
   - jekyll-feed
