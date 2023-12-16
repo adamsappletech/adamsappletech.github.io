@@ -2,9 +2,10 @@
 layout: post
 title:  Hover Mouse for Mac App Store Install Progress
 date:   2022-04-02 17:10:28 -0700
-categories: Quick Tip
+category: Quick Tip
+excerpt_separator: <!--more-->
 ---
-If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer. Apple wants us to use the Mac App Store to install Xcode, which can be flaky at times. [^1] The Mac App Store page indicates if you are downloading a file with a circular progress indicator, however, once the app starts installing, the circular indicator becomes less useful. Xcode takes a long time to install, and I have often thought that it was stalled. 
+If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer.<!--more--> Apple wants us to use the Mac App Store to install Xcode, which can be flaky at times. [^1] The Mac App Store page indicates if you are downloading a file with a circular progress indicator, however, once the app starts installing, the circular indicator becomes less useful. Xcode takes a long time to install, and I have often thought that it was stalled. 
 
 ![Screenshot from Mac App Store][image-1]
 

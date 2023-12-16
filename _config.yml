@@ -28,9 +28,15 @@ url: "https://adamsapple.tech" # the base hostname & protocol for your site, e.g
 github_username:  adamsappletech
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: samarsault/plainwhite-jekyll
+theme: plainwhite
+show_excerpts: true
 plugins:
   - jekyll-feed
+
+plainwhite:
+  disqus_shortname: aballif
 
 # Exclude from processing.
 # The following items will not be processed, by default.
