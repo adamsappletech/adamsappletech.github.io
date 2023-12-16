@@ -38,7 +38,9 @@ plugins:
 plainwhite:
   portfolio_image:  "assets/adamsapple_thumbnail.png"
   disqus_shortname: aballif
-  search: true
+ # sitemap: true
+ # search: true
+  dark_mode: true
   name: adamsapple
   tagline: Technology tips for the Apple centric.
   date_format: "%b %-d, %Y"

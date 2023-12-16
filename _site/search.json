@@ -12,10 +12,10 @@
     {
       "title"    : "Hover Mouse for Mac App Store Install Progress",
       "category" : "Quick Tip",
-      "tags"     : "",
+      "tags"     : "Developer, macOS, Software",
       "url"      : "/quick%20tip/2022/04/02/hover-mouse.html",
       "date"     : "2022-04-02 18:10:28 -0600",
-      "content"  : "If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer. Apple wants us to use the Mac App Store to install Xcode, which can be flaky at times. 1 The Mac App Store page indicates if you are downloading a file with a circular progress indicator, however, once the app starts installing, the circular indicator becomes less useful. Xcode takes a long time to install, and I have often thought that it was stalled.I recently learned that if you hover your mouse over the circular progress indicator, once the app starts installing, it will show more detail about what percentage is complete. This is a welcome new feature that more users should know about. Have faith, that Xcode install will finish if you let it.            Downloading from the Apple Developer Website has been more reliable in my experience. However, if I am not downloading an Xcode beta, the current release version of Xcode is not always available on the developer website. I have been forced to install from the Mac App Store in this case. &#8617;      "
+      "content"  : "If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer. Apple wants us to use the Mac App Store to install Xcode, which can be flaky at times.1 The Mac App Store page indicates if you are downloading a file with a circular progress indicator, however, once the app starts installing, the circular indicator becomes less useful. Xcode takes a long time to install, and I have often thought that it was stalled.I recently learned that if you hover your mouse over the circular progress indicator, once the app starts installing, it will show more detail about what percentage is complete. This is a welcome new feature that more users should know about. Have faith, that Xcode install will finish if you let it.            Downloading from the Apple Developer Website has been more reliable in my experience. However, if I am not downloading an Xcode beta, the current release version of Xcode is not always available on the developer website. I have been forced to install from the Mac App Store in this case. &#8617;      "
     } ,
   
     {
@@ -55,7 +55,7 @@
         "tags"     : "",
         "url"      : "/podcast/",
         "date"     : "",
-        "content"  : "embed links from anchor podcasts here."
+        "content"  : "adamsapple PodcastLatest Episode:Archive Episodes:Webcam ShootoutSetapp - An Alternative App StoreLogitech Folio Touch Review"
      
    } ,
   
@@ -70,7 +70,7 @@
         "tags"     : "",
         "url"      : "/video/",
         "date"     : "",
-        "content"  : "embed links from YouTube here."
+        "content"  : "## adamsapple YouTube Channel[Subscribe to my YouTube Channel](https://www.youtube.com/channel/UCApb4oNH6zXamzXkz8s-ELw) for more Technology Tips. "
      
    } ,
   
