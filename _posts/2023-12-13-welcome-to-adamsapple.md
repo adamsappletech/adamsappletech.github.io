@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  Welcome to adamsapple!
-date:   2023-12-13 09:10:28 -0700
-categories: jekyll update
+date:   2022-3-1 09:10:28 -0700
 ---
 
 My first Mac was the 2002 iMac G4, the one that looked like a desk lamp. It was beautiful. I had experimented with Macintosh in the 1990s, OS 7–9 days while in music school. I was learning to use Finale and Performer on the Macintosh. I had PC computers from Windows 3.1 to Windows XP at home. I was always intrigued with the clean look of the Macintosh interface. Once OS X hit and Apple introduced the innovate iMac G4, I was hooked. I haven’t looked back since.
