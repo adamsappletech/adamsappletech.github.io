@@ -68,7 +68,7 @@ plainwhite:
   portfolio_image:  "assets/adamsapple_thumbnail.png"
  # disqus_shortname: aballif
  # sitemap: true
- # search: true
+  search: true
   dark_mode: true
   name: adamsapple
   tagline: Technology tips for the Apple centric.
