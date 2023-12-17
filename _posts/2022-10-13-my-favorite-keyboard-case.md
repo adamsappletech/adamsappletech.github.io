@@ -20,7 +20,7 @@ Many keyboard cases come close to this list, but very few achieve all of them. A
 
 The Smart Connector on the iPad Pro is amazing but underutilized. It allows devices to connect without pairing, and keeps your accessories fully charged. When you start to look for keyboard cases that use the Smart Connector you quickly find that your options are limited. For whatever reason, it hasn't been widely adopted. 
 
-[<img src="<br>/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png" width="250"/>](/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png)
+![Logitech Keyboard and Apple Smart Keyboard][image-1]
 
 ### And the winner is...
 
@@ -61,6 +61,8 @@ Thank you Logitech for such thoughtful design.
 [^1]: I currently have the new 14" M1 Max MacBook Pro, which has an amazing keyboard. The Logitech Folio Touch is not better than my current MacBook Pro. Apple really hit it out of the park with these new M1 MacBook Pro laptops. 
 
 [^2]: In all fairness to Apple, the Magic Keyboard also feels excellent. It feels more like a MacBook keyboard with scissor switches than the Logitech Keyboard Folio.
+
+[image-1]: /assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
