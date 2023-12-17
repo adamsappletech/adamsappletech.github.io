@@ -6,7 +6,7 @@ categories: Review Hardware iPad
 excerpt_separator: <!--more-->
 ---
 
-My iPad Pro 2018 is still going strong. It has been an incredible device with its beautiful screen, fast processor, and Apple Pencil 2. When Apple enabled touchpad support, new possibilities opened up to turn the iPad into a laptop replacement. There have been many keyboard case options available for the iPad over the years, but few have checked all of my boxes. I want a keyboard case with the following capabilities: 
+My iPad Pro 2018 is still going strong. It has been an incredible device with its beautiful screen, fast processor, and Apple Pencil 2. When Apple enabled touchpad support, new possibilities opened up to turn the iPad into a laptop replacement. There have been many keyboard case options available for the iPad over the years, but few have checked all of my boxes. <!--more--> I want a keyboard case with the following capabilities: 
 
 - lightweight 
 - comfortable keyboard with a laptop-like typing experience
@@ -20,7 +20,7 @@ Many keyboard cases come close to this list, but very few achieve all of them. A
 
 The Smart Connector on the iPad Pro is amazing but underutilized. It allows devices to connect without pairing, and keeps your accessories fully charged. When you start to look for keyboard cases that use the Smart Connector you quickly find that your options are limited. For whatever reason, it hasn't been widely adopted. 
 
-[<img src="<br>/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png" width="250"/>](/assets//Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png)
+[<img src="<br>/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png" width="250"/>](/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png)
 
 ### And the winner is...
 
