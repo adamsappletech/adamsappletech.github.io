@@ -35,7 +35,7 @@ show_excerpts: true
 # disqus_shortname: aballif
 plugins:
   - jekyll-feed
-
+  - jekyll-seo-tag
 # Set which comment system to use
 comments:
   # 'disqus' / 'giscus' / 'utterances' are available
