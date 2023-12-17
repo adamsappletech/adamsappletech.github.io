@@ -27,6 +27,7 @@ url: "https://adamsapple.tech" # the base hostname & protocol for your site, e.g
 # twitter_username: jekyllrb
 github_username:  adamsappletech
 
+
 # Build settings
 # theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
@@ -79,8 +80,11 @@ plainwhite:
       url: "/video"
     - title: Podcast
       url: "/podcast"
+    - title: "Tags"
+      url: "/categories"
     - title: "Contact"
       url: "/about"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

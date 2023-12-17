@@ -40,7 +40,18 @@
         "tags"     : "",
         "url"      : "/about/",
         "date"     : "",
-        "content"  : "Contact MeSend me questions and ideas of topics to cover in the blog, videos, or podcasts.  Name    Email    Message    Send message"
+        "content"  : "Contact MeSend me questions and ideas of topics to cover in the blog, videos, or podcasts.      Your email:            Your message:          Send"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Categories",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/categories/",
+        "date"     : "",
+        "content"  : "Tags                  Quick Tip                  Hover Mouse for Mac App Store Install Progress                            jekyll                  Welcome to Jekyll!                            update                  Welcome to Jekyll!          "
      
    } ,
   
@@ -70,7 +81,7 @@
         "tags"     : "",
         "url"      : "/video/",
         "date"     : "",
-        "content"  : "## adamsapple YouTube Channel[Subscribe to my YouTube Channel](https://www.youtube.com/channel/UCApb4oNH6zXamzXkz8s-ELw) for more Technology Tips. "
+        "content"  : "# adamsapple YouTube Channel[Subscribe to my YouTube Channel](https://www.youtube.com/channel/UCApb4oNH6zXamzXkz8s-ELw) for more Technology Tips. "
      
    } ,
   

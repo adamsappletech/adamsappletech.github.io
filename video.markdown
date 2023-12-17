@@ -4,7 +4,7 @@ title: Video
 permalink: /video/
 ---
 
-## adamsapple YouTube Channel
+# adamsapple YouTube Channel
 
 [Subscribe to my YouTube Channel](https://www.youtube.com/channel/UCApb4oNH6zXamzXkz8s-ELw) for more Technology Tips. 
 
