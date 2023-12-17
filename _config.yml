@@ -33,6 +33,7 @@ github_username:  adamsappletech
 remote_theme: samarsault/plainwhite-jekyll
 show_excerpts: true
 # disqus_shortname: aballif
+# searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
