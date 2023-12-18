@@ -1,4 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-18T10:53:49-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">Expanding Xcode Archives</title><link href="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html" rel="alternate" type="text/html" title="Expanding Xcode Archives" /><published>2022-10-13T07:43:30-06:00</published><updated>2022-10-13T07:43:30-06:00</updated><id>http://localhost:4000/quicktip/2022/10/13/xcode-archives</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html"><![CDATA[<p><a href="https://twitter.com/_saagarjha/status/1481353292164698112?lang=en">Saagar Jha on Twitter</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-18T13:40:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">LaunchBar, Raycast, and Paste</title><link href="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html" rel="alternate" type="text/html" title="LaunchBar, Raycast, and Paste" /><published>2022-12-28T01:25:13-07:00</published><updated>2022-12-28T01:25:13-07:00</updated><id>http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste</id><content type="html" xml:base="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html"><![CDATA[<p>Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.<!--more--> While Spotlight has improved over the years, the market for third-party app launchers and search apps have flourished. Some of the top contenders include <a href="https://www.alfredapp.com">Alfred</a>, <a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a>, and more recently <a href="https://www.raycast.com">Raycast</a>. These third-party apps excel at speed, giving Apple’s Spotlight a run for its money. They are fast and nicely designed, causing even Apple to copy some of their interface elements for Spotlight.</p>
+
+<p>Each of these app launchers offer file search, app launching, extensions, keyboard shortcut support, and clipboard history. I have tried most of them over the years and was a devoted Alfred user for many years. While one app will suffice for most users, I have settled on a trio of apps for my Mac setup:</p>
+
+<ul>
+  <li><a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a></li>
+  <li><a href="https://www.raycast.com">Raycast</a></li>
+  <li><a href="https://pasteapp.io">Paste</a></li>
+</ul>
+
+<h2 id="launchbar"><a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a></h2>
+
+<p>LaunchBar actually predates Spotlight, coming out in 2001 at version 3 for Mac OS X. It has excelled at keeping user’s hands on their keyboards, using keyboard shortcuts to quickly launch apps, find files, and perform web searches.</p>
+
+<p>I find it especially fast at launching applications. Over time it learns the few keystrokes that I use to search for specific apps, resulting in launching an app in under a second. Since Spotlight comes with command-space by default, I have setup option-command-space for my LaunchBar hotkey.</p>
+
+<p><img src="/assets/launchbar-window.png" alt="LaunchBar Window" /></p>
+
+<p>I use LaunchBar primarily to launch applications, but it can do much more:</p>
+
+<ul>
+  <li>Search Google</li>
+  <li>Browse File System</li>
+  <li>Find Files and Folders</li>
+  <li>Browse and Playback Apple Music Songs or Albums</li>
+  <li>Run Shortcuts</li>
+  <li>Find Address Book Contacts</li>
+  <li>Search Clipboard History</li>
+</ul>
+
+<p><img src="/assets/launchbar-google.png" alt="Google Search" /></p>
+
+<p><img src="/assets/launchbar-browse-files.png" alt="Browse Files" /></p>
+
+<p><img src="/assets/launchbar-actions.png" alt="LaunchBar Actions" /></p>
+
+<p>Despite all of this, I have been playing with Raycast recently.</p>
+
+<h2 id="raycast"><a href="https://www.raycast.com">Raycast</a></h2>
+
+<p>Raycast is a newer addition in this space and it duplicates much of the functionality of LaunchBar.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> I haven’t tried all of its features, but one aspect has won me over and that is file search.</p>
+
+<p>Spotlight should be the de-facto way to find files on your Mac, but I find both Spotlight and LaunchBar to be a bit frustrating when I want to find a specific file. I don’t know why, but I don’t always find the file that I know is there and I end up having to fiddle more than I would like.</p>
+
+<p>With Raycast I type what I think the file is named and one of the many actions that you can perform is “File Search”. Raycast takes a moment to search my hard drive, and has been very reliable in filtering my files down to the one that I am looking for.</p>
+
+<p><img src="/assets/Raycast-window.png" alt="Raycast Window" /></p>
+
+<h2 id="paste---clipboard-manager"><a href="https://pasteapp.io">Paste</a> - Clipboard Manager</h2>
+
+<p>Both LaunchBar and Raycast have a clipboard manager, so why do I have a third app for this. I used to use LaunchBar, and before that Alfred, for clipboard history but when I learned about Paste it has been a great addition to my productivity. Paste is cool because it is on Mac and iOS and my clipboard history syncs between all of my devices. I know we have Universal Clipboard on the Mac and I do like being able to hit command-C on my Mac and then paste that to my iPhone, but Paste has a beautiful interface for me to see, search, and pin my pasteboard.</p>
+
+<p><img src="/assets/paste-window.png" alt="Paste Window" /></p>
+
+<p>Paste was added to <a href="https://https://setapp.com">Setapp</a> in the past year, and that was another reason for me to continue to use this for my clipboard history.</p>
+
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+
+<p>Keeping track of all of my hotkeys can be a problem, but I like what I have settled on for these three apps, which don’t interfere with Spotlight.</p>
+
+<ul>
+  <li>command-space (Spotlight)</li>
+  <li>option-command-space (LaunchBar)</li>
+  <li>option-space (Raycast)</li>
+  <li>option-/ (Paste)</li>
+</ul>
+
+<p><img src="/assets/launchbar-stats-1.png" alt="Stats-1" /></p>
+
+<p><img src="/assets/launchbar-stats-2.png" alt="Stats-2" /></p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Raycast includes some whimsy as well, like being able to toggle your mouse into a lightsaber, complete with sound effects. Take that LaunchBar. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="Productivity" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.]]></summary></entry><entry><title type="html">Toggle WiFi On and Off</title><link href="http://localhost:4000/quicktip/2022/12/05/toggle-wifi.html" rel="alternate" type="text/html" title="Toggle WiFi On and Off" /><published>2022-12-05T01:02:26-07:00</published><updated>2022-12-05T01:02:26-07:00</updated><id>http://localhost:4000/quicktip/2022/12/05/toggle-wifi</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/12/05/toggle-wifi.html"><![CDATA[<p>I am coming up on my one-year anniversary with my M1 Max 14-inch MacBook Pro. It is the best computer I have ever used. It is so fast and a powerhouse in every way. I use it for Xcode, Final Cut Pro, music production, and it always delivers.</p>
+
+<!--more-->
+<p>However, computers are not without little hiccups here and there. Lately, I have had some battery issues when it is asleep. I am sure there is some little app that has been preventing my MacBook Pro from sleeping. When I have reached into my bag to get it out, it has been noticeably warm and the battery is depleting when it should be asleep. In all fairness to the computer, I do run a lot of apps and my menu bar is embarrassingly filled with running applications.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>I am still not certain which process has been causing the heat and battery issues, but I did recently find an interim solution. With a short shell script and <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, I can quickly disable WiFi before I close the lid. This has immediately brought back amazing battery life and my computer is super cool when I pull it out of my bag.</p>
+
+<p>The script for toggling WiFi in the Terminal is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networksetup -getairportpower en0 | grep "On" &amp;&amp; networksetup -setairportpower en0 off || networksetup -setairportpower en0 on
+
+</code></pre></div></div>
+
+<p>I setup a <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a> hotkey to quickly toggle the WiFi on and off.</p>
+
+<p><img src="/assets/toggle-wifi-keyboard-maestro.png" alt="Keyboard Maestro Screen" /></p>
+
+<p>I love the Mac.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Thank you <a href="https://www.macbartender.com">Bartender</a> for keeping my menu bar manageable. (Also a part of <a href="https://setapp.com">Setapp</a>) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[I am coming up on my one-year anniversary with my M1 Max 14-inch MacBook Pro. It is the best computer I have ever used. It is so fast and a powerhouse in every way. I use it for Xcode, Final Cut Pro, music production, and it always delivers.]]></summary></entry><entry><title type="html">SpamSieve - Spam Filtering for Mac</title><link href="http://localhost:4000/software/review/2022/11/15/spamsieve.html" rel="alternate" type="text/html" title="SpamSieve - Spam Filtering for Mac" /><published>2022-11-15T12:57:06-07:00</published><updated>2022-11-15T12:57:06-07:00</updated><id>http://localhost:4000/software/review/2022/11/15/spamsieve</id><content type="html" xml:base="http://localhost:4000/software/review/2022/11/15/spamsieve.html"><![CDATA[<p>Email spam is an ongoing problem, which seems to be getting worse over time. When I have had the same email address for many years, more and more spam seem to clutter my inbox. Using the same address with shopping online or trying new services and apps, brings with it an increase of junk email. <!--more--> Apple’s “<a href="https://support.apple.com/en-us/HT210425">Hide My Email</a>” service which is available with an iCloud subscription is a great feature for proactively preventing future spam. You can use a unique email address that will forward to your main email address. It is easy to use and if you notice more spam from a specific place, you can go and disable the unique address and those messages sent to that unique address will go away.</p>
+
+<p><img src="/assets/spamsieve-icon@2x.png" alt="Spamsieve icon" /></p>
+
+<p>I have used <a href="https://c-command.com/spamsieve/">SpamSieve</a> by C-Command Software for many years for filtering out the junk email. SpamSieve is an older macOS app, in fact it has been around since the early days of Mac OS X, 20 years or so. In order for SpamSieve to work its best, you need to have an always-on Mac running Mail. In dealing with spam, some services rely on a server running online to filter messages before they reach your Mac, but with SpamSieve the filtering is done locally on your personal computer. This is kind of an “old school” way to do this, but I find that it works great and is more affordable than other online services.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>You need to have a Mac running Mail at all times for the filtering to work without interruption. I keep my office computer running for this purpose, but you could also have a Mac mini tucked away in a closet in your house running Apple Mail and SpamSieve.</p>
+
+<p>As messages come in, SpamSieve evaluates the message and moves it into a specific Mail folder if it thinks it is Spam. The training works great and you can train messages as “Spam” or as “Good”.</p>
+
+<p>It takes a little bit of setup, working with Apple Mail rules and AppleScripts to get the configuration working. I use the rules and AppleScript support so that I can move messages to either a “train good” or “train spam” folder from my iPhone. Those messages will later be processed and trained when they are noticed on the Mac mini.</p>
+
+<h2 id="the-last-word">The Last Word</h2>
+
+<p>If you don’t have a Mac that you can leave running, then you may want to look elsewhere for spam management. A popular online service for this is <a href="https://www.sanebox.com">SaneBox</a>. SaneBox has access to your email accounts online, and processes your spam and other mail rules on the server side, before your Mac downloads any messages. The service has great reviews, but it is significantly more expensive than SpamSieve, with a monthly subscription of at least seven dollars per month.</p>
+
+<p>SpamSieve is older software, but it has been updated for the latest release of macOS Ventura. It is tried and true for me and still the best way to manage spam email locally on my Mac.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Software" /><category term="Review" /><summary type="html"><![CDATA[Email spam is an ongoing problem, which seems to be getting worse over time. When I have had the same email address for many years, more and more spam seem to clutter my inbox. Using the same address with shopping online or trying new services and apps, brings with it an increase of junk email.]]></summary></entry><entry><title type="html">Fix Blank Apple Maps</title><link href="http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps.html" rel="alternate" type="text/html" title="Fix Blank Apple Maps" /><published>2022-10-26T13:53:50-06:00</published><updated>2022-10-26T13:53:50-06:00</updated><id>http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps.html"><![CDATA[<p>If Apple Maps is showing a blank screen on macOS, here is a quick way to restore and refresh the map data:</p>
+
+<blockquote>
+  <p>The cache for Maps specifically can be cleared by deleting the following folder ~/Library/Caches/GeoServices</p>
+</blockquote>
+
+<!--more-->
+<p>Removing this folder and restarting Maps should allow the map data to be downloaded and displayed again.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[If Apple Maps is showing a blank screen on macOS, here is a quick way to restore and refresh the map data: The cache for Maps specifically can be cleared by deleting the following folder ~/Library/Caches/GeoServices]]></summary></entry><entry><title type="html">My Favorite Calendar App - Fantastical</title><link href="http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical.html" rel="alternate" type="text/html" title="My Favorite Calendar App - Fantastical" /><published>2022-10-23T13:38:57-06:00</published><updated>2022-10-23T13:38:57-06:00</updated><id>http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical</id><content type="html" xml:base="http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical.html"><![CDATA[<p>The built-in Apple apps for Mail, Calendars, and Reminders have improved each year and are solid apps. However, I find myself wanting more out of these apps and have turned to 3rd parties for each of them. <!--more--> I already wrote about my <a href="https://www.adamsapple.tech/2022/08/18/my-favorite-email-app-spark/">Favorite Email App - Spark</a>, and today I am writing about my favorite calendar app, <a href="https://flexibits.com/fantastical">Fantastical</a>.</p>
+
+<p><img src="/assets/fantastical-icon.png" alt="Fastastical icon" /></p>
+
+<h2 id="criteria">Criteria</h2>
+
+<p>A modern calendar app needs to have the following:</p>
+
+<ul>
+  <li>Available and synced to all my devices</li>
+  <li>Natural language input</li>
+  <li>Support all of the most common accounts (Exchange, Gmail, iCloud, etc…)</li>
+</ul>
+
+<p>The above characteristics are the minimum requirements. Fantastical was one of the first apps to use natural language input, which is where you can just type a sentence to enter a new event and Fantastical will parse all of the relevant information. Fantastical achieves all of the above features in a beautiful interface and also adds these additional features:</p>
+
+<ul>
+  <li>Calendar sets. The ability to customize groups of calendars and recall them with a keyboard shortcut.</li>
+  <li>Weather forecast.</li>
+  <li>Integration with Apple Reminders.</li>
+  <li>Menu bar item with quick entry.</li>
+  <li>Beautiful and useful widgets on iOS and macOS.</li>
+  <li>Integration for scheduling meetings and Zoom integration.</li>
+  <li>Apple Shortcut support.</li>
+  <li>Focus filters.</li>
+</ul>
+
+<p>I use calendar sets all of the time to see my schedule, my wife and kid’s schedules, and other interesting calendars, which are hidden most of the time.</p>
+
+<p><img src="/assets/fantastical-calendar-sets.png" alt="Calendar Sets" /></p>
+
+<p>The weather forecast is a really nice addition that shows temperature and precipitation for the upcoming few days. The free version shows three days, while the premium version shows a ten-day forecast.</p>
+
+<p><img src="/assets/weather-forecast.png" alt="Weather Forecast" /></p>
+
+<p>My favorite task list manager is <a href="https://www.adamsapple.tech/2022/04/04/my-favorite-to-do-list-app-things/">Things</a>, but I also use Apple Reminders for certain types of tasks. If I want my Apple Watch to remind me to do something in the afternoon, I will use Siri and set a quick reminder. I also use Reminders for some of the mundane, repeating chores in my life. Reminders sits nicely in the list view alongside my other events in Fantastical.</p>
+
+<p>With a quick keyboard command, I can enter a new event into Fantastical’s menu bar item.</p>
+
+<p><img src="/assets/fansticial-menuar.png" alt="Menubar Calendar" /></p>
+
+<p>Fantastical provides around 8 useful widgets on iOS and macOS for quickly seeing upcoming events, reminders, or the date. They also support the recent addition of lock-screen widgets on iOS 16.</p>
+
+<p>I haven’t played much with Focus Filters yet, but I am starting to use Focus more on my devices and love how they sync across devices and can change Home Screen layout and set custom do-not-disturb settings. I need to experiment more with this.</p>
+
+<p>I have been an active Fantastical user for many years, and I continue to be impressed with the attention and care that <a href="https://flexibits.com">Flexibits</a> put into their apps. Competition is good, and I hope Apple will continue to improve the built-in Calendars app, but for me I am sticking with <a href="https://flexibits.com/fantastical">Fantastical</a>.</p>
+
+<p><img src="/assets/fantastical-calendarview.png" alt="Calendar View" /></p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Review" /><category term="Software" /><summary type="html"><![CDATA[The built-in Apple apps for Mail, Calendars, and Reminders have improved each year and are solid apps. However, I find myself wanting more out of these apps and have turned to 3rd parties for each of them.]]></summary></entry><entry><title type="html">Expanding Xcode Archives</title><link href="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html" rel="alternate" type="text/html" title="Expanding Xcode Archives" /><published>2022-10-13T07:43:30-06:00</published><updated>2022-10-13T07:43:30-06:00</updated><id>http://localhost:4000/quicktip/2022/10/13/xcode-archives</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html"><![CDATA[<p><a href="https://twitter.com/_saagarjha/status/1481353292164698112?lang=en">Saagar Jha on Twitter</a></p>
 
 <p>Tip: when expanding an Xcode XIP archive, use the command line (xip –expand) rather than Archive Utility. It’s at least 25% faster–sometimes even twice as fast, depending on the circumstances. <!--more--></p>
 
@@ -150,85 +339,56 @@
       <p>You can read why I like Things in this <a href="/_posts/2022-04-03-favorite-to-do-things.md">post</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="Productivity" /><category term="Software" /><summary type="html"><![CDATA[I have been familiar with and used David Allen’s Getting Things Done (GTD) for many years. Getting Things Done came out in 2001 with David Allen’s popular book. Apps later followed that were based on the GTD system, including my first favorite task-list app, OmniFocus.]]></summary></entry><entry><title type="html">My Favorite Email App - Spark</title><link href="http://localhost:4000/review/macos/ios/software/2022/08/22/favorite-email-spark.html" rel="alternate" type="text/html" title="My Favorite Email App - Spark" /><published>2022-08-22T12:36:49-06:00</published><updated>2022-08-22T12:36:49-06:00</updated><id>http://localhost:4000/review/macos/ios/software/2022/08/22/favorite-email-spark</id><content type="html" xml:base="http://localhost:4000/review/macos/ios/software/2022/08/22/favorite-email-spark.html"><![CDATA[<p>For better or worse, email is where I spend a lot of my time. When you spend a significant amount of time each day in a certain mode, the tools that you require need to be efficient and enjoyable to use. I have tried many email apps over the years. I can still remember the days of Microsoft Entourage. <!--more--> I got my first iMac in 2001 and Apple Mail was really in its infancy at the time. I remember using Eudora for email and then later Microsoft Entourage. After Entourage, I embraced Apple Mail for many years. It has a familiar interface and is fine, but when the iPhone came around in 2007, and then the App Store in 2008, email needed to be great on the go. I started to try out many email apps as they came through the App Store. I have tried <a href="https://apps.apple.com/us/app/airmail-your-mail-with-you/id993160329">Airmail</a>, <a href="https://www.spikenow.com/">Spike</a>, <a href="https://canarymail.io/">Canary Mail</a>, <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596">Outlook</a>, and others. Each have their strengths and weakness. After using many email apps over the years, <a href="https://sparkmailapp.com/">Spark</a> by <a href="https://readdle.com/">Readdle</a> is my favorite app on all Apple devices and the one that has stuck with me.</p>
+</div>]]></content><author><name></name></author><category term="Productivity" /><category term="Software" /><summary type="html"><![CDATA[I have been familiar with and used David Allen’s Getting Things Done (GTD) for many years. Getting Things Done came out in 2001 with David Allen’s popular book. Apps later followed that were based on the GTD system, including my first favorite task-list app, OmniFocus.]]></summary></entry><entry><title type="html">Error Message in Microsoft Office</title><link href="http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft.html" rel="alternate" type="text/html" title="Error Message in Microsoft Office" /><published>2022-10-07T12:48:40-06:00</published><updated>2022-10-07T12:48:40-06:00</updated><id>http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft.html"><![CDATA[<p>I had a weird Microsoft Office bug a few months back. Every time I would open Word or Excel I would get this error in a dialog box:</p>
 
-<p><img src="/assets/Spark-icon.png" alt="Spark icon" /></p>
+<blockquote>
+  <p>Microsoft Visual Basic Run-time error `53’
+File not found: /Libary/Application Support/Adobe/MACPDFM/MacPDFM.framework/Versions/A/MacPDFM</p>
+</blockquote>
 
-<p>In trying out and searching for the best solution, I came to understand the features that I am looking for in an email app.</p>
+<!--more-->
+<p>I would dismiss it, but it would return every time I opened a file or started the app. It got to be very annoying after a while. Fortunately, there is a fix.</p>
 
-<h2 id="triage-easily-delete-archive-and-move">Triage: easily delete, archive, and move.</h2>
+<ol>
+  <li>Close all Office applications.</li>
+  <li>Go to /Users/your-user-name-here/Library/Group Containers/UBF8T346G9.Office/User Content/Startup/Word.</li>
+  <li>Remove linkCreation.dotm.</li>
+  <li>Restart Word and problem solved.</li>
+</ol>
 
-<p>When you receive many emails each day, which applies to most of us, I want an email app that can help me triage and sift through the junk. I don’t necessarily get to inbox zero each day, but I do aspire to either delete, read, or archive all of the email that comes in each day.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+<p>This should fix the problem for Microsoft Word, but a few additional steps are needed for Excel and Powerpoint:</p>
 
-<p>Spark has a “Smart Inbox” that separates new email from newsletters, pinned messages, and read messages. It is easy to see which messages are important and those that can wait. Spark’s interface is customizable with four levels of swipe gestures on each message. I have my swipes configured as:</p>
+<ol>
+  <li>Remove the SaveAsAdobePDF.ppam and SaveAsAdobePDF.xlam from the PowerPoint and Excel folders next to the Word folder.</li>
+  <li>Launch Excel and PowerPoint and go to the menu Tools -&gt; Excel Add-ins… and Tools -&gt; PowerPoint Add-ins…, respectively, and remove the Save as Adobe PDF add-in, by unchecking it and removing it with the “-“ button and then click OK.</li>
+  <li>Restart Excel and PowerPoint and the problem should go away.</li>
+</ol>
 
-<ul>
-  <li>mark as read</li>
-  <li>snooze</li>
-  <li>archive</li>
-  <li>delete</li>
-</ul>
+<p>This fix has really saved my sanity.</p>
 
-<p>Triaging messages is very fast on the iPhone by using these gestures. In addition to swiping individual messages, you can also swipe large groups of messages for quick archiving or deleting.</p>
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[I had a weird Microsoft Office bug a few months back. Every time I would open Word or Excel I would get this error in a dialog box: Microsoft Visual Basic Run-time error `53’ File not found: /Libary/Application Support/Adobe/MACPDFM/MacPDFM.framework/Versions/A/MacPDFM]]></summary></entry><entry><title type="html">To Watch or Not To Watch - Apple Watch Series 8</title><link href="http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8.html" rel="alternate" type="text/html" title="To Watch or Not To Watch - Apple Watch Series 8" /><published>2022-09-30T11:57:48-06:00</published><updated>2022-09-30T11:57:48-06:00</updated><id>http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8</id><content type="html" xml:base="http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8.html"><![CDATA[<p>Apple released two new watches this month, the Apple Watch Series 8 and the Apple Watch Ultra. I have been an Apple Watch user since the Apple Watch Series 3. My current watch is a Series 5. I had planned on this Fall being my time to upgrade with whatever was released. Each series has been fairly incremental, which is fine when you wait two to three years to upgrade. Those incremental updates each year equate to a nice upgrade every few years.</p>
 
-<p><img src="/assets/spark-swipes.png" alt="Swipes" /></p>
+<!--more-->
+<p>The Apple Watch Ultra is very cool, but not for me. I am not an outdoor enthusiast and this watch is tailor made for serious hiking, running, or diving. It has a huge screen, by watch standards, at 49mm. I typically opt for the smaller watch sizes and have been happy with my 40mm Series 5. The Ultra is chunky and overkill for me. The orange programmable button is cool, but with it being double the price of the Series 8 I haven’t been tempted by the Ultra.</p>
 
-<h2 id="snooze">Snooze</h2>
+<p><img src="/assets/apple-watch-ultra.jpeg" alt="Apple Watch Ultra" /></p>
 
-<p>Snoozing a message so that it shows up in the inbox at a future time has become a standard feature in most modern mail apps. Even Apple is finally adding this feature to Apple Mail in the upcoming macOS Ventura and iOS 16 releases. In Spark, the snooze feature is highly customizable with quick actions for snoozing to later today, tomorrow, next week, or in a month, as well as choosing a custom date and time. I use this feature every day.</p>
+<p>So, if no Ultra, then am I ordering a Series 8? I thought this would be a no brainer, but found myself a bit underwhelmed by the Series 8. Don’t get me wrong, it is a nice upgrade when coming from the Series 5. It has a larger screen, which is also edge to edge, a faster processor, blood oxygen meter, and fast charging. But wait, this list of features were all available on last year’s Series 7. The Series 8 only has two new features from the Series 7: a temperature sensor for cycle tracking and ovulation prediction, and car crash detection.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
 
-<p><img src="/assets/spark-snooze.png" alt="Snooze" /></p>
+<p><img src="/assets/apple-watch-series-8.jpeg" alt="Apple Watch Series 8" /></p>
 
-<h2 id="send-later">Send later</h2>
+<p>These limited new features caused me to reconsider my upgrade plans this time. I considered just sticking with my Series 5 for one more year and to upgrade next Fall to the Series 9. However, I have really been looking forward to upgrading this year. My Series 5 is still working great, but the larger edge to edge screen of the Series 7 has been enticing. I am now coding Apple Watch apps, and having just a little more screen real estate would be nice.</p>
 
-<p>Being able to write a message late at night, and schedule that message to deliver the next day is the main feature that got me to switch to Spark several years ago. I like to schedule time for dealing with email, and that time is not always during regular business hours. I don’t want to bother my colleagues with late night email. It’s great to be able to consider when my email will have the most impact by scheduling when it will be sent. With Spark, the send later items are held on the server, so my personal device doesn’t have to be on with Spark open for the email to send. This is different with how other apps handle send later, including Apple’s upcoming Mail release. IT departments may have some security concerns with how Spark handles these messages, but the feature has been rock solid for me.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+<h2 id="verdict">Verdict</h2>
 
-<h2 id="signatures-synced">Signatures synced</h2>
+<p>After the Apple Watch Series 8 went on sale, my inbox was inundated with advertisements for discounted Series 7 Apple Watches. Many of these came from Amazon and were used watches. This got me to also start looking at Apple’s refurbished models. Only cellular editions were available at first and I tend to stick to the GPS models. Late last week Apple’s refurbished list started to include Nike GPS versions of the Series 7, $100 less expensive than the Series 8. I took the plunge and ordered a Midnight colored, GPS Nike Series 7 with a Nike sports band. I have always ordered the Nike versions because I liked the band options and the additional watch faces. With the Series 8, Apple is no longer selling Nike versions. Everyone now gets the Nike watch faces, and you can order Nike bands separately.</p>
 
-<p>I like having a professional signature at the bottom of each message. Over the years I have had mail apps get out of sync with which signature I wanted to use with my various email accounts. This is a straightforward feature, but Spark has been the most reliably in displaying my signature. It is also easy to swipe to display or hide the signature when I am composing the message.</p>
+<p><img src="/assets/apple-watch-series-7.jpg" alt="Apple Watch Series 7" /></p>
 
-<h2 id="keyboard-shortcuts-gmail">Keyboard shortcuts (Gmail)</h2>
+<p>My Series 7 arrived quickly and its awesome. It feels like new and I love the larger screen. One surprise is that the processor is noticeably faster. The interface is much snappier and more delightful to use than my old Series 5. I am also enjoying the fast charging. You have to use a Apple’s fast-charge cable, which comes with the Series 7, but it’s great getting to 80% in 45 minutes.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
 
-<p>All great apps have strong keyboard shortcut support, and Spark is no exception. Spark has support for multiple sets of shortcuts to cater to the needs of each user. They have keyboard shortcuts that align with Apple Mail, Gmail, or Custom. If you are a power Gmail user who is used to working in Gmail’s web interface, you can continue to fly through your messages with Spark.</p>
-
-<p><img src="/assets/spark-keyboard-shortcuts.png" alt="Keyboard Shortcuts" /></p>
-
-<h2 id="little-niceties">Little Niceties</h2>
-
-<p>The developers at Readdle care about software and maintain a high level of polish throughout their apps.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
-
-<h3 id="minimize-draft">Minimize Draft</h3>
-
-<p>On the iPhone, instead of saving a draft of new messages, you can just minimize the message while you are working on it. It appears as a little round icon at the bottom of the screen. With a quick tap, you are back to editing your message. It is a delight.</p>
-
-<p><img src="/assets/spark-minimize.png" alt="Minimize Draft" /></p>
-
-<h3 id="undo-send">Undo Send</h3>
-
-<p>In Spark, if you accidentally hit send too quickly, you have a few seconds to undo. A small counter indicates how much time you have to undo. We have all sent an email and wished we could take it back. Now you can.</p>
-
-<p><img src="/assets/spark-undo.png" alt="Undo Send" /></p>
-
-<h3 id="quick-reply">Quick Reply</h3>
-
-<p>In Apple Messages, I love using little tap backs to give a quick “thumbs up” to a message. It shows the sender that I read their message and it is really fast without having to type a reply. Spark has this feature as well with “Quick Reply.” I can choose from a list of emojis and the message will quickly get sent back with my little image.</p>
-
-<p><img src="/assets/spark-quick-reply.png" alt="Quick Reply" /></p>
-
-<h3 id="send-again">Send Again</h3>
-
-<p>When my emails aren’t replied to in several days, I like to send the message again with all of the original formatting. I don’t want to forward the message or reply with the message text quoted. I want the message to go out again just like it did originally. Spark has “Send Again,” and I use it more than I would like to.
-Save as PDF</p>
-
-<p>On the Mac it is easy to print anything to a PDF. It is one of the many reasons that I love being a Mac user. On the iPhone, Spark includes this feature with each message. A simple button to save the email as a PDF. Brilliant.</p>
-
-<h3 id="search">Search</h3>
-
-<p>Email search is a standard and expected feature. I only mention it here to say that Spark has fast and accurate search. Spark also allows me to quickly filter search results by sender, receiver, or specific folders.</p>
-
-<h2 id="the-last-word">The Last Word</h2>
-
-<p>If you are on the fence about your email, or want something a little more than Apple Mail, you really need to check out Spark. It is available on Mac, iPhone, iPad, and Apple Watch.</p>
+<p>I wonder what the Series 9 will have in store…</p>
 
 <style type="text/css">
     img {
@@ -245,214 +405,10 @@ Save as PDF</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>I use SpamSieve for my system of catching junk mail and spam. That will be a topic for another day. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Notice any similarities between the pictures of the Series 8 and Series 7. Yeah, me too. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:2" role="doc-endnote">
-      <p>9to5Mac recently wrote about this issue of send later and the pros and cons of sending later on device versus a server. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:3" role="doc-endnote">
-      <p>These developers are in Ukraine. One more reason to support their work. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>You can identify a fast charge cable versus a standard Apple Watch charging cable, because the fast charge cable has an aluminum back. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="iOS" /><category term="Software" /><summary type="html"><![CDATA[For better or worse, email is where I spend a lot of my time. When you spend a significant amount of time each day in a certain mode, the tools that you require need to be efficient and enjoyable to use. I have tried many email apps over the years. I can still remember the days of Microsoft Entourage.]]></summary></entry><entry><title type="html">Quick Reader Mode in Safari on iPhone and iPad</title><link href="http://localhost:4000/quicktip/2022/08/18/quicktip-reader-mode.html" rel="alternate" type="text/html" title="Quick Reader Mode in Safari on iPhone and iPad" /><published>2022-08-18T13:15:47-06:00</published><updated>2022-08-18T13:15:47-06:00</updated><id>http://localhost:4000/quicktip/2022/08/18/quicktip-reader-mode</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/08/18/quicktip-reader-mode.html"><![CDATA[<p>I don’t know if this a new feature or only new to me, but here is a fast way to switch to “Reader” mode on websites using mobile Safari. <!--more--></p>
-
-<p>Simply hold your finger down on the AA button in the toolbar and the interface will toggle between full webpage view and reader mode.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
-
-<p>On iPhone you will get a nice little haptic feedback to indicate the switch. When a new webpage loads, this AA button first appears as the Reader icon, but it only lasts for a second, and I am never fast enough to tap the icon before it changes to the text settings icon. If it stayed just a bit longer, I wouldn’t need this shortcut, but I am glad it exists.</p>
-
-<p><img src="/assets/reader-mode-1.png" alt="Reader Mode button" /></p>
-
-<p><img src="/assets/reader-mode-2.png" alt="Reader Mode Button-2" /></p>
-
-<p><img src="/assets/show-reader-button.png" alt="Show Reader Button" /></p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Also known as a long press gesture. It use to be called “Force Touch” but Apple no longer uses Force Touch on iOS devices. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[I don’t know if this a new feature or only new to me, but here is a fast way to switch to “Reader” mode on websites using mobile Safari.]]></summary></entry><entry><title type="html">Liked - Hands-On With Enhanced Dictation in iOS 16</title><link href="http://localhost:4000/liked/2022/08/02/liked-dictation.html" rel="alternate" type="text/html" title="Liked - Hands-On With Enhanced Dictation in iOS 16" /><published>2022-08-02T12:31:12-06:00</published><updated>2022-08-02T12:31:12-06:00</updated><id>http://localhost:4000/liked/2022/08/02/liked-dictation</id><content type="html" xml:base="http://localhost:4000/liked/2022/08/02/liked-dictation.html"><![CDATA[<p><a href="https://www.macobserver.com/news/hands-on-with-enhanced-dictation-in-ios-16/?utm_source=macobserver&amp;utm_medium=rss&amp;utm_campaign=rss_everything">Jeff Butts from the Mac Observer</a></p>
-
-<p>One of the greatest improvements in iOS 16 is with the dictation engine. Apple has greatly enhanced dictation in iOS 16 to make it even smarter and more useful. This applies not only to the iPhone, but also the iPad, Mac (via macOS Ventura) and Apple Watch. <!--more--></p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Liked" /><summary type="html"><![CDATA[Jeff Butts from the Mac Observer One of the greatest improvements in iOS 16 is with the dictation engine. Apple has greatly enhanced dictation in iOS 16 to make it even smarter and more useful. This applies not only to the iPhone, but also the iPad, Mac (via macOS Ventura) and Apple Watch.]]></summary></entry><entry><title type="html">Setapp</title><link href="http://localhost:4000/review/macos/software/2022/06/10/setapp.html" rel="alternate" type="text/html" title="Setapp" /><published>2022-06-10T07:47:43-06:00</published><updated>2022-06-10T07:47:43-06:00</updated><id>http://localhost:4000/review/macos/software/2022/06/10/setapp</id><content type="html" xml:base="http://localhost:4000/review/macos/software/2022/06/10/setapp.html"><![CDATA[<p>My name is Adam and I am addicted to apps. I admit it. I am a sucker for a new app or tool for my Mac or iOS device, which is why <a href="https://setapp.com">Setapp</a> has been a great fit for me. Setapp is a subscription service for apps for your Mac and iOS devices. <!--more--> As a general rule, I don’t like subscription services, as they have a tendency to pile up and can become pretty expensive over time. However, Setapp has proven itself to me and has paid for my Mac workflow.</p>
-
-<h2 id="what-is-setapp">What is Setapp?</h2>
-
-<p>Setapp is like an alternative App Store for your Mac. For a monthly fee, you have access to over 200, curated apps for your Mac, from some of the communities most trusted developers. When you subscribe you install the Setapp app on your Mac, where you can browse the collection, install apps, and uninstall. It works similarly to the Mac App Store.</p>
-
-<p>The <a href="https://setapp.com/pricing">pricing model</a> is $9.99 a month for 1 Mac, $12.49 a month for 1 Mac plus iOS device, and $14.99 for 4 Macs and 4 iOS devices. The collection of apps is so great, that I found that I am actually saving money using Setapp, versus paying for yearly upgrades to some of my favorite apps.</p>
-
-<h2 id="my-favorite-apps">My Favorite Apps</h2>
-
-<p>I currently have 32 apps installed from Setapp on my Mac. Here are a few of my favorites:</p>
-
-<ul>
-  <li><a href="https://cleanmymac.com">CleanMyMac X</a>. This is the app that drove me over to Setapp. I was about to buy an upgrade and decided to put that money toward a Setapp subscription instead. CleanMyMac is for freeing up hard drive space, system memory, running maintenance scripts, checking for malware, and generally optimizing and keeping your Mac running lean and mean.</li>
-  <li><a href="https://macpaw.com/gemini">Gemini</a> is an app for finding duplicate files on your Mac. It has a very Apple-like interface that allows for comparing the duplicates before deciding to clean house. Gemini also has an iOS app included in Setapp for finding duplicates in your photo library.</li>
-  <li><a href="https://skylum.com/luminar-4">Luminar</a> is a photo organizer/editor. It is a direct competitor to Adobe’s Lightroom. Luminar has powerful photo editing features in an easy-to-use interface.</li>
-  <li><a href="https://marked2app.com">Marked</a> from Brett Terpstra is an app for previewing and exporting markdown files. If you have a favorite note-taking app, you can pair your app with Marked for a very slick live preview.</li>
-  <li><a href="https://redsweater.com/marsedit/">MarsEdit</a> has been around on the Mac for quite some time, and is a popular blogging editor. MarsEdit can connect with your Wordpress site and allow for fast creation and editing of blog posts. It has tremendous markdown support and also includes Safari extensions for quickly adding links to your posts.</li>
-  <li><a href="https://www.mindnode.com">MindNode</a> is my favorite mind mapping app, and it was my favorite before I knew about Setapp. It has a beautiful interface and a companion iOS app.</li>
-  <li><a href="https://www.econtechnologies.com/chronosync-express/overview.html">ChronoSync Express</a> also has a long history on the Mac for synchronizing two folders. You can setup different sync recipes that run on various schedules. It is a great for backing up specific folders, and keep your desktop and laptop in sync.</li>
-  <li><a href="https://eternalstorms.at/yoink/mac/">Yoink</a> is small utility that has been on my Mac for a long time. You don’t see Yoink until you need to drag a file on your Mac. Once you start to drag a file, Yoink appears in a corner of your screen for you to drop the file, or a stack of files. They remain in this small container, until you ready to drag them back to a new location.</li>
-</ul>
-
-<p>If these were the only apps on Setapp, it would be work the cost to me. However, there are over 200 more apps to explore. Here are a few more gems.</p>
-
-<h2 id="gems-on-setapp">Gems on Setapp</h2>
-
-<p>With all of the various apps on my Mac, my menu bar is full of icons. This is where <a href="https://www.macbartender.com">Bartender</a> comes to the rescue. Bartender can hide less used menubar items, and keep your menu nice and tidy. When you need those hidden menu items, Bartender reveals them and brings them forward.</p>
-
-<p><a href="https://www.busymac.com/busycal/index.html">BusyCal</a> is a powerful Calendar alternative. It is designed similarly to Apple’s Calendar, but includes a few more features. I find it easier to manage local calendars on my Mac, ones that I don’t want to sync with iCloud. BusyCal syncs with the system calendar, so you can use it interchangeably with Calendar or Fantastical.</p>
-
-<p><a href="https://cleanshot.com">CleanShot X</a>is a great screen capture alternative, for both photos and video.</p>
-
-<p><a href="https://www.stclairsoftD.com/DefaultFolderX/">Default Folder X</a> has been around on the Mac for many years. It adds more features to the Finder windows for quickly accessing recent and favorite folders.</p>
-
-<p>When I want to save a video from YouTube or Vimeo, I turn to <a href="https://software.charliemonroe.net/downie/">Downie</a>. It has a very simple interface for pasting in links to online videos. Downie downloads that video and saves it to my Mac for offline viewing.</p>
-
-<p>One menubar item that I keep an eye on is <a href="https://bjango.com/mac/istatmenus/">iStat Menus</a>. iStat Menus provides handy graphs for keeping an eye on CPU usage, available RAM, battery status, and weather. The menu items are very customizable so that you can monitor only what you are interested in.</p>
-
-<p>I have tried a lot of note-taking apps, and one that has gained popularity is <a href="https://ulysses.app">Ulysses</a>. It is a beautiful and powerful note taking app for keeping plain text files on your Mac. It has strong markdown support and can connect to WordPress or Medium for quickly publishing posts.</p>
-
-<h2 id="new-to-me">New To Me</h2>
-
-<p>Many of the above apps I was aware of before I started to use Setapp. There are several other apps that I have discovered since using Setapp, and more apps are added each month.</p>
-
-<ul>
-  <li><a href="https://v2.airbuddy.app">AirBuddy</a>. Menubar app for connecting AirPods and seeing the battery status of your devices.</li>
-  <li><a href="https://www.globaldelight.com/capto/">Capto</a>. Powerful screen capture with a photos like organizer for tagging and tracking your screenshots.</li>
-  <li><a href="https://dropshare.app">Dropshare</a>. Have a large file to send to someone? Dropshare can help. You upload files to Dropshare and then get a link back for sending to others. Setapp also includes a companion iOS app.</li>
-  <li><a href="https://apps.apple.com/us/app/home-inventory/id413564952?mt=12">Home Inventory</a>. With Home Inventory you can take a picture with your iPhone of all of your home assets, add metadata and value information, and sync this information back to your Mac. It’s great for knowing what your assets are and helpful if you need to make a claim in case of fire or theft.</li>
-  <li><a href="https://tripsy.app">Tripsy</a>. Taking a trip? Use Tripsy to organize all of your travel documents and sync it to your iPhone. Tripsy was just added to Setapp this past week.</li>
-</ul>
-
-<h2 id="ios-companion-apps">iOS Companion Apps</h2>
-
-<p>Setapp includes 29 iOS apps. This is a small number compared to the over 200 for the Mac, but iOS apps were added to the service much later. Of the apps I have mentioned above, here are the ones that include an iOS version:</p>
-
-<ul>
-  <li>Dropshare</li>
-  <li>Gemini</li>
-  <li>MindNode</li>
-  <li>Paste</li>
-  <li>Screens</li>
-  <li>Tripsy</li>
-  <li>Ulysses</li>
-</ul>
-
-<p>Setapp is worth a look, and I am looking forward to exploring more of them. I can’t help myself.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[My name is Adam and I am addicted to apps. I admit it. I am a sucker for a new app or tool for my Mac or iOS device, which is why Setapp has been a great fit for me. Setapp is a subscription service for apps for your Mac and iOS devices.]]></summary></entry><entry><title type="html">My Favorite To Do List App - Things</title><link href="http://localhost:4000/review/ios/macos/software/2022/04/03/favorite-to-do-things.html" rel="alternate" type="text/html" title="My Favorite To Do List App - Things" /><published>2022-04-03T06:18:13-06:00</published><updated>2022-04-03T06:18:13-06:00</updated><id>http://localhost:4000/review/ios/macos/software/2022/04/03/favorite-to-do-things</id><content type="html" xml:base="http://localhost:4000/review/ios/macos/software/2022/04/03/favorite-to-do-things.html"><![CDATA[<p>I spend a lot of time in my calendar, email, and task management apps. When I started using a Mac in the early 2000s I used <a href="https://en.wikipedia.org/wiki/Microsoft_Entourage">Microsoft’s Entourage</a>, which combined all of these into one app. Entourage was the Mac’s answer to Outlook. <!--more--> Over the years I experimented with many apps and eventually decided that it is better for me to have these as separate apps. When the iPhone App Store launched in 2008 I started to use <a href="https://www.omnigroup.com/omnifocus/">OmniFocus</a> and was happy with that for several years. OmniFocus is still a powerful task management app. OmniFocus was built with <a href="https://gettingthingsdone.com">David Allen’s GTD</a> system in mind. I would probably still be using OmniFocus today if it weren’t for <a href="https://culturedcode.com/things/">Things by Cultured Code</a>. When Things was updated to version 3 and included reliable sync between devices, I was taken with the clean and beautiful interface, as well as the flexibility to have a system that was a more personalized version of GTD.</p>
-
-<p><img src="/assets/appicon-mac-things.png" alt="Things icon" /></p>
-
-<h3 id="criteria-for-my-task-management-app">Criteria for my Task Management App</h3>
-
-<p>Here are my must-have features in a to do list manager:</p>
-
-<ul>
-  <li>Syncs between all of my devices (Mac, iPhone, iPad, Apple Watch)</li>
-  <li>Easy to add new items from any device. (Quick Capture)</li>
-  <li>Flexibility with simple lists versus Projects, Contexts, Tags</li>
-  <li>Today items automatically move to the next day.</li>
-  <li>Repeating Tasks</li>
-</ul>
-
-<p>I want to be able to easily add new tasks and mark tasks as completed from any of my devices. The app needs to sync seamlessly between my Mac, iOS devices, and Apple Watch. I enter most of my tasks on my Mac with a fast quick-entry window triggered by a custom keyboard shortcut.</p>
-
-<p><img src="/assets/things-quick-entry.png" alt="Quick Entry" /></p>
-
-<p>Things is designed around a GTD framework. It has an Inbox, Projects, and Tags. You can assign due dates and deadlines, add notes to tasks, and import your calendar items to view alongside your to do list. You can use Things as a simply single list of items, or you can customize it with more complexity with Projects, Folders, Areas, and Headings to suit your personal needs.</p>
-
-<p><img src="/assets/Things-headings-in-projects.png" alt="Headings in Projects" /></p>
-
-<p>The main feature that caused me to move away from OmniFocus to Things was the Today View.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> In OmniFocus, at the time, I would manually adjust due dates each day to setup my tasks for “Today.” With Things, any item that I don’t complete today, will automatically move to “Today” tomorrow. This has been a huge time saver for me and fits my mental framework for how I would like my to do list to function.</p>
-
-<p><img src="/assets/things-calendar-and-list.png" alt="Calendar and List" /></p>
-
-<p>I also use repeating tasks in two ways. First, for tasks that appear each month or so that I need to remember; and second, for projects that I am working on each day during a given week, where I need to make progress on the task each day, but it won’t be completed for a week or so. Things lets me customize repeated tasks for both of these scenarios.</p>
-
-<h3 id="fit-and-finish">Fit and Finish</h3>
-
-<p>Both OmniFocus and Things have beautiful interfaces, but I prefer the look and feel of Things. This is a subjective opinion and is based more on emotion and aesthetics than on anything else. I like how simply and clean Things can be with very little visual clutter. This clean look is very unified across each of my devices.</p>
-
-<p>Things recently added MarkDown support with the notes for each to do item. I write in MarkDown for most of my note taking and writing projects. Things also includes small bulleted checklists within a task. This flexibility is great for when I have multiple action items, but where I don’t want to setup a new project.</p>
-
-<p><img src="/assets/things-bulleted-checklist.png" alt="Bulleted Checklist" /></p>
-
-<p>Things has delightful, small animations that provide some whimsy and delight. My favorite is on the Apple Watch when you check off your final task for the day.</p>
-
-<p><img src="/assets/things-watch.png" alt="Thinks Watch" /></p>
-
-<h3 id="wishlist">Wishlist</h3>
-
-<p>There isn’t a perfect app in any category, and Things is no exception. There are a few items that I miss from my OmniFocus days, and a few other items that I will be added to Things in the next update.</p>
-
-<ul>
-  <li>OmniFocus had a really cool feature based on location. I could sort my tasks on based on where I was at the time. When I arrived at work, my to do list would filter and resort itself to show me the most relevant tasks at work. It would then switch back when I returned home.</li>
-  <li>Things has support for tags. In OmniFocus, and GTD, there is a concept of “context” for action items. A context represents where you are or what tool you are working with for a given task. Grocery Store could be a context for set of tasks. Or, phone could be another context for tasks that require your phone. In Things, you can use tags in place of contexts. While you can assign multiple tags to a to do item, Things doesn’t work well will filtering multiple tags. For example, I can filter to see two separate tags, but unless the to do item has both of those tags, it won’t show that item. Things would only show items that had both of those tags assigned. I would like more flexibility in how tags are filtered.</li>
-  <li>On iOS you can link to Things from other apps like Drafts, or my email app Spark. However, most items that you sent to Things from other apps go to the Inbox. It is more difficult to assign projects, due dates, and tags through automation on iOS. I would like to see more Shortcut support in a future update. In Shortcuts, Things has five action items. I hope to see more action items added over time.</li>
-</ul>
-
-<p><img src="/assets/things-shortcuts.png" alt="Things Shortcut" /></p>
-
-<h3 id="final-thoughts">Final Thoughts</h3>
-
-<p>The task manager software category on macOS and iOS is very rich. I have tried many apps over the years in search for the perfect app.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> I keep coming back to <a href="https://culturedcode.com/things/">Things by Cultured Code</a>.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>In OmniFocus, the today view is called the Forecast. I never liked the visual layout for the Forecast View, with how the calendar events were laid out horizontally. This has since been updated in OmniFocus to a vertical layout. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>I have tried: <a href="https://todoist.com">Todoist</a>, Apple Reminders, <a href="https://www.any.do">Any.do</a>, <a href="https://www.2doapp.com">2Do</a>, and <a href="https://goodtaskapp.com">GoodTask</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="Review" /><category term="iOS" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[I spend a lot of time in my calendar, email, and task management apps. When I started using a Mac in the early 2000s I used Microsoft’s Entourage, which combined all of these into one app. Entourage was the Mac’s answer to Outlook.]]></summary></entry><entry><title type="html">Hover Mouse for Mac App Store Install Progress</title><link href="http://localhost:4000/quicktip/2022/04/02/hover-mouse.html" rel="alternate" type="text/html" title="Hover Mouse for Mac App Store Install Progress" /><published>2022-04-02T18:10:28-06:00</published><updated>2022-04-02T18:10:28-06:00</updated><id>http://localhost:4000/quicktip/2022/04/02/hover-mouse</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/04/02/hover-mouse.html"><![CDATA[<p>If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer.<!--more--> Apple wants us to use the Mac App Store to install Xcode, which can be flaky at times.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The Mac App Store page indicates if you are downloading a file with a circular progress indicator, however, once the app starts installing, the circular indicator becomes less useful. Xcode takes a long time to install, and I have often thought that it was stalled.</p>
-
-<p><img src="/assets/hover-mouse-mac-app-store_edited.png" alt="Screenshot from Mac App Store" /></p>
-
-<p>I recently learned that if you hover your mouse over the circular progress indicator, once the app starts installing, it will show more detail about what percentage is complete. This is a welcome new feature that more users should know about. Have faith, that Xcode install will finish if you let it.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Downloading from the <a href="https://developer.apple.com">Apple Developer Website</a> has been more reliable in my experience. However, if I am not downloading an Xcode beta, the current release version of Xcode is not always available on the developer website. I have been forced to install from the Mac App Store in this case. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="QuickTip" /><category term="Developer" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[If you are an Apple Developer, then you know the pain associated with downloading a 12GB Xcode installer.]]></summary></entry><entry><title type="html">SimpleSynth - Quick MIDI Keyboard for macOS</title><link href="http://localhost:4000/quicktip/macos/music/software/2022/03/31/simplesynth.html" rel="alternate" type="text/html" title="SimpleSynth - Quick MIDI Keyboard for macOS" /><published>2022-03-31T05:49:24-06:00</published><updated>2022-03-31T05:49:24-06:00</updated><id>http://localhost:4000/quicktip/macos/music/software/2022/03/31/simplesynth</id><content type="html" xml:base="http://localhost:4000/quicktip/macos/music/software/2022/03/31/simplesynth.html"><![CDATA[<p>I have a midi keyboard connected to my desktop computers. It is great to be able to quickly enter notes into <a href="https://www.finalemusic.com">Finale</a>, or experiment in <a href="https://www.apple.com/logic-pro/">Logic</a> or <a href="https://www.apple.com/mac/garageband/">GarageBand</a>. However, sometimes I just want to play a few notes or practice some piano without launching a large app like Logic. <!--more--> With larger apps like Finale or even GarageBand, I have to start a new project and am presented with many settings for tempo and key signature. This provides just enough friction for me to procrastinate my practice. I need to be able to enable sounds on my MIDI keyboard with one click and get to the playing. Enter <a href="https://github.com/lllucius/simplesynth64">SimpleSynth</a>.</p>
-
-<p><img src="/assets/simplesynth_icon.png" alt="SimpleSynth Icon" /></p>
-
-<p>SimpleSynth is a very lightweight app, which simply gets MIDI sounds out of my connected MIDI keyboard. It doesn’t record, the layout isn’t fancy, but it launches fast and allows me to choose the MIDI sound that I want with the least amount of friction.</p>
-
-<p>When I switched to Apple Silicon with my new MacBook Pro 14” M1 Max, SimpleSynth stopped working for me. It hadn’t been updated for 64 bit. Luckily, it has been updated on Github as SimpleSynth64.</p>
-
-<p>Thank you to <a href="http://notahat.com/simplesynth">Pete Yandell</a> for originally writing the app and for <a href="https://github.com/rraallvv/simplesynth.git">rraallvvv </a> on Github for releasing this new version.</p>
-
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-    }
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><category term="macOS" /><category term="Music" /><category term="Software" /><summary type="html"><![CDATA[I have a midi keyboard connected to my desktop computers. It is great to be able to quickly enter notes into Finale, or experiment in Logic or GarageBand. However, sometimes I just want to play a few notes or practice some piano without launching a large app like Logic.]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="AppleWatch" /><category term="Review" /><summary type="html"><![CDATA[Apple released two new watches this month, the Apple Watch Series 8 and the Apple Watch Ultra. I have been an Apple Watch user since the Apple Watch Series 3. My current watch is a Series 5. I had planned on this Fall being my time to upgrade with whatever was released. Each series has been fairly incremental, which is fine when you wait two to three years to upgrade. Those incremental updates each year equate to a nice upgrade every few years.]]></summary></entry></feed>

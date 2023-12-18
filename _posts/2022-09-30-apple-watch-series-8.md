@@ -2,7 +2,7 @@
 layout: post
 title:  To Watch or Not To Watch - Apple Watch Series 8
 date:   2022-09-30 10:57:48 -0700
-categories: 
+categories: AppleWatch Review
 excerpt_separator: <!--more-->
 ---
 
@@ -34,8 +34,16 @@ I wonder what the Series 9 will have in store...
 
 [image-1]: /assets/apple-watch-ultra.jpeg
 [image-2]: /assets/apple-watch-series-8.jpeg
-[image-3]: /assets/apple-watch-series-7.jpeg
+[image-3]: /assets/apple-watch-series-7.jpg
 
+<style type="text/css">
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+    }
+</style>
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
