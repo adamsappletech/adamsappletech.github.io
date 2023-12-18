@@ -14,10 +14,21 @@
     {
 
       "title"    : "Hover Mouse for Mac App Store Install Progress",
-      "url"      : "/quick%20tip/2022/04/02/hover-mouse.html",
-      "category" : "Quick Tip",
+      "url"      : "/quicktip/2022/04/02/hover-mouse.html",
+      "category" : "QuickTip",
       "tags"     : "Developer, macOS, Software",
       "date"     : "2022-04-02 18:10:28 -0600",
+      "description" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "SimpleSynth - Quick MIDI Keyboard for macOS",
+      "url"      : "/quicktip/macos/music/software/2022/03/31/simplesynth.html",
+      "category" : "QuickTip, macOS, Music, Software",
+      "tags"     : "",
+      "date"     : "2022-03-31 05:49:24 -0600",
       "description" : ""
 
     } ,

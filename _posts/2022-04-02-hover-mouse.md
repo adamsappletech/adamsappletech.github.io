@@ -2,7 +2,7 @@
 layout: post
 title:  Hover Mouse for Mac App Store Install Progress
 date:   2022-04-02 17:10:28 -0700
-category: Quick Tip
+category: QuickTip
 tags: Developer macOS Software
 excerpt_separator: <!--more-->
 ---
