@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Quick Reader Mode in Safari on iPhone and iPad
+title:  Reader Mode in Safari on iPhone and iPad
 date:   2022-08-18 12:15:47 -0700
 categories: QuickTip
 excerpt_separator: <!--more-->
