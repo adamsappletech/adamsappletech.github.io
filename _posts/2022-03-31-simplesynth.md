@@ -20,14 +20,6 @@ Thank you to [Pete Yandell](http://notahat.com/simplesynth) for originally writi
 
 [image-1]: /assets/simplesynth_icon.png
 
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-    }
-</style>
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"

@@ -101,14 +101,6 @@ If you are on the fence about your email, or want something a little more than A
 
 
 
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 350px;
-    }
-</style>
 
 
 <script src="https://giscus.app/client.js"

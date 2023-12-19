@@ -36,14 +36,7 @@ The Mac is a great platform for high-quality, third party apps that do one thing
 [image-2]: /assets/fission-conversion.png
 [image-3]: /assets/fission-batch.png
 
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 750px;
-    }
-</style>
+
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"

@@ -69,14 +69,7 @@ Task management is an ongoing "task" to find the perfect system. For now, I am p
 [image-1]: /assets/things-tags.png
 [image-2]: /assets/things-shortcuts-2.png
 
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-    }
-</style>
+
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"

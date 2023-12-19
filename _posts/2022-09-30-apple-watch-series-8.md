@@ -34,18 +34,11 @@ I wonder what the Series 9 will have in store...
 [^1]:   Notice any similarities between the pictures of the Series 8 and Series 7. Yeah, me too.  
 [^2]: You can identify a fast charge cable versus a standard Apple Watch charging cable, because the fast charge cable has an aluminum back.   
 
-[image-1]: /assets/apple-watch-ultra.jpeg
-[image-2]: /assets/apple-watch-series-8.jpeg
+[image-1]: /assets/apple-watch-ultra.jpg
+[image-2]: /assets/apple-watch-series-8.jpg
 [image-3]: /assets/apple-watch-series-7.jpg
 
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 350px;
-    }
-</style>
+
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
