@@ -47,6 +47,8 @@ I send articles that I want to save or read later to my favorite read-it-later s
 ## Conclusion
 Reeder has a polished and delightful interface for reading RSS feeds. It is fast to use with gestures for sending articles quickly to Pocket or Instapaper, and quickly marking all articles as read. It has a consistent look on both macOS and iOS. I can’t recommend it highly enough. 
 
+{% include social-media-share.html %}
+
 [^1]:   Google Reader ran from 2005-2013. I now use Feedly to collect my feeds along with Reeder for viewing them. 
 
 [^2]:   Bionic Reading® revises texts so that the most concise parts of words are highlighted. This guides the eye over the text and the brain remembers previously learned words more quickly.

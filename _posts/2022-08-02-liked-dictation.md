@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 
 One of the greatest improvements in iOS 16 is with the dictation engine. Apple has greatly enhanced dictation in iOS 16 to make it even smarter and more useful. This applies not only to the iPhone, but also the iPad, Mac (via macOS Ventura) and Apple Watch. <!--more--> 
 
+{% include social-media-share.html %}
 
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"

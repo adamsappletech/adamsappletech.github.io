@@ -55,7 +55,7 @@ I highly recommend the Logitech Folio Touch for iPad users who are looking for a
 
 Thank you Logitech for such thoughtful design. 
 
-
+{% include social-media-share.html %}
 
 
 [^1]: I currently have the new 14" M1 Max MacBook Pro, which has an amazing keyboard. The Logitech Folio Touch is not better than my current MacBook Pro. Apple really hit it out of the park with these new M1 MacBook Pro laptops. 

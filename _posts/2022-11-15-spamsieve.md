@@ -26,6 +26,8 @@ If you don't have a Mac that you can leave running, then you may want to look el
 
 SpamSieve is older software, but it has been updated for the latest release of macOS Ventura. It is tried and true for me and still the best way to manage spam email locally on my Mac.
 
+{% include social-media-share.html %}
+
 [image-1]: /assets/spamsieve-icon@2x.png
 
 <script src="https://giscus.app/client.js"

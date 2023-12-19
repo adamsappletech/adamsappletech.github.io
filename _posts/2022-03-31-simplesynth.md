@@ -16,6 +16,8 @@ When I switched to Apple Silicon with my new MacBook Pro 14" M1 Max, SimpleSynth
 
 Thank you to [Pete Yandell](http://notahat.com/simplesynth) for originally writing the app and for [rraallvvv ](https://github.com/rraallvv/simplesynth.git) on Github for releasing this new version.
 
+{% include social-media-share.html %}
+
 [image-1]: /assets/simplesynth_icon.png
 
 <style type="text/css">

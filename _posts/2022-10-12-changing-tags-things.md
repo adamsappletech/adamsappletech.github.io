@@ -61,6 +61,8 @@ These only show what is scheduled for Today, unless it has the prefix "All," the
 
 Task management is an ongoing "task" to find the perfect system. For now, I am pretty happy with Things, Tags, and Shortcuts. 
 
+{% include social-media-share.html %}
+
 [^1]: OmniFocus would even use GPS location data to automatically filter your tasks when you arrived at certain locations that were matched to your contexts.
 [^2]: You can read why I like Things in this [post](/_posts/2022-04-03-favorite-to-do-things.md). 
 

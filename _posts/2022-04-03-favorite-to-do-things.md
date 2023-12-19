@@ -60,6 +60,8 @@ There isn't a perfect app in any category, and Things is no exception. There are
 
 The task manager software category on macOS and iOS is very rich. I have tried many apps over the years in search for the perfect app.[^2] I keep coming back to [Things by Cultured Code](https://culturedcode.com/things/).
 
+{% include social-media-share.html %}
+
 [^1]:  In OmniFocus, the today view is called the Forecast. I never liked the visual layout for the Forecast View, with how the calendar events were laid out horizontally. This has since been updated in OmniFocus to a vertical layout. 
 
 [^2]:  I have tried: [Todoist](https://todoist.com), Apple Reminders, [Any.do](https://www.any.do), [2Do](https://www.2doapp.com), and [GoodTask](https://goodtaskapp.com).

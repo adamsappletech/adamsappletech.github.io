@@ -25,6 +25,8 @@ I setup a [Keyboard Maestro](https://www.keyboardmaestro.com/main/) hotkey to qu
 
 I love the Mac.
 
+{% include social-media-share.html %}
+
 [^1]: Thank you [Bartender](https://www.macbartender.com) for keeping my menu bar manageable. (Also a part of [Setapp](https://setapp.com))
 
 [image-1]: /assets/toggle-wifi-keyboard-maestro.png

@@ -10,6 +10,8 @@ excerpt_separator: <!--more-->
 
 Tip: when expanding an Xcode XIP archive, use the command line (xip –expand) rather than Archive Utility. It’s at least 25% faster–sometimes even twice as fast, depending on the circumstances. <!--more--> 
 
+{% include social-media-share.html %}
+
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
         data-repo-id="R_kgDOK5uboQ"

@@ -78,6 +78,8 @@ Here is the AppleScript I use to get the daily headlines.
 
 Writing a meaningful, personalized, journal entry each day is likely better for your mental health, but if you are like me and find it difficult to journal daily, but want a daily record, this shortcut may be helpful to you. It reminds me to reflect on my day, and on important days I do remember to go back and write the more meaningful reflection. 
 
+{% include social-media-share.html %}
+
 [1]:    https://dayoneapp.com
 [2]:    https://brettterpstra.com
 [3]:    https://hasseg.org/icalBuddy/

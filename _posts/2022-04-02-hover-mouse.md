@@ -12,6 +12,8 @@ If you are an Apple Developer, then you know the pain associated with downloadin
 
 I recently learned that if you hover your mouse over the circular progress indicator, once the app starts installing, it will show more detail about what percentage is complete. This is a welcome new feature that more users should know about. Have faith, that Xcode install will finish if you let it. 
 
+{% include social-media-share.html %}
+
 
 [^1]:	Downloading from the [Apple Developer Website][1] has been more reliable in my experience. However, if I am not downloading an Xcode beta, the current release version of Xcode is not always available on the developer website. I have been forced to install from the Mac App Store in this case.
 

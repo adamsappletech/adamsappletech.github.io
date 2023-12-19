@@ -15,6 +15,8 @@ You can then put that email address as a new contact in your address book. It is
 - Give your @things.email address to a trusted partner or colleague so they can delegate to-dos to you.
 - Create powerful workflows with other apps or online services, such as [IFTTT][3]. 
 
+{% include social-media-share.html %}
+
 [1]:    https://www.adamsapple.tech/2022/04/04/my-favorite-to-do-list-app-things/
 [2]:    https://culturedcode.com/things/support/articles/2908262/
 [3]:    https://ifttt.com

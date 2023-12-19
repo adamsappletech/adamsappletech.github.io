@@ -51,6 +51,8 @@ I have been an active Fantastical user for many years, and I continue to be impr
 
 ![Calendar View][image-5]
 
+{% include social-media-share.html %}
+
 [image-1]: /assets/fantastical-icon.png
 [image-2]: /assets/fantastical-calendar-sets.png
 [image-3]: /assets/weather-forecast.png

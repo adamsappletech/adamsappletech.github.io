@@ -85,6 +85,8 @@ Email search is a standard and expected feature. I only mention it here to say t
 
 If you are on the fence about your email, or want something a little more than Apple Mail, you really need to check out Spark. It is available on Mac, iPhone, iPad, and Apple Watch.
 
+{% include social-media-share.html %}
+
 [^1]: I use SpamSieve for my system of catching junk mail and spam. That will be a topic for another day.
 [^2]: 9to5Mac recently wrote about this issue of send later and the pros and cons of sending later on device versus a server.
 [^3]: These developers are in Ukraine. One more reason to support their work.
@@ -96,6 +98,8 @@ If you are on the fence about your email, or want something a little more than A
 [image-5]: /assets/spark-minimize.png
 [image-6]: /assets/spark-undo.png
 [image-7]: /assets/spark-quick-reply.png
+
+
 
 <style type="text/css">
     img {

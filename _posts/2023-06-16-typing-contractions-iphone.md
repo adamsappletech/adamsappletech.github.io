@@ -14,6 +14,8 @@ This tip works for all of the contractions that I can think of, including: canâ€
 
 ![iPhone Demo][image-1]
 
+{% include social-media-share.html %}
+
 [image-1]: /assets/iOS_contractions.gif
 
 

@@ -13,6 +13,8 @@ excerpt_separator: <!--more-->
 
 <!--more--> This is a great list of apps for recording your screen. Several were new to me, including EaseUS RecExpert, Icecream, and TinyTake. My favorites are [Screenflow](https://www.telestream.net/screenflow/overview.htm) and [CleanShot X](https://cleanshot.com/).
 
+{% include social-media-share.html %}
+
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
         data-repo-id="R_kgDOK5uboQ"

@@ -12,6 +12,8 @@ If Apple Maps is showing a blank screen on macOS, here is a quick way to restore
 
 <!--more--> Removing this folder and restarting Maps should allow the map data to be downloaded and displayed again.
 
+{% include social-media-share.html %}
+
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
         data-repo-id="R_kgDOK5uboQ"

@@ -63,7 +63,7 @@ Here are a few photos from my "Webcam Shootout" video. It was a challenge to fil
 
 Checkout my video for an explanation: [YouTube Video - Webcam Shootout](https://youtu.be/eeKTHMvkH88)
 
-
+{% include social-media-share.html %}
 
 [^1]: This works with older iPhones too; you don't have to have the latest 14 to make this work. 
 

@@ -18,6 +18,7 @@ On iPhone you will get a nice little haptic feedback to indicate the switch. Whe
 
 ![Show Reader Button][image-3]
 
+{% include social-media-share.html %}
 
 [^1]: Also known as a long press gesture. It use to be called “Force Touch” but Apple no longer uses Force Touch on iOS devices.
 

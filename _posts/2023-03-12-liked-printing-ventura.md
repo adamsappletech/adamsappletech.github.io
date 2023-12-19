@@ -12,6 +12,8 @@ excerpt_separator: <!--more-->
 
 I have relied on this keyboard shortcut for years. It is so handy to quickly hit CMD-P for the Print Dialog and then CMD-P again to save the document as a PDF. Now I know why it hasn’t been working since upgrading to Ventura.
 
+{% include social-media-share.html %}
+
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
         data-repo-id="R_kgDOK5uboQ"

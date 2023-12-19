@@ -26,6 +26,8 @@ This should fix the problem for Microsoft Word, but a few additional steps are n
 
 This fix has really saved my sanity. 
 
+{% include social-media-share.html %}
+
 <script src="https://giscus.app/client.js"
         data-repo="adamsappletech/adamsappletech.github.io"
         data-repo-id="R_kgDOK5uboQ"

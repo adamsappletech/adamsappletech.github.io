@@ -28,6 +28,8 @@ My Series 7 arrived quickly and its awesome. It feels like new and I love the la
 
 I wonder what the Series 9 will have in store...
 
+{% include social-media-share.html %}
+
 
 [^1]:   Notice any similarities between the pictures of the Series 8 and Series 7. Yeah, me too.  
 [^2]: You can identify a fast charge cable versus a standard Apple Watch charging cable, because the fast charge cable has an aluminum back.   

@@ -20,6 +20,8 @@ Fission also includes a batch editor for conversions. You can drag in multiple a
 
 The Mac is a great platform for high-quality, third party apps that do one thing and do it very well. [Fission][8] is one of those apps. 
 
+{% include social-media-share.html %}
+
 
 [1]:    https://www.avid.com
 [2]:    https://www.ilok.com/#!home

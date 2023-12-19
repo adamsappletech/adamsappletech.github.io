@@ -44,6 +44,7 @@ I love this keyboard. I can touch type as fast as I am able and not have to worr
 
 ![Keychron Side][image-3]
 
+{% include social-media-share.html %}
 
 [^1]:   The brown option is not the most clicky option. It is in between red (click) and blue (tactile). I have found it to be plenty clicky for my taste.
 

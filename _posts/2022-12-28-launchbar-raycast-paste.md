@@ -71,6 +71,8 @@ Keeping track of all of my hotkeys can be a problem, but I like what I have sett
 
 ![Stats-2][image-8]
 
+{% include social-media-share.html %}
+
 [^1]:   Raycast includes some whimsy as well, like being able to toggle your mouse into a lightsaber, complete with sound effects. Take that LaunchBar. 
 
 [1]:    https://www.alfredapp.com
