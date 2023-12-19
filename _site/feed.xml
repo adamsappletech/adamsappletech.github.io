@@ -1,4 +1,324 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-18T13:40:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">LaunchBar, Raycast, and Paste</title><link href="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html" rel="alternate" type="text/html" title="LaunchBar, Raycast, and Paste" /><published>2022-12-28T01:25:13-07:00</published><updated>2022-12-28T01:25:13-07:00</updated><id>http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste</id><content type="html" xml:base="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html"><![CDATA[<p>Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.<!--more--> While Spotlight has improved over the years, the market for third-party app launchers and search apps have flourished. Some of the top contenders include <a href="https://www.alfredapp.com">Alfred</a>, <a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a>, and more recently <a href="https://www.raycast.com">Raycast</a>. These third-party apps excel at speed, giving Apple’s Spotlight a run for its money. They are fast and nicely designed, causing even Apple to copy some of their interface elements for Spotlight.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-18T17:51:58-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">Automate Journaling Day One with Shortcuts</title><link href="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" rel="alternate" type="text/html" title="Automate Journaling Day One with Shortcuts" /><published>2023-11-26T05:47:12-07:00</published><updated>2023-11-26T05:47:12-07:00</updated><id>http://localhost:4000/productivity/2023/11/26/journaling-shortcuts</id><content type="html" xml:base="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"><![CDATA[<p>I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, <a href="https://dayoneapp.com">Day One</a>. I used to accomplish this only with AppleScript, with inspiration and help from <a href="https://brettterpstra.com">Brett Terpstra</a>. <!--more--> My old AppleScript relied on a command-line utility called <a href="https://hasseg.org/icalBuddy/">iCalBuddy</a>. I recently got a new computer and I had trouble getting iCalBuddy to work, so I decided to redo my automation using Apple Shortcuts. In the end, I think this is even better than my original script. It still relies on some AppleScript, and so it won’t run on iOS, but so far it has been rock solid.</p>
+
+<p>This shortcut finds my calendar events for today and puts them into a list, organized by calendar. It then looks at my to do list in <a href="https://culturedcode.com/things/">Things</a>, and makes a list of the tasks that I completed today. Finally, it accesses a CNN RSS feed to find today’s top headlines, puts the title in a list, with a link to the article.</p>
+
+<p>I can then add a picture to the journal entry, or add a longer text reflection, if I want to personalize it further. I use Keyboard Maestro to run the Shortcut at a certain time each night. Day</p>
+
+<h2 id="shortcut">Shortcut</h2>
+
+<p>The Shortcut relies on the following:</p>
+
+<p>Day One actions:</p>
+
+<ul>
+  <li>Create New Entry</li>
+  <li>Append to Entry</li>
+</ul>
+
+<p>Calendar actions:</p>
+
+<ul>
+  <li>Find Calendar Events Where</li>
+</ul>
+
+<p>Things actions:</p>
+
+<ul>
+  <li>Find Items Where</li>
+</ul>
+
+<p>AppleScript Action:</p>
+
+<ul>
+  <li>Run AppleScript</li>
+</ul>
+
+<p>General Action:</p>
+
+<ul>
+  <li>Replace Text</li>
+</ul>
+
+<p><img src="/assets/journal-script-1.png" alt="Journal Script 1" /></p>
+
+<p><img src="/assets/journal-script-2.png" alt="Journal Script 2" /></p>
+
+<h2 id="applescript">AppleScript</h2>
+
+<p>Here is the AppleScript I use to get the daily headlines.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    property RSSURL : "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    on run {input, parameters}
+            set ASTID to AppleScript's text item delimiters
+            set AppleScript's text item delimiters to {("&lt;item&gt;" &amp; (ASCII character 13))}
+            try
+                    do shell script "curl -sS " &amp; quoted form of RSSURL
+                    set rssFeed to every text item of result
+                    set AppleScript's text item delimiters to ASTID
+                    
+                    if (count rssFeed) is greater than or equal to 6 then
+                            set rssFeed to items 2 thru 6 of rssFeed
+                    else
+                            set rssFeed to items 2 thru (count rssFeed) of rssFeed
+                    end if
+            on error errorMsg number errorNum
+                    set AppleScript's text item delimiters to ASTID
+                    display dialog "Error (" &amp; errorNum &amp; "):" &amp; return &amp; return &amp; errorMsg buttons "Cancel" default button 1 with icon caution
+            end try
+            
+            
+            delay 2
+            set newsList to {}
+            repeat with thisPiece in rssFeed
+                    set newsList's end to (text 8 thru -9 of (first paragraph of thisPiece))
+                    set newsList's end to (text 14 thru -8 of (third paragraph of thisPiece))
+            end repeat
+            return newsList
+    end run
+</code></pre></div></div>
+
+<p>Writing a meaningful, personalized, journal entry each day is likely better for your mental health, but if you are like me and find it difficult to journal daily, but want a daily record, this shortcut may be helpful to you. It reminds me to reflect on my day, and on important days I do remember to go back and write the more meaningful reflection.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Productivity" /><summary type="html"><![CDATA[I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra.]]></summary></entry><entry><title type="html">Fission - Lightweight Audio Editor</title><link href="http://localhost:4000/review/macos/software/2023/10/06/review-fission.html" rel="alternate" type="text/html" title="Fission - Lightweight Audio Editor" /><published>2023-10-06T06:40:27-06:00</published><updated>2023-10-06T06:40:27-06:00</updated><id>http://localhost:4000/review/macos/software/2023/10/06/review-fission</id><content type="html" xml:base="http://localhost:4000/review/macos/software/2023/10/06/review-fission.html"><![CDATA[<p>I am a <a href="https://www.avid.com">Pro Tools</a> power user. When I am recording or producing a recording session, Pro Tools is my DAW of choice. It is the industry standard and incredibly powerful. However, sometimes I need to trim an audio file or do some light editing, and for those times Pro Tools is overkill. <!--more--> With Pro Tools I need to have my <a href="https://www.ilok.com/#!home">iLok</a>  plugged in and when Pro Tools opens, a number of plugins also load. It isn’t a quick in-and-out app. For a quick audio file edit, <a href="https://rogueamoeba.com/fission/">Fission</a> from <a href="https://rogueamoeba.com">Rogue Amoeba</a> is my go to app.</p>
+
+<p><img src="/assets/fission-editor.png" alt="Fission Editor" /></p>
+
+<p><a href="https://rogueamoeba.com">Rogue Amoeba</a> makes incredible audio software, including <a href="https://rogueamoeba.com/audiohijack/">Audio Hijack</a> and <a href="https://rogueamoeba.com/loopback/">Loopback</a>. These are powerful apps for routing audio around your Mac. They also make Fission, a fast little audio editor that is perfect for quick edits and conversions. Fission opens fast and provides a clean interface for trimming audio, adding quick fade-in or fade-out edits, and will export to .mp3, .aac, .alac, .flac, .aiff, and .wav.</p>
+
+<p><img src="/assets/fission-conversion.png" alt="Fission Conversion" /></p>
+
+<p>Fission also includes a batch editor for conversions. You can drag in multiple audio files and start a queue of exports to all of the above file types.</p>
+
+<p><img src="/assets/fission-batch.png" alt="Fission Batch" /></p>
+
+<p>The Mac is a great platform for high-quality, third party apps that do one thing and do it very well. <a href="https://rogueamoeba.com/fission/">Fission</a> is one of those apps.</p>
+
+<style type="text/css">
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 750px;
+    }
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[I am a Pro Tools power user. When I am recording or producing a recording session, Pro Tools is my DAW of choice. It is the industry standard and incredibly powerful. However, sometimes I need to trim an audio file or do some light editing, and for those times Pro Tools is overkill.]]></summary></entry><entry><title type="html">Typing Contractions on iPhone</title><link href="http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" rel="alternate" type="text/html" title="Typing Contractions on iPhone" /><published>2023-06-16T06:34:00-06:00</published><updated>2023-06-16T06:34:00-06:00</updated><id>http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone</id><content type="html" xml:base="http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html"><![CDATA[<p>When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.</p>
+
+<!--more-->
+<p>When typing contractions on iOS, you can add a double letter at the end of the word, and the autocorrect engine will type the appropriate apostrophe for you. For example, if you want to type don’t, type dontt. When you hit enter it will autocorrect to don’t, saving you time from changing keyboards to find the apostrophe. I am finding that it even works on macOS. As I type cantt with this new method, macOS displays the possible autocorrect in a small popup, when I hit the space bar it autocorrects to the correct can’t.</p>
+
+<p>This tip works for all of the contractions that I can think of, including: can’t, don’t, won’t, didn’t, isn’t, etc…</p>
+
+<p><img src="/assets/iOS_contractions.gif" alt="iPhone Demo" /></p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.]]></summary></entry><entry><title type="html">Keychron Q5 Mechanical Keyboard</title><link href="http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" rel="alternate" type="text/html" title="Keychron Q5 Mechanical Keyboard" /><published>2023-04-07T06:20:17-06:00</published><updated>2023-04-07T06:20:17-06:00</updated><id>http://localhost:4000/review/hardware/2023/04/07/keychron-review</id><content type="html" xml:base="http://localhost:4000/review/hardware/2023/04/07/keychron-review.html"><![CDATA[<p>I grew up during the beginning of the personal computer era. The first computer in our house was an IBM PCjr and my dad used an IBM PC at work. The Macintosh had just been announced, but I was sheltered from Apple except for a few days using an Apple II at school. <!--more--> I can still remember the sound and feel of typing on these early IBM keyboards. They were loud and sounded like you were getting real work done on them. They felt solid and if you pushed the key down slowly, there was an audible click when the key triggered a response on screen. As time went on, keyboards became more compact and much quieter. The industry reached an extreme of low key travel and quiet keyboards with the Apple butterfly keyboard era, around 2016. These keyboards were quiet and sleek, but fatally flawed with accuracy and repair problems. Even more than the defective problems, the key travel on these keyboards were so slight that touch typing was difficult. Apple has since remedied the butterfly keyboard and the current keyboards on the MacBook Pros are excellent. They have more key travel and use the more reliable scissor-switch design. I am trying on one right now and it feels great and is rock solid reliable. Ironically, the butterfly keyboards piqued my interest in fully mechanical keyboards, ones that hearken back to the early 1980s and what I remember from using those IBM PC keyboards. Mechanical keyboard fans have always been around, but I feel lately the mechanical keyboard is enjoying increased popularity.</p>
+
+<p>I decided to take the plunge and settled on a <a href="https://www.keychron.com/products/keychron-q5-qmk-custom-mechanical-keyboard?variant=40010452041817">Keychron Q5</a> for my office setup. There are several competitors in this space including Das Keyboard, Logitech, and even the older Apple Extended Keyboard, which can be found on eBay.</p>
+
+<p><img src="/assets/keychron-top.jpeg" alt="Keychron 1" /></p>
+
+<h2 id="chassis">Chassis</h2>
+<p>I was shocked when then box arrived and I felt the weight of this keyboard. It is a solid full metal CNC machined body. When I unwrapped the keyboard and picked it up, I couldn’t get over how solid this keyboard feels. It will not slide around on your desk when typing. It is extremely well made, and could probably double as a weapon in a pinch. The base on the Q5 is somewhat high and so I have opted to add a <a href="https://www.keychron.com/products/keychron-keyboard-wooden-palm-rest">beautiful wooden wrist rest</a>, also from Keychron. Having a wrist rest has made the typing experience very comfortable for me. I would recommend having some wrist support, or opt for one of Keychron’s <a href="https://www.keychron.com/collections/low-profile-keyboard-collection">low profile keyboards</a> instead.</p>
+
+<h2 id="key-switches">Key Switches</h2>
+<p>If you haven’t delved into the world of key switches, you are in for a rabbit hole of options. Here is helpful guide and background about key switches at <a href="https://www.rtings.com/keyboard/learn/mechanical-switches">RTings.com</a>.</p>
+
+<blockquote>
+  <p>There are many different switch types available, all with a different feel and sound, so it can be hard to narrow down which is the best for you. It’s overwhelming, especially if you’re just getting started in the world of mechanical keyboards. At the end of the day, it all boils down to personal preference. Are you looking for the classic “click” that comes from a clicky switch or a feeling that’s similar to popping bubble wrap, which you get from a tactile switch? Or do you prefer a silent and smooth keypress that a linear switch offers?</p>
+</blockquote>
+
+<p>I wanted the clicky sound to remind me that I am using a mechanical keyboard. I was looking forward to the nostalgia of that early IBM PC keyboard. I decided to order the <a href="https://www.keychron.com/products/keychron-mechanical-switch-set?variant=39305107865689">Gateron G Pro Brown</a> option.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> I have been happy with the amount of clickyness and the tactile feel. One of the beauties of living a mechanical keyboard lifestyle is that you can order different sets of switches and fully customize the keyboard later, if you want to try a different switch. You can order new switches, keycaps, or both and get a completely new keyboard, look and feel.</p>
+
+<h2 id="layout">Layout</h2>
+<p>The Keychron Q5 fully supports both Mac and Windows and has a switch on the back to toggle between optimizing for either operating system. Most of Keychron’s keyboards are less than 100%, meaning that they don’t include a number keypad or dedicated home, end, or pg keys. I really enjoy having a dedicated number keypad. The Q5 is a 95% size keyboard. It has a full number keypad in a slightly more compact design. I have been happy with this tradeoff. Keychron’s most popular keyboards are even smaller than mine without a number keypad, but they do sell a few full 100% models as well. I think they Q5 at 95% has been an excellent compromise between number of keys and size of keyboard on my desk.</p>
+
+<h2 id="knob">Knob</h2>
+<p>Keychron offers a customizable knob in the top right corner of the keyboard. This is an add-on feature and I opted to have it. I use it for volume and if you press the knob in it will mute and unmute. I use the knob all of the time. Other use cases could include zoom your display or scrubbing audio or video in apps like Logic or Final Cut Pro.</p>
+
+<h2 id="programmable">Programmable</h2>
+<p>I have alluded to the ability to customize and program this keyboard such as changing the knob functionality. With the included software, the sky is the limit with the ability to reprogram this keyboard.</p>
+
+<blockquote>
+  <p>With full QMK and VIA support, you can easily program and remap each key on the keyboard. The open-source firmware means endless possibilities for keyboard layouts, shortcuts, backlight effects, even the knob, and more.</p>
+</blockquote>
+
+<p>I haven’t reprogrammed my setup yet, but the software was easy to install and get connected.</p>
+
+<p><img src="/assets/via-keychron.jpg" alt="VIA Software" /></p>
+
+<h2 id="verdict">Verdict</h2>
+<p>I love this keyboard. I can touch type as fast as I am able and not have to worry about missed keystrokes. It is a joy to type on and even if I am not technically working, it sure sounds like I am.</p>
+
+<p><img src="/assets/keychron-side.jpeg" alt="Keychron Side" /></p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>The brown option is not the most clicky option. It is in between red (click) and blue (tactile). I have found it to be plenty clicky for my taste. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="Review" /><category term="Hardware" /><summary type="html"><![CDATA[I grew up during the beginning of the personal computer era. The first computer in our house was an IBM PCjr and my dad used an IBM PC at work. The Macintosh had just been announced, but I was sheltered from Apple except for a few days using an Apple II at school.]]></summary></entry><entry><title type="html">Mail Tasks to Things</title><link href="http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" rel="alternate" type="text/html" title="Mail Tasks to Things" /><published>2023-03-15T06:14:49-06:00</published><updated>2023-03-15T06:14:49-06:00</updated><id>http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things</id><content type="html" xml:base="http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html"><![CDATA[<p>My favorite to do list app is <a href="https://www.adamsapple.tech/2022/04/04/my-favorite-to-do-list-app-things/">Things</a>.  I like how easy it is to add things to the inbox. On the Mac, the Quick Entry window is awesome, but on iOS there isn’t a Quick Entry window unless you are already in the app. This is when you can use the <a href="https://culturedcode.com/things/support/articles/2908262/">Mail To Things</a> service. <!--more--> In Settings, you can setup a Mail To Things email address.</p>
+
+<p>You can then put that email address as a new contact in your address book. It is then easy to send anything via email into your inbox. The subject of the email becomes the title of the task, and the body of the email is added to the notes field.</p>
+
+<ul>
+  <li>Send to-dos to Things from other platforms, such as Windows or Android.</li>
+  <li>Forward an email to Things from your iPhone; Things will link back to the email so you can find it again later.</li>
+  <li>Give your @things.email address to a trusted partner or colleague so they can delegate to-dos to you.</li>
+  <li>Create powerful workflows with other apps or online services, such as <a href="https://ifttt.com">IFTTT</a>.</li>
+</ul>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[My favorite to do list app is Things. I like how easy it is to add things to the inbox. On the Mac, the Quick Entry window is awesome, but on iOS there isn’t a Quick Entry window unless you are already in the app. This is when you can use the Mail To Things service.]]></summary></entry><entry><title type="html">Liked - Fix Print to PDF Keyboard Shortcut in MacOS Ventura</title><link href="http://localhost:4000/liked/2023/03/12/liked-printing-ventura.html" rel="alternate" type="text/html" title="Liked - Fix Print to PDF Keyboard Shortcut in MacOS Ventura" /><published>2023-03-12T06:12:16-06:00</published><updated>2023-03-12T06:12:16-06:00</updated><id>http://localhost:4000/liked/2023/03/12/liked-printing-ventura</id><content type="html" xml:base="http://localhost:4000/liked/2023/03/12/liked-printing-ventura.html"><![CDATA[<p><a href="https://osxdaily.com/2022/12/06/creating-a-save-as-pdf-keyboard-shortcut-in-macos-ventura/">Creating A “Save As PDF” Keyboard Shortcut In MacOS Ventura</a></p>
+
+<blockquote>
+  <p>If you have long been using the old trick to create a Save as PDF keyboard shortcut and recently updated to MacOS Ventura, you may have noticed your old keyboard shortcut doesn’t work anymore. <!--more--> This is because Apple has renamed the menu title for the action, so if you’re using the old keyboard shortcut it will not register. But with a little adjustment you’ll be able to use the Command+PP trick again for saving as PDF in no time. -Paul Horowitz, osxdaily.com</p>
+</blockquote>
+
+<p>I have relied on this keyboard shortcut for years. It is so handy to quickly hit CMD-P for the Print Dialog and then CMD-P again to save the document as a PDF. Now I know why it hasn’t been working since upgrading to Ventura.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Liked" /><summary type="html"><![CDATA[Creating A “Save As PDF” Keyboard Shortcut In MacOS Ventura If you have long been using the old trick to create a Save as PDF keyboard shortcut and recently updated to MacOS Ventura, you may have noticed your old keyboard shortcut doesn’t work anymore.]]></summary></entry><entry><title type="html">Favorite RSS Reader - Reeder</title><link href="http://localhost:4000/software/review/2023/03/05/favorite-rss-reader.html" rel="alternate" type="text/html" title="Favorite RSS Reader - Reeder" /><published>2023-03-05T04:40:47-07:00</published><updated>2023-03-05T04:40:47-07:00</updated><id>http://localhost:4000/software/review/2023/03/05/favorite-rss-reader</id><content type="html" xml:base="http://localhost:4000/software/review/2023/03/05/favorite-rss-reader.html"><![CDATA[<p>I have relied on RSS (Really Simple Syndication) for keeping up on the news and interesting articles since the days of <a href="https://en.wikipedia.org/wiki/GoogleReader">Google Reader</a>.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> RSS is an easy way to subscribe to your favorite websites and blogs and to collect new articles in one place. <!--more--> Fortunately, when Google Reader shut down, it didn’t destroy RSS. RSS is still used throughout the internet and is also used as a mechanism for publishing and notifying users of new podcast episodes.</p>
+
+<p>There have been many RSS clients over the years including <a href="https://netnewswire.com">NetNewsWire</a>, <a href="https://feedly.com">Feedly</a>, and <a href="https://readkit.app">ReadKit</a>.</p>
+
+<p>I have tried them all, but I keep coming back by to <a href="https://reederapp.com">Reeder</a>, made by Silvio Rizzi. It is a beautiful app and still my favorite for reading my RSS feeds.</p>
+
+<h2 id="design">Design</h2>
+
+<p>All of the RSS apps that I have tried have a “clean” interface, but Reeder has a beautiful, fluid interface with terrific gesture support.</p>
+
+<h3 id="three-panel-view">Three-Panel View</h3>
+<p>The three-column view is a natural interface on macOS with article titles on the left and full articles on the right. The typography and dark mode support enables a highly-customizable and easy-to-read experience.</p>
+
+<p><img src="/assets/reeder-three-panel-view.png" alt="Three Panel View" /></p>
+
+<h3 id="reading-experience">Reading Experience</h3>
+<p>Both long and short articles are a pleasure to read in Reeder, on all of my devices, Mac, iPhone, and iPad.</p>
+
+<p><img src="/assets/reeder-iphone-view.jpg" alt="Reeder - iPhone" /></p>
+
+<h3 id="gestures">Gestures</h3>
+<p>The gesture support in Reeder is what makes this RSS app stand out from the competition. It is so natural to swipe right or left to mark articles as read, or to send them to my favorite read-it-later service. I can also swipe between panels to get to different folders of articles or move between different services.</p>
+
+<p><img src="/assets/reeder-gestures.png" alt="Reeder Gestures" /></p>
+
+<h3 id="bionic-reading">Bionic Reading</h3>
+<p>Reeder supports <a href="https://bionic-reading.com">Bionic Reading</a>, which emphasizes certain letters in the text. With practice, Bionic Reading allows a reader to speed-read through articles.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> This type of formatting looks odd at first, but over time it can improve ones ability to read and comprehend quickly.</p>
+
+<p><img src="/assets/reeder-bionic.jpg" alt="Bionic Reading" /></p>
+
+<h3 id="rss-accounts">RSS Accounts</h3>
+<p>Reeder supports a wide range of RSS feed accounts including <a href="https://feedbin.com">Feedbin</a>, <a href="https://feedwrangler.net/welcome.html">Feed Wrangler</a>, and <a href="https://newsblur.com">NewsBlur</a>.</p>
+
+<h3 id="other-services">Other Services</h3>
+<p>I send articles that I want to save or read later to my favorite read-it-later service <a href="https://getpocket.com/en/">Pocket</a>. Pocket has their own apps for macOS and iOS, and I mostly use those, however Reeder can connect directly to Pocket and I have started to use Reeder as my read-it-later service, accessing my Pocket articles all within one app.</p>
+
+<p><img src="/assets/reeder-services.png" alt="Services" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Reeder has a polished and delightful interface for reading RSS feeds. It is fast to use with gestures for sending articles quickly to Pocket or Instapaper, and quickly marking all articles as read. It has a consistent look on both macOS and iOS. I can’t recommend it highly enough.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Google Reader ran from 2005-2013. I now use Feedly to collect my feeds along with Reeder for viewing them. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Bionic Reading® revises texts so that the most concise parts of words are highlighted. This guides the eye over the text and the brain remembers previously learned words more quickly. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="Software" /><category term="Review" /><summary type="html"><![CDATA[I have relied on RSS (Really Simple Syndication) for keeping up on the news and interesting articles since the days of Google Reader.1 RSS is an easy way to subscribe to your favorite websites and blogs and to collect new articles in one place. Google Reader ran from 2005-2013. I now use Feedly to collect my feeds along with Reeder for viewing them. &#8617;]]></summary></entry><entry><title type="html">Liked - The Best Screen Recording Apps for Your Mac</title><link href="http://localhost:4000/liked/2023/02/14/liked-best-screen-recording.html" rel="alternate" type="text/html" title="Liked - The Best Screen Recording Apps for Your Mac" /><published>2023-02-14T02:36:24-07:00</published><updated>2023-02-14T02:36:24-07:00</updated><id>http://localhost:4000/liked/2023/02/14/liked-best-screen-recording</id><content type="html" xml:base="http://localhost:4000/liked/2023/02/14/liked-best-screen-recording.html"><![CDATA[<p><a href="https://www.macobserver.com/tips/round-ups/best-screen-recording-apps-for-mac/?utm_source=macobserver&amp;utm_medium=rss&amp;utm_campaign=rss_everything">The Best Screen Recording Apps for Your Mac</a></p>
+
+<blockquote>
+  <p>In this category, you’ve got several possibilities. Some are free, some are paid apps. Some require you to install software on your Mac while others will just run from a browser.</p>
+  <ul>
+    <li>Jeff Butts, The Mac Observer</li>
+  </ul>
+</blockquote>
+
+<!--more-->
+<p>This is a great list of apps for recording your screen. Several were new to me, including EaseUS RecExpert, Icecream, and TinyTake. My favorites are <a href="https://www.telestream.net/screenflow/overview.htm">Screenflow</a> and <a href="https://cleanshot.com/">CleanShot X</a>.</p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Liked" /><summary type="html"><![CDATA[The Best Screen Recording Apps for Your Mac In this category, you’ve got several possibilities. Some are free, some are paid apps. Some require you to install software on your Mac while others will just run from a browser. Jeff Butts, The Mac Observer]]></summary></entry><entry><title type="html">Webcam Shootout</title><link href="http://localhost:4000/review/hardware/2022/12/31/webcam-shootout.html" rel="alternate" type="text/html" title="Webcam Shootout" /><published>2022-12-31T02:18:54-07:00</published><updated>2022-12-31T02:18:54-07:00</updated><id>http://localhost:4000/review/hardware/2022/12/31/webcam-shootout</id><content type="html" xml:base="http://localhost:4000/review/hardware/2022/12/31/webcam-shootout.html"><![CDATA[<p>Like many people, when the pandemic hit I started to use and learn more about webcams. I found myself on Zoom calls each day and also recording more video. At the time, the Logitech Brio 4K had just come out and was a coveted 4K camera. <!--more--> It was sold out everywhere online, and the price had exploded to several hundred dollars more than it was worth. Even ordering an older and lower-cost webcam became a challenge. Now that the pandemic has subsided, it is much easier to find these cameras at an affordable price. For whatever reason, I have a <a href="https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=DChcSEwiBma30zKX8AhV0IK0GHR83Ad0YABAFGgJwdg&amp;ae=2&amp;ohost=www.google.com&amp;cid=CAESbOD219uDFeF_DybJ0TO6QcOY8NNJQshRx7FMee1eUSaztsh3q9pH9THN647cqBOdPbO6QysbfWcm1RKU2eFDjxSxA6wE_ADy4A-UzpP28jN9UBjuCQixJ1ZlFK3j3Zl6lLHvy6KAfovPaccqxQ&amp;sig=AOD64_393hoVkjBCSMHtO-_wIWhkE_pqDg&amp;ctype=5&amp;q=&amp;ved=2ahUKEwjIpqL0zKX8AhXvMUQIHcAfC1cQww8oAnoECAUQCw&amp;adurl=">Logitech C920</a>, a <a href="https://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=DChcSEwiQ2Z39zKX8AhXvKq0GHXS2DnQYABAFGgJwdg&amp;ae=2&amp;ohost=www.google.com&amp;cid=CAESbOD25ko0GokT3zhvofMoG3WHQDN1pq9i2aWK-xwsZBYBy7xse4Zo-sEMUfGfpzxXTMXrflrPZl0OY5JvzWuZH8U5p95Cb8hpfVdw1gBwUoyB5JdX1X54DPT7Qn9g3rFibfQkTLrPV7fjLmzP-g&amp;sig=AOD64_09UB8fSydVa2h096C1xXNwgmHZ-w&amp;ctype=5&amp;q=&amp;ved=2ahUKEwj-iJL9zKX8AhULMUQIHWwrAlcQ9aACKAB6BAgFEBw&amp;adurl=">Logitech Brio 4K</a>, and most recently I just got a new <a href="https://www.apple.com/iphone-14-pro/">iPhone 14 Pro</a>.</p>
+
+<p>TL;DR - The short answer is that the iPhone 14 Pro rocks as a webcam, thanks to Apple’s Continuity Camera feature in macOS Ventura. Checkout my video for all of the details: https://youtu.be/eeKTHMvkH88</p>
+
+<h2 id="logitech-c920">Logitech C920</h2>
+
+<p><img src="/assets/c920-image.jpeg" alt="Logitech C920" /></p>
+
+<p>The C920 is an HD webcam. It can be ordered online for well under $100. The picture quality is very respectable. All of Logitech’s cameras are a bit cold on the white balance, but can be adjusted easily with the free app <a href="https://github.com/Itaybre/CameraController">CameraController</a> The C920 has a built-in mic and is a decent upgrade to what might be built-in to your computer. It is helpful to have an additional light source, such as a ring light, with the C920.</p>
+
+<p>I added the Logitech C920 to a monitor that didn’t have a built-in camera for use with my M1 MacMini.</p>
+
+<h2 id="logitech-brio-4k">Logitech Brio 4K</h2>
+
+<p><img src="/assets/brio-4k-image.jpeg" alt="Brio 4K" /></p>
+
+<p>This camera really received a lot of buzz when it came out. It does produce a nice sharp picture and it doesn’t require a lot of light. It gets a very usable picture without the use of a ring light. Due to the 4K image, and paired with <a href="https://github.com/Itaybre/CameraController">CameraController</a>, the Brio 4K can zoom and pan, which is a really nice feature to get your framing just right.</p>
+
+<p>The white balance on the Brio 4K is very cool, meaning that it could use some warming up, which is easy to do with <a href="https://github.com/Itaybre/CameraController">CameraController</a></p>
+
+<p>If you want to mount a webcam and forget about it, the Brio 4K is a solid choice, and the price has come down to a very reasonable range.</p>
+
+<h2 id="iphone-14">iPhone 14</h2>
+
+<p><img src="/assets/iPhone-resized.jpg" alt="iPhone 14 Pro" /></p>
+
+<p>With macOS Ventura and iOS 16, Apple has added a killer feature for using your iPhone as a webcam. It is remarkable how well this works, and wireless no less.</p>
+
+<p>Whenever you open an app that requires a camera, like FaceTime or Zoom, if your iPhone is nearby, macOS will pop up a dialog to ask if you want to use your iPhone.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> If you click yes, your iPhone automatically wakes up and the camera turns on. That’s it. There is no other setup. You can plug in as well if you want to charge your battery will using it, but it works surprisingly well when done wirelessly.</p>
+
+<p>You have access to a few controls and features through Control Center on your Mac. From Control Center you can turn on “Center Stage”, enable “Portrait Mode”, or enable “Studio Lighting.” Center Stage uses all of the lenses on your iPhone to keep you centered in the video. You can move from side to side, and the camera will pan to adjust. Portrait mode adds a blurred background to your video, and Studio Lighting darkens the background to make the subject pop a bit more.</p>
+
+<p><img src="/assets/control-center-1.png" alt="Control Center 1" /></p>
+
+<p><img src="/assets/control-center-2.png" alt="Control Center 2" /></p>
+
+<p>Belkin has released a small accessory for attaching your iPhone to a <a href="https://www.apple.com/shop/product/HQ642ZM/A/belkin-iphone-mount-with-magsafe-for-mac-notebooks?cid=aos-us-seo-pla">laptop</a> or <a href="https://www.apple.com/shop/product/HQ652ZM/A/belkin-iphone-mount-with-magsafe-for-mac-desktops-and-displays">desktop</a> screen via MagSafe.</p>
+
+<p><img src="/assets/belkin-mount.png" alt="Belkin iPhone Mount" /></p>
+
+<p>The iPhone setup with Continuity Camera will give other webcam makers a challenge to make something as compelling. It really is a joy to use.</p>
+
+<h3 id="behind-the-scenes">Behind The Scenes</h3>
+
+<p>Here are a few photos from my “Webcam Shootout” video. It was a challenge to film with three cameras at once and make it all work. I used the following apps:</p>
+
+<ul>
+  <li>Detail</li>
+  <li>Hand Mirror</li>
+  <li>QuickTime Player</li>
+  <li>Screenflow</li>
+</ul>
+
+<p><img src="/assets/webcam-closer.jpeg" alt="Webcam Setup - close" /></p>
+
+<p><img src="/assets/webcam-setup.jpeg" alt="Webcam Setup" /></p>
+
+<p>Checkout my video for an explanation: <a href="https://youtu.be/eeKTHMvkH88">YouTube Video - Webcam Shootout</a></p>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This works with older iPhones too; you don’t have to have the latest 14 to make this work. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="Review" /><category term="Hardware" /><summary type="html"><![CDATA[Like many people, when the pandemic hit I started to use and learn more about webcams. I found myself on Zoom calls each day and also recording more video. At the time, the Logitech Brio 4K had just come out and was a coveted 4K camera.]]></summary></entry><entry><title type="html">LaunchBar, Raycast, and Paste</title><link href="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html" rel="alternate" type="text/html" title="LaunchBar, Raycast, and Paste" /><published>2022-12-28T01:25:13-07:00</published><updated>2022-12-28T01:25:13-07:00</updated><id>http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste</id><content type="html" xml:base="http://localhost:4000/productivity/macos/software/2022/12/28/launchbar-raycast-paste.html"><![CDATA[<p>Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.<!--more--> While Spotlight has improved over the years, the market for third-party app launchers and search apps have flourished. Some of the top contenders include <a href="https://www.alfredapp.com">Alfred</a>, <a href="https://www.obdev.at/products/launchbar/index.html">LaunchBar</a>, and more recently <a href="https://www.raycast.com">Raycast</a>. These third-party apps excel at speed, giving Apple’s Spotlight a run for its money. They are fast and nicely designed, causing even Apple to copy some of their interface elements for Spotlight.</p>
 
 <p>Each of these app launchers offer file search, app launching, extensions, keyboard shortcut support, and clipboard history. I have tried most of them over the years and was a devoted Alfred user for many years. While one app will suffice for most users, I have settled on a trio of apps for my Mac setup:</p>
 
@@ -78,337 +398,4 @@
       <p>Raycast includes some whimsy as well, like being able to toggle your mouse into a lightsaber, complete with sound effects. Take that LaunchBar. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="Productivity" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.]]></summary></entry><entry><title type="html">Toggle WiFi On and Off</title><link href="http://localhost:4000/quicktip/2022/12/05/toggle-wifi.html" rel="alternate" type="text/html" title="Toggle WiFi On and Off" /><published>2022-12-05T01:02:26-07:00</published><updated>2022-12-05T01:02:26-07:00</updated><id>http://localhost:4000/quicktip/2022/12/05/toggle-wifi</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/12/05/toggle-wifi.html"><![CDATA[<p>I am coming up on my one-year anniversary with my M1 Max 14-inch MacBook Pro. It is the best computer I have ever used. It is so fast and a powerhouse in every way. I use it for Xcode, Final Cut Pro, music production, and it always delivers.</p>
-
-<!--more-->
-<p>However, computers are not without little hiccups here and there. Lately, I have had some battery issues when it is asleep. I am sure there is some little app that has been preventing my MacBook Pro from sleeping. When I have reached into my bag to get it out, it has been noticeably warm and the battery is depleting when it should be asleep. In all fairness to the computer, I do run a lot of apps and my menu bar is embarrassingly filled with running applications.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
-
-<p>I am still not certain which process has been causing the heat and battery issues, but I did recently find an interim solution. With a short shell script and <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a>, I can quickly disable WiFi before I close the lid. This has immediately brought back amazing battery life and my computer is super cool when I pull it out of my bag.</p>
-
-<p>The script for toggling WiFi in the Terminal is:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networksetup -getairportpower en0 | grep "On" &amp;&amp; networksetup -setairportpower en0 off || networksetup -setairportpower en0 on
-
-</code></pre></div></div>
-
-<p>I setup a <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a> hotkey to quickly toggle the WiFi on and off.</p>
-
-<p><img src="/assets/toggle-wifi-keyboard-maestro.png" alt="Keyboard Maestro Screen" /></p>
-
-<p>I love the Mac.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Thank you <a href="https://www.macbartender.com">Bartender</a> for keeping my menu bar manageable. (Also a part of <a href="https://setapp.com">Setapp</a>) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[I am coming up on my one-year anniversary with my M1 Max 14-inch MacBook Pro. It is the best computer I have ever used. It is so fast and a powerhouse in every way. I use it for Xcode, Final Cut Pro, music production, and it always delivers.]]></summary></entry><entry><title type="html">SpamSieve - Spam Filtering for Mac</title><link href="http://localhost:4000/software/review/2022/11/15/spamsieve.html" rel="alternate" type="text/html" title="SpamSieve - Spam Filtering for Mac" /><published>2022-11-15T12:57:06-07:00</published><updated>2022-11-15T12:57:06-07:00</updated><id>http://localhost:4000/software/review/2022/11/15/spamsieve</id><content type="html" xml:base="http://localhost:4000/software/review/2022/11/15/spamsieve.html"><![CDATA[<p>Email spam is an ongoing problem, which seems to be getting worse over time. When I have had the same email address for many years, more and more spam seem to clutter my inbox. Using the same address with shopping online or trying new services and apps, brings with it an increase of junk email. <!--more--> Apple’s “<a href="https://support.apple.com/en-us/HT210425">Hide My Email</a>” service which is available with an iCloud subscription is a great feature for proactively preventing future spam. You can use a unique email address that will forward to your main email address. It is easy to use and if you notice more spam from a specific place, you can go and disable the unique address and those messages sent to that unique address will go away.</p>
-
-<p><img src="/assets/spamsieve-icon@2x.png" alt="Spamsieve icon" /></p>
-
-<p>I have used <a href="https://c-command.com/spamsieve/">SpamSieve</a> by C-Command Software for many years for filtering out the junk email. SpamSieve is an older macOS app, in fact it has been around since the early days of Mac OS X, 20 years or so. In order for SpamSieve to work its best, you need to have an always-on Mac running Mail. In dealing with spam, some services rely on a server running online to filter messages before they reach your Mac, but with SpamSieve the filtering is done locally on your personal computer. This is kind of an “old school” way to do this, but I find that it works great and is more affordable than other online services.</p>
-
-<h2 id="setup">Setup</h2>
-
-<p>You need to have a Mac running Mail at all times for the filtering to work without interruption. I keep my office computer running for this purpose, but you could also have a Mac mini tucked away in a closet in your house running Apple Mail and SpamSieve.</p>
-
-<p>As messages come in, SpamSieve evaluates the message and moves it into a specific Mail folder if it thinks it is Spam. The training works great and you can train messages as “Spam” or as “Good”.</p>
-
-<p>It takes a little bit of setup, working with Apple Mail rules and AppleScripts to get the configuration working. I use the rules and AppleScript support so that I can move messages to either a “train good” or “train spam” folder from my iPhone. Those messages will later be processed and trained when they are noticed on the Mac mini.</p>
-
-<h2 id="the-last-word">The Last Word</h2>
-
-<p>If you don’t have a Mac that you can leave running, then you may want to look elsewhere for spam management. A popular online service for this is <a href="https://www.sanebox.com">SaneBox</a>. SaneBox has access to your email accounts online, and processes your spam and other mail rules on the server side, before your Mac downloads any messages. The service has great reviews, but it is significantly more expensive than SpamSieve, with a monthly subscription of at least seven dollars per month.</p>
-
-<p>SpamSieve is older software, but it has been updated for the latest release of macOS Ventura. It is tried and true for me and still the best way to manage spam email locally on my Mac.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Software" /><category term="Review" /><summary type="html"><![CDATA[Email spam is an ongoing problem, which seems to be getting worse over time. When I have had the same email address for many years, more and more spam seem to clutter my inbox. Using the same address with shopping online or trying new services and apps, brings with it an increase of junk email.]]></summary></entry><entry><title type="html">Fix Blank Apple Maps</title><link href="http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps.html" rel="alternate" type="text/html" title="Fix Blank Apple Maps" /><published>2022-10-26T13:53:50-06:00</published><updated>2022-10-26T13:53:50-06:00</updated><id>http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/26/quicktip-apple-maps.html"><![CDATA[<p>If Apple Maps is showing a blank screen on macOS, here is a quick way to restore and refresh the map data:</p>
-
-<blockquote>
-  <p>The cache for Maps specifically can be cleared by deleting the following folder ~/Library/Caches/GeoServices</p>
-</blockquote>
-
-<!--more-->
-<p>Removing this folder and restarting Maps should allow the map data to be downloaded and displayed again.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[If Apple Maps is showing a blank screen on macOS, here is a quick way to restore and refresh the map data: The cache for Maps specifically can be cleared by deleting the following folder ~/Library/Caches/GeoServices]]></summary></entry><entry><title type="html">My Favorite Calendar App - Fantastical</title><link href="http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical.html" rel="alternate" type="text/html" title="My Favorite Calendar App - Fantastical" /><published>2022-10-23T13:38:57-06:00</published><updated>2022-10-23T13:38:57-06:00</updated><id>http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical</id><content type="html" xml:base="http://localhost:4000/review/software/2022/10/23/favorite-calendar-fantastical.html"><![CDATA[<p>The built-in Apple apps for Mail, Calendars, and Reminders have improved each year and are solid apps. However, I find myself wanting more out of these apps and have turned to 3rd parties for each of them. <!--more--> I already wrote about my <a href="https://www.adamsapple.tech/2022/08/18/my-favorite-email-app-spark/">Favorite Email App - Spark</a>, and today I am writing about my favorite calendar app, <a href="https://flexibits.com/fantastical">Fantastical</a>.</p>
-
-<p><img src="/assets/fantastical-icon.png" alt="Fastastical icon" /></p>
-
-<h2 id="criteria">Criteria</h2>
-
-<p>A modern calendar app needs to have the following:</p>
-
-<ul>
-  <li>Available and synced to all my devices</li>
-  <li>Natural language input</li>
-  <li>Support all of the most common accounts (Exchange, Gmail, iCloud, etc…)</li>
-</ul>
-
-<p>The above characteristics are the minimum requirements. Fantastical was one of the first apps to use natural language input, which is where you can just type a sentence to enter a new event and Fantastical will parse all of the relevant information. Fantastical achieves all of the above features in a beautiful interface and also adds these additional features:</p>
-
-<ul>
-  <li>Calendar sets. The ability to customize groups of calendars and recall them with a keyboard shortcut.</li>
-  <li>Weather forecast.</li>
-  <li>Integration with Apple Reminders.</li>
-  <li>Menu bar item with quick entry.</li>
-  <li>Beautiful and useful widgets on iOS and macOS.</li>
-  <li>Integration for scheduling meetings and Zoom integration.</li>
-  <li>Apple Shortcut support.</li>
-  <li>Focus filters.</li>
-</ul>
-
-<p>I use calendar sets all of the time to see my schedule, my wife and kid’s schedules, and other interesting calendars, which are hidden most of the time.</p>
-
-<p><img src="/assets/fantastical-calendar-sets.png" alt="Calendar Sets" /></p>
-
-<p>The weather forecast is a really nice addition that shows temperature and precipitation for the upcoming few days. The free version shows three days, while the premium version shows a ten-day forecast.</p>
-
-<p><img src="/assets/weather-forecast.png" alt="Weather Forecast" /></p>
-
-<p>My favorite task list manager is <a href="https://www.adamsapple.tech/2022/04/04/my-favorite-to-do-list-app-things/">Things</a>, but I also use Apple Reminders for certain types of tasks. If I want my Apple Watch to remind me to do something in the afternoon, I will use Siri and set a quick reminder. I also use Reminders for some of the mundane, repeating chores in my life. Reminders sits nicely in the list view alongside my other events in Fantastical.</p>
-
-<p>With a quick keyboard command, I can enter a new event into Fantastical’s menu bar item.</p>
-
-<p><img src="/assets/fansticial-menuar.png" alt="Menubar Calendar" /></p>
-
-<p>Fantastical provides around 8 useful widgets on iOS and macOS for quickly seeing upcoming events, reminders, or the date. They also support the recent addition of lock-screen widgets on iOS 16.</p>
-
-<p>I haven’t played much with Focus Filters yet, but I am starting to use Focus more on my devices and love how they sync across devices and can change Home Screen layout and set custom do-not-disturb settings. I need to experiment more with this.</p>
-
-<p>I have been an active Fantastical user for many years, and I continue to be impressed with the attention and care that <a href="https://flexibits.com">Flexibits</a> put into their apps. Competition is good, and I hope Apple will continue to improve the built-in Calendars app, but for me I am sticking with <a href="https://flexibits.com/fantastical">Fantastical</a>.</p>
-
-<p><img src="/assets/fantastical-calendarview.png" alt="Calendar View" /></p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Review" /><category term="Software" /><summary type="html"><![CDATA[The built-in Apple apps for Mail, Calendars, and Reminders have improved each year and are solid apps. However, I find myself wanting more out of these apps and have turned to 3rd parties for each of them.]]></summary></entry><entry><title type="html">Expanding Xcode Archives</title><link href="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html" rel="alternate" type="text/html" title="Expanding Xcode Archives" /><published>2022-10-13T07:43:30-06:00</published><updated>2022-10-13T07:43:30-06:00</updated><id>http://localhost:4000/quicktip/2022/10/13/xcode-archives</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/13/xcode-archives.html"><![CDATA[<p><a href="https://twitter.com/_saagarjha/status/1481353292164698112?lang=en">Saagar Jha on Twitter</a></p>
-
-<p>Tip: when expanding an Xcode XIP archive, use the command line (xip –expand) rather than Archive Utility. It’s at least 25% faster–sometimes even twice as fast, depending on the circumstances. <!--more--></p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[Saagar Jha on Twitter Tip: when expanding an Xcode XIP archive, use the command line (xip –expand) rather than Archive Utility. It’s at least 25% faster–sometimes even twice as fast, depending on the circumstances.]]></summary></entry><entry><title type="html">My Favorite Keyboard Case for iPad</title><link href="http://localhost:4000/review/hardware/ipad/2022/10/13/my-favorite-keyboard-case.html" rel="alternate" type="text/html" title="My Favorite Keyboard Case for iPad" /><published>2022-10-13T04:01:24-06:00</published><updated>2022-10-13T04:01:24-06:00</updated><id>http://localhost:4000/review/hardware/ipad/2022/10/13/my-favorite-keyboard-case</id><content type="html" xml:base="http://localhost:4000/review/hardware/ipad/2022/10/13/my-favorite-keyboard-case.html"><![CDATA[<p>My iPad Pro 2018 is still going strong. It has been an incredible device with its beautiful screen, fast processor, and Apple Pencil 2. When Apple enabled touchpad support, new possibilities opened up to turn the iPad into a laptop replacement. There have been many keyboard case options available for the iPad over the years, but few have checked all of my boxes. <!--more--> I want a keyboard case with the following capabilities:</p>
-
-<ul>
-  <li>lightweight</li>
-  <li>comfortable keyboard with a laptop-like typing experience</li>
-  <li>touchpad for mouse gestures</li>
-  <li>easily convertible between laptop mode and tablet orientation</li>
-  <li>use the Smart Connector, not bluetooth</li>
-  <li>backlit keys</li>
-  <li>protective case</li>
-</ul>
-
-<p>Many keyboard cases come close to this list, but very few achieve all of them. Apple’s own <a href="https://www.apple.com/shop/product/MJQL3LL/A/magic-keyboard-for-ipad-pro-129%E2%80%91inch-5th-generation-us-english-white?fnode=fee37517c75bfe48526aead0c3d82d62fe80c082d52f08e1bc3e943d4df70eb22e2f3480f4e0eef4c13f4ff13d416ae1605822708458141f753cd221b6eac417f0f7e45da3798aa1d930e820a10d3354d5a9004b4ecfbba1512a015a663d7f5e">Magic Keyboard ($299)</a> for the iPad comes very close, but doesn’t hit all of them, and is quite expensive. The one shortcoming with Apple’s Keyboard is that it isn’t convertible between landscape and portrait. You have to remove the iPad from the keyboard and use it case-less. Then you have to put the keyboard somewhere when you aren’t using it. This is really the only downside to Apple’s Magic Keyboard. If you could fold the keyboard behind the device, this would be my keyboard of choice. Unfortunately for me, though, it is a deal breaker. I don’t want to remove the keyboard from the case every time I want to use the iPad in portrait orientation. I use portrait mode often when reading, or when using the iPad as a sheet-music reader. That, along with the excessive cost of the Magic Keyboard has been enough to make me look elsewhere.</p>
-
-<p>The Smart Connector on the iPad Pro is amazing but underutilized. It allows devices to connect without pairing, and keeps your accessories fully charged. When you start to look for keyboard cases that use the Smart Connector you quickly find that your options are limited. For whatever reason, it hasn’t been widely adopted.</p>
-
-<p><img src="/assets/Logitech-Keyboard-Folio-Touch-Apple-Smart-Keyboard.png" alt="Logitech Keyboard and Apple Smart Keyboard" /></p>
-
-<h3 id="and-the-winner-is">And the winner is…</h3>
-
-<p>I have been using the <a href="https://www.logitech.com/en-us/products/ipad-keyboards/folio-touch.html">Logitech Folio Touch ($159)</a> with my 11” iPad Pro for the past few years and it is fantastic. It ticks all of my boxes and is still like new after years of use.</p>
-
-<h4 id="keyboard">Keyboard</h4>
-
-<p>With backlit keys and a row of media function keys, the keyboard on the Logitech Folio Touch is a joy to use. I even liked typing on it more than my MacBook Pro 13” with its butterfly keyboard.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> I very seldom mistype words and the key travel is very comfortable, considering how thin and light the Logitech Folio Touch is. The backlit keys and the keyboard itself turn off automatically when the keyboard is folded behind the iPad. I don’t accidentally type on it when I don’t intend to. The full row of shortcut keys are very handy, and something that Apple doesn’t even offer on its Magic Keyboard. These keys include quick access to:</p>
-
-<ul>
-  <li>Home</li>
-  <li>Screen Brightness</li>
-  <li>Onscreen Keyboard</li>
-  <li>Search</li>
-  <li>Key Brightness</li>
-  <li>Media Controls</li>
-  <li>Volume Controls</li>
-  <li>Screen Lock</li>
-</ul>
-
-<h4 id="trackpad">Trackpad</h4>
-
-<p>The trackpad on the Logitech Folio Touch works well. It is responsive and reliable. In addition to touch gestures, it also has a click mechanism. However, it is a bit on the small side. Apple’s Magic Keyboard comes with a larger and excellent trackpad, with a more of a polished feel to it.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
-
-<h4 id="protective-case">Protective Case</h4>
-
-<p>The Logitech Folio Touch completely encases the iPad for terrific protection. The corners of the iPad are covered and not exposed. All of the buttons are also covered with raised indicators to identify the volume and power buttons. The buttons continue to work well and are easy to use despite being covered. The case edges have a rubberized feel, but the larger handling areas are covered with a very nice fabric. This case does not feel cheap in any way. The build quality is excellent and has held up very well for me. The case also nicely accommodates the Apple Pencil. The Pencil can still easily charge magnetically to the case and flap is also included for keeping track and not losing your beloved Apple Pencil 2.</p>
-
-<p>The case folds into four different configurations for changing use cases from typing like an iPad, to movie watching with a kickstand, and then to portrait tablet mode. It is easy to handle and quickly change and adapt to your use case. When in laptop mode the case can be a little cumbersome when typing on your lap, but works flawlessly on a table.</p>
-
-<h3 id="final-thoughts">Final Thoughts</h3>
-
-<p>I highly recommend the Logitech Folio Touch for iPad users who are looking for alternatives to Apple’s Magic Keyboard. The convenience of the Smart Connector cannot be overstated. Pairing was instant, and I have never thought about charging or re-connected my keyboard in the years that I have used it. It is always powered and ready to use. With the difference in cost between these products and added versatility with the Logitech, I am very happy with my iPad keyboard case.</p>
-
-<p>Thank you Logitech for such thoughtful design.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>I currently have the new 14” M1 Max MacBook Pro, which has an amazing keyboard. The Logitech Folio Touch is not better than my current MacBook Pro. Apple really hit it out of the park with these new M1 MacBook Pro laptops. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>In all fairness to Apple, the Magic Keyboard also feels excellent. It feels more like a MacBook keyboard with scissor switches than the Logitech Keyboard Folio. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="Review" /><category term="Hardware" /><category term="iPad" /><summary type="html"><![CDATA[My iPad Pro 2018 is still going strong. It has been an incredible device with its beautiful screen, fast processor, and Apple Pencil 2. When Apple enabled touchpad support, new possibilities opened up to turn the iPad into a laptop replacement. There have been many keyboard case options available for the iPad over the years, but few have checked all of my boxes.]]></summary></entry><entry><title type="html">Changing How I Use Tags in Things</title><link href="http://localhost:4000/productivity/software/2022/10/12/changing-tags-things.html" rel="alternate" type="text/html" title="Changing How I Use Tags in Things" /><published>2022-10-12T12:16:22-06:00</published><updated>2022-10-12T12:16:22-06:00</updated><id>http://localhost:4000/productivity/software/2022/10/12/changing-tags-things</id><content type="html" xml:base="http://localhost:4000/productivity/software/2022/10/12/changing-tags-things.html"><![CDATA[<p>I have been familiar with and used David Allen’s <a href="https://gettingthingsdone.com">Getting Things Done (GTD)</a> for many years. Getting Things Done came out in 2001 with David Allen’s popular book. Apps later followed that were based on the GTD system, including my first favorite task-list app, <a href="https://www.omnigroup.com/omnifocus">OmniFocus</a>. <!--more-->  OmniFocus was explicitly designed with the GTD framework in mind. In GTD, you try to identify <strong>contexts</strong> to define where you are or what tools you require to perform a certain task. For example, a context could be the office or your home, for tasks that can only be done in those locations. With well-thought-out contexts, OmniFocus allowed you to filter your tasks to only see what you could work on at any given time.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
-
-<p>I used and loved OmniFocus for many years, but when <a href="https://culturedcode.com/things/">Things</a> got to version 3, the simplified and flexible interface really won me over. I have been a Things user ever since.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> Instead of contexts, Things uses Tags. Tags can be organized like contexts and used to filter your tasks, but Tags in Things has a weakness. You cannot filter your tasks with multiple tags, and while you can assign multiple tags to a task, filters will only show lists of tasks that match the tag exactly. This means that the contexts that I had used in OmniFocus didn’t translate well to Things. I have recently re-thought my tags and am really happy with how it is working.</p>
-
-<h2 id="my-old-contexts">My Old Contexts</h2>
-
-<p>My old contexts followed the GTD system closely. They are tools or locations that are required to complete a given task.</p>
-
-<ul>
-  <li>Computer (Mac, iPhone, iPad)</li>
-  <li>Phone</li>
-  <li>Office</li>
-  <li>House</li>
-  <li>Grocery Store (Walgreens, Smiths, Walmart)</li>
-  <li>Church</li>
-</ul>
-
-<p>The example David Allen likes to use is that if mowing the lawn is a task on your list, the context would be House. If you are on an airplane and filter by context, mowing the lawn should disappear off the list, because you can’t mow the lawn since you aren’t at the House.</p>
-
-<p>I have a lot of projects that require a computer, so I would use the computer context often. With Things, since I can only filter by one tag at a time, my computer context would include work items, home items, and church items. I found that I didn’t use the filters much because I wanted my filters to focus with more clarity on either work or personal.</p>
-
-<h2 id="my-new-tags">My New Tags</h2>
-
-<p>I have simplified my tags and I only tag items with one tag. My new tags are less about where I am and more about what area of my life I want to focus on. This is not how David Allen intended GTD to work, but this modification has given me more clarity on how I want to focus my attention.</p>
-
-<p>My new tags are:</p>
-
-<ul>
-  <li>Work</li>
-  <li>Church</li>
-  <li>Home</li>
-  <li>Computer</li>
-  <li>Practice</li>
-  <li>Errand</li>
-</ul>
-
-<p>Some are the same as my old contexts, but these are areas of my life, as opposed to specific locations or tools. It is a small mental shift, but with these tags, I only need to assign one to each task.</p>
-
-<p><img src="/assets/things-tags.png" alt="Things Tags" /></p>
-
-<h2 id="shortcuts---fast-filters">Shortcuts - Fast Filters</h2>
-
-<p>Things has Shortcut support for filtering by tag. Shortcuts for iOS and macOS keep getting better and better. I have easily set up eight shortcuts for quick access to my most used tags. Now with my voice, or with a click of a Shortcut icon, I can get straight to the tasks that I want to focus on. My Shortcuts are:</p>
-
-<ul>
-  <li>Work Things</li>
-  <li>All Work Things</li>
-  <li>Home Things</li>
-  <li>All Home Things</li>
-  <li>Church Things</li>
-  <li>All Church Things</li>
-  <li>Computer Things</li>
-  <li>All Computer Things</li>
-</ul>
-
-<p><img src="/assets/things-shortcuts-2.png" alt="Things Shortcuts" /></p>
-
-<p>These only show what is scheduled for Today, unless it has the prefix “All,” then it will show me all future tasks with that tag. Shortcuts are powerful because they sync between all my devices and can be accessed via Siri.</p>
-
-<p>Task management is an ongoing “task” to find the perfect system. For now, I am pretty happy with Things, Tags, and Shortcuts.</p>
-
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-    }
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>OmniFocus would even use GPS location data to automatically filter your tasks when you arrived at certain locations that were matched to your contexts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>You can read why I like Things in this <a href="/_posts/2022-04-03-favorite-to-do-things.md">post</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="Productivity" /><category term="Software" /><summary type="html"><![CDATA[I have been familiar with and used David Allen’s Getting Things Done (GTD) for many years. Getting Things Done came out in 2001 with David Allen’s popular book. Apps later followed that were based on the GTD system, including my first favorite task-list app, OmniFocus.]]></summary></entry><entry><title type="html">Error Message in Microsoft Office</title><link href="http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft.html" rel="alternate" type="text/html" title="Error Message in Microsoft Office" /><published>2022-10-07T12:48:40-06:00</published><updated>2022-10-07T12:48:40-06:00</updated><id>http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft</id><content type="html" xml:base="http://localhost:4000/quicktip/2022/10/07/quicktip-microsoft.html"><![CDATA[<p>I had a weird Microsoft Office bug a few months back. Every time I would open Word or Excel I would get this error in a dialog box:</p>
-
-<blockquote>
-  <p>Microsoft Visual Basic Run-time error `53’
-File not found: /Libary/Application Support/Adobe/MACPDFM/MacPDFM.framework/Versions/A/MacPDFM</p>
-</blockquote>
-
-<!--more-->
-<p>I would dismiss it, but it would return every time I opened a file or started the app. It got to be very annoying after a while. Fortunately, there is a fix.</p>
-
-<ol>
-  <li>Close all Office applications.</li>
-  <li>Go to /Users/your-user-name-here/Library/Group Containers/UBF8T346G9.Office/User Content/Startup/Word.</li>
-  <li>Remove linkCreation.dotm.</li>
-  <li>Restart Word and problem solved.</li>
-</ol>
-
-<p>This should fix the problem for Microsoft Word, but a few additional steps are needed for Excel and Powerpoint:</p>
-
-<ol>
-  <li>Remove the SaveAsAdobePDF.ppam and SaveAsAdobePDF.xlam from the PowerPoint and Excel folders next to the Word folder.</li>
-  <li>Launch Excel and PowerPoint and go to the menu Tools -&gt; Excel Add-ins… and Tools -&gt; PowerPoint Add-ins…, respectively, and remove the Save as Adobe PDF add-in, by unchecking it and removing it with the “-“ button and then click OK.</li>
-  <li>Restart Excel and PowerPoint and the problem should go away.</li>
-</ol>
-
-<p>This fix has really saved my sanity.</p>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[I had a weird Microsoft Office bug a few months back. Every time I would open Word or Excel I would get this error in a dialog box: Microsoft Visual Basic Run-time error `53’ File not found: /Libary/Application Support/Adobe/MACPDFM/MacPDFM.framework/Versions/A/MacPDFM]]></summary></entry><entry><title type="html">To Watch or Not To Watch - Apple Watch Series 8</title><link href="http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8.html" rel="alternate" type="text/html" title="To Watch or Not To Watch - Apple Watch Series 8" /><published>2022-09-30T11:57:48-06:00</published><updated>2022-09-30T11:57:48-06:00</updated><id>http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8</id><content type="html" xml:base="http://localhost:4000/applewatch/review/2022/09/30/apple-watch-series-8.html"><![CDATA[<p>Apple released two new watches this month, the Apple Watch Series 8 and the Apple Watch Ultra. I have been an Apple Watch user since the Apple Watch Series 3. My current watch is a Series 5. I had planned on this Fall being my time to upgrade with whatever was released. Each series has been fairly incremental, which is fine when you wait two to three years to upgrade. Those incremental updates each year equate to a nice upgrade every few years.</p>
-
-<!--more-->
-<p>The Apple Watch Ultra is very cool, but not for me. I am not an outdoor enthusiast and this watch is tailor made for serious hiking, running, or diving. It has a huge screen, by watch standards, at 49mm. I typically opt for the smaller watch sizes and have been happy with my 40mm Series 5. The Ultra is chunky and overkill for me. The orange programmable button is cool, but with it being double the price of the Series 8 I haven’t been tempted by the Ultra.</p>
-
-<p><img src="/assets/apple-watch-ultra.jpeg" alt="Apple Watch Ultra" /></p>
-
-<p>So, if no Ultra, then am I ordering a Series 8? I thought this would be a no brainer, but found myself a bit underwhelmed by the Series 8. Don’t get me wrong, it is a nice upgrade when coming from the Series 5. It has a larger screen, which is also edge to edge, a faster processor, blood oxygen meter, and fast charging. But wait, this list of features were all available on last year’s Series 7. The Series 8 only has two new features from the Series 7: a temperature sensor for cycle tracking and ovulation prediction, and car crash detection.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
-
-<p><img src="/assets/apple-watch-series-8.jpeg" alt="Apple Watch Series 8" /></p>
-
-<p>These limited new features caused me to reconsider my upgrade plans this time. I considered just sticking with my Series 5 for one more year and to upgrade next Fall to the Series 9. However, I have really been looking forward to upgrading this year. My Series 5 is still working great, but the larger edge to edge screen of the Series 7 has been enticing. I am now coding Apple Watch apps, and having just a little more screen real estate would be nice.</p>
-
-<h2 id="verdict">Verdict</h2>
-
-<p>After the Apple Watch Series 8 went on sale, my inbox was inundated with advertisements for discounted Series 7 Apple Watches. Many of these came from Amazon and were used watches. This got me to also start looking at Apple’s refurbished models. Only cellular editions were available at first and I tend to stick to the GPS models. Late last week Apple’s refurbished list started to include Nike GPS versions of the Series 7, $100 less expensive than the Series 8. I took the plunge and ordered a Midnight colored, GPS Nike Series 7 with a Nike sports band. I have always ordered the Nike versions because I liked the band options and the additional watch faces. With the Series 8, Apple is no longer selling Nike versions. Everyone now gets the Nike watch faces, and you can order Nike bands separately.</p>
-
-<p><img src="/assets/apple-watch-series-7.jpg" alt="Apple Watch Series 7" /></p>
-
-<p>My Series 7 arrived quickly and its awesome. It feels like new and I love the larger screen. One surprise is that the processor is noticeably faster. The interface is much snappier and more delightful to use than my old Series 5. I am also enjoying the fast charging. You have to use a Apple’s fast-charge cable, which comes with the Series 7, but it’s great getting to 80% in 45 minutes.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
-
-<p>I wonder what the Series 9 will have in store…</p>
-
-<style type="text/css">
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 350px;
-    }
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Notice any similarities between the pictures of the Series 8 and Series 7. Yeah, me too. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>You can identify a fast charge cable versus a standard Apple Watch charging cable, because the fast charge cable has an aluminum back. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="AppleWatch" /><category term="Review" /><summary type="html"><![CDATA[Apple released two new watches this month, the Apple Watch Series 8 and the Apple Watch Ultra. I have been an Apple Watch user since the Apple Watch Series 3. My current watch is a Series 5. I had planned on this Fall being my time to upgrade with whatever was released. Each series has been fairly incremental, which is fine when you wait two to three years to upgrade. Those incremental updates each year equate to a nice upgrade every few years.]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="Productivity" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[Spotlight in macOS was first announced in 2004 as a part of Mac OS X Tiger. It was revolutionary at the time for quickly and efficiently searching your hard drive for files and apps. The Spotlight magnifying glass continues to live in the Mac menu bar and is accessed via the command-space keyboard shortcut.]]></summary></entry></feed>
