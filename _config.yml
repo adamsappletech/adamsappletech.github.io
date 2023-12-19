@@ -29,7 +29,7 @@ github_username:  adamsappletech
 
 
 # Build settings
-theme: plainwhite
+# theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
 show_excerpts: true
 # disqus_shortname: aballif
