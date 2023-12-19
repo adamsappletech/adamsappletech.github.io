@@ -8,10 +8,10 @@ excerpt_separator: <!--more-->
 
 I had a weird Microsoft Office bug a few months back. Every time I would open Word or Excel I would get this error in a dialog box: 
 
->Microsoft Visual Basic Run-time error `53'
+<!—more—> >Microsoft Visual Basic Run-time error `53'
 File not found: /Libary/Application Support/Adobe/MACPDFM/MacPDFM.framework/Versions/A/MacPDFM
 
-<!--more--> I would dismiss it, but it would return every time I opened a file or started the app. It got to be very annoying after a while. Fortunately, there is a fix. 
+I would dismiss it, but it would return every time I opened a file or started the app. It got to be very annoying after a while. Fortunately, there is a fix. 
 
 1. Close all Office applications.
 2. Go to /Users/your-user-name-here/Library/Group Containers/UBF8T346G9.Office/User Content/Startup/Word.
