@@ -34,6 +34,10 @@ remote_theme: samarsault/plainwhite-jekyll
 show_excerpts: true
 # disqus_shortname: aballif
 # searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+
+# Google Analytics
+google_analytics: G-PPLD9SR428
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
