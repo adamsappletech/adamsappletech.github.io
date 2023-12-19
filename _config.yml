@@ -29,7 +29,7 @@ github_username:  adamsappletech
 
 
 # Build settings
-# theme: plainwhite
+theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
 show_excerpts: true
 # disqus_shortname: aballif
@@ -89,7 +89,10 @@ plainwhite:
       url: "/categories"
     - title: "Contact"
       url: "/about"
-
+  condensed_mobile:
+    - home
+    - post
+    - page
 
 # Exclude from processing.
 # The following items will not be processed, by default.
