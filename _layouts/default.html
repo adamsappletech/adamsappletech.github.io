@@ -41,7 +41,7 @@
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
       </div>
-      <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe (RSS)</a>
+      
       </div>
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
@@ -154,6 +154,7 @@
             <span class="slider round" onclick="toggleDarkMode()"></span>
           </label>
         </p>
+        <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe (RSS)</a>
       </div>
       {%- endif -%}
       {% endcapture %}
