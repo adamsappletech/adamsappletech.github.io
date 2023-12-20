@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "New Blog - Same adamsapple",
+      "url"      : "/2023/12/20/new-blog-same-adamsapple.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2023-12-20 03:09:35 -0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Automate Journaling Day One with Shortcuts",
       "url"      : "/productivity/2023/11/26/journaling-shortcuts.html",
       "category" : "Productivity",

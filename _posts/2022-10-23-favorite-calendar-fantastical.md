@@ -59,18 +59,4 @@ I have been an active Fantastical user for many years, and I continue to be impr
 [image-4]: /assets/fansticial-menuar.png
 [image-5]: /assets/fantastical-calendarview.png
 
-<script src="https://giscus.app/client.js"
-        data-repo="adamsappletech/adamsappletech.github.io"
-        data-repo-id="R_kgDOK5uboQ"
-        data-category="General"
-        data-category-id="DIC_kwDOK5uboc4CbzPX"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include comments.html %}

@@ -70,18 +70,4 @@ Reeder has a polished and delightful interface for reading RSS feeds. It is fast
 [image-4]: /assets/reeder-bionic.jpg
 [image-5]: /assets/reeder-services.png
 
-<script src="https://giscus.app/client.js"
-        data-repo="adamsappletech/adamsappletech.github.io"
-        data-repo-id="R_kgDOK5uboQ"
-        data-category="General"
-        data-category-id="DIC_kwDOK5uboc4CbzPX"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include comments.html %}

@@ -88,18 +88,4 @@ Writing a meaningful, personalized, journal entry each day is likely better for 
 [image-1]: /assets/journal-script-1.png
 [image-2]: /assets/journal-script-2.png
 
-<script src="https://giscus.app/client.js"
-        data-repo="adamsappletech/adamsappletech.github.io"
-        data-repo-id="R_kgDOK5uboQ"
-        data-category="General"
-        data-category-id="DIC_kwDOK5uboc4CbzPX"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include comments.html %}

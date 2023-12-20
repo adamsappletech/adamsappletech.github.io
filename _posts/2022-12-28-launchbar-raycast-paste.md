@@ -95,18 +95,4 @@ Keeping track of all of my hotkeys can be a problem, but I like what I have sett
 [image-7]: /assets/launchbar-stats-1.png
 [image-8]: /assets/launchbar-stats-2.png
 
-<script src="https://giscus.app/client.js"
-        data-repo="adamsappletech/adamsappletech.github.io"
-        data-repo-id="R_kgDOK5uboQ"
-        data-category="General"
-        data-category-id="DIC_kwDOK5uboc4CbzPX"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include comments.html %}

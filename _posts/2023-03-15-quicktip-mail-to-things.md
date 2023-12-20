@@ -21,18 +21,4 @@ You can then put that email address as a new contact in your address book. It is
 [2]:    https://culturedcode.com/things/support/articles/2908262/
 [3]:    https://ifttt.com
 
-<script src="https://giscus.app/client.js"
-        data-repo="adamsappletech/adamsappletech.github.io"
-        data-repo-id="R_kgDOK5uboQ"
-        data-category="General"
-        data-category-id="DIC_kwDOK5uboc4CbzPX"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{% include comments.html %}
