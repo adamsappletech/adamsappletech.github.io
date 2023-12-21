@@ -100,6 +100,8 @@ In this whole process I also want to give an honorable mention to the fanstastic
 
 There is more to come on adamsapple...
 
+{% include social-media-share.html %}
+
 
 [^1]: See [Jason Snell's article](https://sixcolors.com/post/2021/03/searching-for-the-perfect-ios-markdown-writing-tool/) about this very topic. 
 
