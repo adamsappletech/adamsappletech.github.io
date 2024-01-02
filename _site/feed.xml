@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-21T00:25:44-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">New Blog - Same adamsapple</title><link href="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" rel="alternate" type="text/html" title="New Blog - Same adamsapple" /><published>2023-12-20T03:56:49-07:00</published><updated>2023-12-20T03:56:49-07:00</updated><id>http://localhost:4000/2023/12/20/new-blog-same-adamsapple</id><content type="html" xml:base="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html"><![CDATA[<p>One the reasons I started this website was for the opporunity to learn <a href="https://wordpress.com/">Wordpress</a>. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress. <!--more--> I use Squarespace for another website and I like it’s design and ease of use, but I don’t like to use their mobile app for posting and updating content. With adamsapple I wanted a setup that had the following features:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-01T17:38:38-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">New Blog - Same adamsapple</title><link href="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" rel="alternate" type="text/html" title="New Blog - Same adamsapple" /><published>2023-12-20T03:56:49-07:00</published><updated>2023-12-20T03:56:49-07:00</updated><id>http://localhost:4000/2023/12/20/new-blog-same-adamsapple</id><content type="html" xml:base="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html"><![CDATA[<p>One the reasons I started this website was for the opporunity to learn <a href="https://wordpress.com/">Wordpress</a>. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress. <!--more--> I use Squarespace for another website and I like it’s design and ease of use, but I don’t like to use their mobile app for posting and updating content. With adamsapple I wanted a setup that had the following features:</p>
 
 <ul>
   <li>text-based, writing in <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a></li>
@@ -101,6 +101,139 @@ excerpt_separator: &lt;!--more--&gt;
 <p>In this whole process I also want to give an honorable mention to the fanstastic text editor <a href="https://www.sublimetext.com">Sublime Text</a>. I had heard of Sublime Text, but never tried it. It is a beautiful text editor with a two panel design. I can keep my most-used folders on the left and then edit text on the right. It has syntax highlighting for many languages, including Markdown. It has been a joy to use.</p>
 
 <p>There is more to come on adamsapple…</p>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"> facebook</i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=New Blog - Same adamsapple&amp;url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa fa-twitter share-button"> twitter</i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"> pinterest</i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"> tumblr</i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"> reddit</i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html&amp;title=New Blog - Same adamsapple&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
+        </a>
+
+        <a href="mailto:?subject=New Blog - Same adamsapple&amp;body=Check out this site http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"> email</i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-twitter {
+    color: #55acee;
+}
+.fa-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
 
 <script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
@@ -222,6 +355,9 @@ excerpt_separator: &lt;!--more--&gt;
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html&amp;title=Automate Journaling Day One with Shortcuts&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
         </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
+        </a>
 
         <a href="mailto:?subject=Automate Journaling Day One with Shortcuts&amp;body=Check out this site http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" title="Share via Email">
             <i class="fa fa-envelope share-button"> email</i>
@@ -303,6 +439,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -357,6 +502,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/macos/software/2023/10/06/review-fission.html&amp;title=Fission - Lightweight Audio Editor&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/macos/software/2023/10/06/review-fission.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Fission - Lightweight Audio Editor&amp;body=Check out this site http://localhost:4000/review/macos/software/2023/10/06/review-fission.html" title="Share via Email">
@@ -439,6 +587,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -488,6 +645,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html&amp;title=Typing Contractions on iPhone&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Typing Contractions on iPhone&amp;body=Check out this site http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" title="Share via Email">
@@ -570,6 +730,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -650,6 +819,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html&amp;title=Keychron Q5 Mechanical Keyboard&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Keychron Q5 Mechanical Keyboard&amp;body=Check out this site http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" title="Share via Email">
@@ -732,6 +904,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -791,6 +972,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html&amp;title=Mail Tasks to Things&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Mail Tasks to Things&amp;body=Check out this site http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" title="Share via Email">
@@ -873,6 +1057,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -921,6 +1114,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/liked/2023/03/12/liked-printing-ventura.html&amp;title=Liked - Fix Print to PDF Keyboard Shortcut in MacOS Ventura&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/liked/2023/03/12/liked-printing-ventura.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Liked - Fix Print to PDF Keyboard Shortcut in MacOS Ventura&amp;body=Check out this site http://localhost:4000/liked/2023/03/12/liked-printing-ventura.html" title="Share via Email">
@@ -1003,6 +1199,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -1085,6 +1290,9 @@ excerpt_separator: &lt;!--more--&gt;
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/software/review/2023/03/05/favorite-rss-reader.html&amp;title=Favorite RSS Reader - Reeder&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
         </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/software/review/2023/03/05/favorite-rss-reader.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
+        </a>
 
         <a href="mailto:?subject=Favorite RSS Reader - Reeder&amp;body=Check out this site http://localhost:4000/software/review/2023/03/05/favorite-rss-reader.html" title="Share via Email">
             <i class="fa fa-envelope share-button"> email</i>
@@ -1166,6 +1374,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -1229,6 +1446,9 @@ excerpt_separator: &lt;!--more--&gt;
 
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/liked/2023/02/14/liked-best-screen-recording.html&amp;title=Liked - The Best Screen Recording Apps for Your Mac&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/liked/2023/02/14/liked-best-screen-recording.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
         </a>
 
         <a href="mailto:?subject=Liked - The Best Screen Recording Apps for Your Mac&amp;body=Check out this site http://localhost:4000/liked/2023/02/14/liked-best-screen-recording.html" title="Share via Email">
@@ -1311,6 +1531,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
@@ -1411,6 +1640,9 @@ excerpt_separator: &lt;!--more--&gt;
         <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/hardware/2022/12/31/webcam-shootout.html&amp;title=Webcam Shootout&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
             <i class="fa fa-linkedin share-button"> linkedin</i>
         </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/hardware/2022/12/31/webcam-shootout.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
+        </a>
 
         <a href="mailto:?subject=Webcam Shootout&amp;body=Check out this site http://localhost:4000/review/hardware/2022/12/31/webcam-shootout.html" title="Share via Email">
             <i class="fa fa-envelope share-button"> email</i>
@@ -1492,6 +1724,15 @@ excerpt_separator: &lt;!--more--&gt;
 .fa-linkedin:hover {
     background-color: #007bb5;
 }
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
 /* Email button */
 .fa-envelope {
     color: #444444;
