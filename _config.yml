@@ -87,6 +87,8 @@ plainwhite:
       url: "/podcast"
     - title: "Tags"
       url: "/categories"
+    - title: Apps
+      url: "/apps"
     - title: "Contact"
       url: "/about"
   condensed_mobile:
