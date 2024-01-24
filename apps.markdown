@@ -4,6 +4,50 @@ title: Apps
 permalink: /apps/
 ---
 
+# GolfRSS: Really Simple Scorecard
+
+[<img src="/assets/GolfScore-App-icon.png" width="150"/>](https://apps.apple.com/us/app/golfrss/id6472930077)
+
+[GolfRSS for iPhone and Apple Watch](https://apps.apple.com/us/app/golfrss/id6472930077)
+
+I created GolfScore because I wanted a fast and simple way to keep score while playing. I have tried many of the golf apps on the App Store and most of them offer more features than GolfScore, including GPS features, but I found all of them to be more complicated than I needed. 
+
+I wanted a really simple scorecard for my iPhone and Apple Watch.
+
+## Instructions
+
+### PLAY GOLF
+
+Tap the 'Golf Ball' to start a new round. Set round details, such as 9 versus 18 holes, number of players, and handicap. If you have saved previous played courses, you can choose one of your saved courses.
+
+Use the stepper to advance your score. When you are done entering, click NEXT to go to the next hole. If you have more than one player, toggle to the other players and enter their scores before advancing to the next hole. If you need to edit a score you can tap on the hole or score to edit. The hole will highlight yellow to indicate that you are editing that hole.
+
+You can change the par of the hole by tapping on the number under the flag. It will cycle through possible pars of 3, 4, or 5.
+
+### SAVE A GOLF COURSE
+
+If you are playing a favorite course, or a course that you play regularly, after playing your first round of golf you can save this course. When you save the course, the specific par is saved for each hole. Other details, such as green fees, course slope, and course rating may also be saved, as well as a photo. Saved courses are accessed on the third page of the app. When you start a new round, you can start a blank round or choose from one of your saved courses.
+
+### HANDICAP
+
+If you subscribe to GolfScore, through in-app purchase, you can use the Handicap feature. Handicaps may be entered for each player, and their scores will be adjusted accordingly when you toggle the handicap switch. A player's handicap may be changed by long-pressing on the handicap number. The in, out, and total scores are adjusted for handicap.
+
+### SHARE YOUR ROUND
+
+After a good round, you can share your statistics with your friends and family. On the second page of the app, you can see your saved rounds. Tap on a round to see more details and statistics. Tap the share button to send a text or email to brag about your round. If you scored par or below, specific stats about number of pars and birdies will be shared.
+
+### APPLE WATCH
+
+Access GolfScore on your Apple Watch to quickly enter your score. If you are playing with more than one player, tap the player's name at the top of the screen to enter their scores as well. Apple Watch widgets are available for showing GolfScore data on your watch face. You can choose from singular circular widgets that indicate current hole, score on last hole, and other player's scores. Two rectangular widgets show stats for player one or the scores of each of the players in your group.
+
+### IN-APP PURCHASE
+
+Subscribe to GolfScore to remove the banner ads, unlock Handicap support, save more than three favorite golf courses, and help to support further development of GolfScore. Subscriptions may be purchased by month, year, or one lifetime purchase.
+
+
+---
+
+
 # PracticeMeter
 
 ## TRACK AND IMPROVE YOUR PRACTICE HABITS
