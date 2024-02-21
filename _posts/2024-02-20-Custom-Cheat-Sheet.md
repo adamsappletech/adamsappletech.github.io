@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  My Cheatsheet for Keyboard Shortcuts
+title:  My Cheat Sheet for Keyboard Shortcuts
 date:   2024-02-20 09:58:16 -0700
 categories: QuickTip Productivity
 excerpt_separator: <!--more-->
