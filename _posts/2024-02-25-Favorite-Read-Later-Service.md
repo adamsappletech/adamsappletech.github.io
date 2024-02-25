@@ -3,12 +3,12 @@ layout: post
 title:  Favorite Read Later - Pocket vs Good Links
 date:   2024-02-24 10:31:45 -0700
 categories: Review macOS iOS Software
-excerpt_separator: <!—more—>
+excerpt_separator: <!--more-->
 ---
 
-I have been saving articles to read later since the early days of the iPhone with apps like [Instapaper](https://www.instapaper.com). At some point Apple added Reading List to Safari as a way of saving items to read later. These are more than bookmarks, a solid read it later service will download text and images, remove ads, and provide a way to read and save articles that can be accessed offline. 
+I have been saving articles to read later since the early days of the iPhone with apps like [Instapaper](https://www.instapaper.com). At some point Apple added Reading List to Safari as a way of saving items to read later. These are more than bookmarks, a solid read it later service will download text and images, remove ads, and provide a way to read and save articles that can be accessed offline. <!--more-->
 
-Instapaper was my first read-it-later app, created by Marco Arment, and then later sold. It is still available, but has moved to subscription pricing. After instapaper, I switched over to using [Pocket](https://getpocket.com/collections). I have used Pocket for many years, but just a few months ago I became aware of [Good Links](https://goodlinks.app) and have been testing and using Good Links most recently. <!--more-->
+Instapaper was my first read-it-later app, created by Marco Arment, and then later sold. It is still available, but has moved to subscription pricing. After instapaper, I switched over to using [Pocket](https://getpocket.com/collections). I have used Pocket for many years, but just a few months ago I became aware of [Good Links](https://goodlinks.app) and have been testing and using Good Links most recently.
 
 ## Read-It-Later Ideals
 
