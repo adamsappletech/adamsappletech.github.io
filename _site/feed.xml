@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-20T22:41:08-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">My Cheatsheet for Keyboard Shortcuts</title><link href="http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet.html" rel="alternate" type="text/html" title="My Cheatsheet for Keyboard Shortcuts" /><published>2024-02-20T09:58:16-07:00</published><updated>2024-02-20T09:58:16-07:00</updated><id>http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet</id><content type="html" xml:base="http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet.html"><![CDATA[<p>I am a big fan of using keyboard shortcuts. Even though Apple made the mouse a mainstream input device, the Mac has always embraced keyboard shortcuts as well. I like to keep my hands on the keyboard as much as possible. MacOS is setup so that one can be very productive and fast at executing commands, all from the keyboard. <!--more--></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-25T01:25:14-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">My Cheatsheet for Keyboard Shortcuts</title><link href="http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet.html" rel="alternate" type="text/html" title="My Cheatsheet for Keyboard Shortcuts" /><published>2024-02-20T09:58:16-07:00</published><updated>2024-02-20T09:58:16-07:00</updated><id>http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet</id><content type="html" xml:base="http://localhost:4000/quicktip/productivity/2024/02/20/Custom-Cheat-Sheet.html"><![CDATA[<p>I am a big fan of using keyboard shortcuts. Even though Apple made the mouse a mainstream input device, the Mac has always embraced keyboard shortcuts as well. I like to keep my hands on the keyboard as much as possible. MacOS is setup so that one can be very productive and fast at executing commands, all from the keyboard. <!--more--></p>
 
 <p>While there are many keyboard shortcuts programmed into each app, I also like to create my own shortcuts. <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a> is an incredible app for creating shortcuts and automating repetitive tasks. However, I have made so many shortcuts over the years that I have trouble remembering them. I created the following PDF below as a cheat sheet to remind me of my most helpful keyboard shortcuts.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The best way to remember keyboard shortcuts is to use them regular. I have several shortcuts that I use every day and are now engrained into my fingers with muscle memory. My custom cheat sheet is for helping me remember and use the shortcuts that aren’t yet available to me via muscle memory.</p>
 
@@ -148,150 +148,7 @@
       <p>My favorite git client is <a href="https://www.git-tower.com/mac">Git-Tower</a>. The Git-Tower website provides these wonderful cheat sheets for remember keyboard shortcuts for Terminal, Xcode, HTML, Javascript, Markdown, etc… I took inspiration from these in designing my custom cheat sheet. I used <a href="https://affinity.serif.com/en-us/publisher/">Affinity Publisher 2</a> to make the layout. I wanted it to match these other cheat sheets as closely as possible. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="QuickTip" /><category term="Productivity" /><summary type="html"><![CDATA[I am a big fan of using keyboard shortcuts. Even though Apple made the mouse a mainstream input device, the Mac has always embraced keyboard shortcuts as well. I like to keep my hands on the keyboard as much as possible. MacOS is setup so that one can be very productive and fast at executing commands, all from the keyboard.]]></summary></entry><entry><title type="html">Favorite Read Later Service</title><link href="http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" rel="alternate" type="text/html" title="Favorite Read Later Service" /><published>2023-12-30T20:04:54-07:00</published><updated>2023-12-30T20:04:54-07:00</updated><id>http://localhost:4000/2023/12/30/Favorite-Read-Later-Service</id><content type="html" xml:base="http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html"><![CDATA[<hr />
-<p>layout: post
-title:  Favorite Read Later - Pocket vs Good Links
-date:   2023-12-19 10:31:45 -0700
-categories: 
-excerpt_separator: &lt;!—more—&gt;</p>
-
-<p>—</p>
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-<div id="share-bar">
-
-    <h4>Share this:</h4>
-
-    <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
-            <i class="fa fa-facebook-official share-button"> facebook</i>
-        </a>
-
-        <a href="https://twitter.com/intent/tweet?text=Favorite Read Later Service&amp;url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
-            <i class="fa fa-twitter share-button"> twitter</i>
-        </a>
-
-        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
-            <i class="fa fa-pinterest-p share-button"> pinterest</i>
-        </a>
-
-        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
-            <i class="fa fa-tumblr share-button"> tumblr</i>
-        </a>
-
-        <a href="http://www.reddit.com/submit?url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
-            <i class="fa fa-reddit-alien share-button"> reddit</i>
-        </a>
-
-        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html&amp;title=Favorite Read Later Service&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
-            <i class="fa fa-linkedin share-button"> linkedin</i>
-        </a>
-        
-        <a href="https://mastodonshare.com/?url=http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
-        </a>
-
-        <a href="mailto:?subject=Favorite Read Later Service&amp;body=Check out this site http://localhost:4000/2023/12/30/Favorite-Read-Later-Service.html" title="Share via Email">
-            <i class="fa fa-envelope share-button"> email</i>
-        </a>
-    </div>
-
-</div>
-<style type="text/css">
-/* Share Bar */
-#share-bar {
-    font-size: 20px;
-}
-/* Title */
-#share-bar h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-/* All buttons */
-.share-buttons {
-}
-/* Each button */
-.share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    border: 1px solid #D3D6D2;
-    padding: 5px 10px 5px 10px;
-}
-.share-button:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-/* Facebook button */
-.fa-facebook-official {
-    color: #3b5998;
-}
-.fa-facebook-official:hover {
-    background-color: #3b5998;
-}
-/* Twitter button */
-.fa-twitter {
-    color: #55acee;
-}
-.fa-twitter:hover {
-    background-color: #55acee;
-}
-/* Google-PLus button */
-.fa-google-plus {
-    color: #dd4b39;
-}
-.fa-google-plus:hover {
-    background-color: #dd4b39;
-}
-/* Pinterest button */
-.fa-pinterest-p {
-    color: #cb2027;
-}
-.fa-pinterest-p:hover {
-    background-color: #cb2027;
-}
-/* Tumblr button */
-.fa-tumblr {
-    color: #32506d;
-}
-.fa-tumblr:hover {
-    background-color: #32506d;
-}
-/* Reddit button */
-.fa-reddit-alien {
-    color: #ff4500;
-}
-.fa-reddit-alien:hover {
-    background-color: #ff4500;
-}
-/* LinkedIn button */
-.fa-linkedin {
-    color: #007bb5;
-}
-.fa-linkedin:hover {
-    background-color: #007bb5;
-}
-
-/* Mastodon button */
-.fa-envelope-mas {
-    color: #7133ff;
-}
-.fa-envelope-mas:hover {
-    background-color: #7133ff;
-}
-
-/* Email button */
-.fa-envelope {
-    color: #444444;
-}
-.fa-envelope:hover {
-    background-color: #444444;
-}
-    
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><summary type="html"><![CDATA[layout: post title: Favorite Read Later - Pocket vs Good Links date: 2023-12-19 10:31:45 -0700 categories: excerpt_separator: &lt;!—more—&gt;]]></summary></entry><entry><title type="html">New Blog - Same adamsapple</title><link href="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" rel="alternate" type="text/html" title="New Blog - Same adamsapple" /><published>2023-12-20T03:56:49-07:00</published><updated>2023-12-20T03:56:49-07:00</updated><id>http://localhost:4000/2023/12/20/new-blog-same-adamsapple</id><content type="html" xml:base="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html"><![CDATA[<p>One the reasons I started this website was for the opporunity to learn <a href="https://wordpress.com/">Wordpress</a>. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress. <!--more--> I use Squarespace for another website and I like it’s design and ease of use, but I don’t like to use their mobile app for posting and updating content. With adamsapple I wanted a setup that had the following features:</p>
+</div>]]></content><author><name></name></author><category term="QuickTip" /><category term="Productivity" /><summary type="html"><![CDATA[I am a big fan of using keyboard shortcuts. Even though Apple made the mouse a mainstream input device, the Mac has always embraced keyboard shortcuts as well. I like to keep my hands on the keyboard as much as possible. MacOS is setup so that one can be very productive and fast at executing commands, all from the keyboard.]]></summary></entry><entry><title type="html">New Blog - Same adamsapple</title><link href="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html" rel="alternate" type="text/html" title="New Blog - Same adamsapple" /><published>2023-12-20T03:56:49-07:00</published><updated>2023-12-20T03:56:49-07:00</updated><id>http://localhost:4000/2023/12/20/new-blog-same-adamsapple</id><content type="html" xml:base="http://localhost:4000/2023/12/20/new-blog-same-adamsapple.html"><![CDATA[<p>One the reasons I started this website was for the opporunity to learn <a href="https://wordpress.com/">Wordpress</a>. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress. <!--more--> I use Squarespace for another website and I like it’s design and ease of use, but I don’t like to use their mobile app for posting and updating content. With adamsapple I wanted a setup that had the following features:</p>
 
 <ul>
   <li>text-based, writing in <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a></li>
@@ -537,7 +394,194 @@ excerpt_separator: &lt;!--more--&gt;
       <p>See <a href="https://sixcolors.com/post/2021/03/searching-for-the-perfect-ios-markdown-writing-tool/">Jason Snell’s article</a> about this very topic. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><summary type="html"><![CDATA[One the reasons I started this website was for the opporunity to learn Wordpress. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress.]]></summary></entry><entry><title type="html">Automate Journaling Day One with Shortcuts</title><link href="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" rel="alternate" type="text/html" title="Automate Journaling Day One with Shortcuts" /><published>2023-11-26T05:47:12-07:00</published><updated>2023-11-26T05:47:12-07:00</updated><id>http://localhost:4000/productivity/2023/11/26/journaling-shortcuts</id><content type="html" xml:base="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"><![CDATA[<p>I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, <a href="https://dayoneapp.com">Day One</a>. I used to accomplish this only with AppleScript, with inspiration and help from <a href="https://brettterpstra.com">Brett Terpstra</a>. <!--more--> My old AppleScript relied on a command-line utility called <a href="https://hasseg.org/icalBuddy/">iCalBuddy</a>. I recently got a new computer and I had trouble getting iCalBuddy to work, so I decided to redo my automation using Apple Shortcuts. In the end, I think this is even better than my original script. It still relies on some AppleScript, and so it won’t run on iOS, but so far it has been rock solid.</p>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[One the reasons I started this website was for the opporunity to learn Wordpress. I have tried a few different hosts over the years and I have a better understanding of the pros and cons of Wordpress.]]></summary></entry><entry><title type="html">Favorite Read Later - Pocket vs Good Links</title><link href="http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" rel="alternate" type="text/html" title="Favorite Read Later - Pocket vs Good Links" /><published>2023-12-19T10:31:45-07:00</published><updated>2023-12-19T10:31:45-07:00</updated><id>http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service</id><content type="html" xml:base="http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html"><![CDATA[<p>I have been saving articles to read later since the early days of the iPhone with apps like <a href="https://www.instapaper.com">Instapaper</a>. At some point Apple added Reading List to Safari as a way of saving items to read later. These are more than bookmarks, a solid read it later service will download text and images, remove ads, and provide a way to read and save articles that can be accessed offline.</p>
+
+<p>Instapaper was my first read-it-later app, created by Marco Arment, and then later sold. It is still available, but has moved to subscription pricing. After instapaper, I switched over to using <a href="https://getpocket.com/collections">Pocket</a>. I have used Pocket for many years, but just a few months ago I became aware of <a href="https://goodlinks.app">Good Links</a> and have been testing and using Good Links most recently. <!--more--></p>
+
+<h2 id="read-it-later-ideals">Read-It-Later Ideals</h2>
+
+<p>The best read-it-later service or app will have the following characteristics:</p>
+
+<ul>
+  <li>Available on all of my devices, Mac, iPhone, and iPad.</li>
+  <li>Easy to save articles. It should have Safari extensions and be available in the iOS share sheet.</li>
+  <li>Easy to read and nice to look at.</li>
+  <li>It should include ways to organize saved articles, with either folders or tags.</li>
+</ul>
+
+<p>Let’s get this out of the way first, I don’t use Reading List in Safari. I am not sure why it hasn’t stuck with me. It is available on all my devices, but I don’t find the interface that appealing. I prefer a dedicated app for reading things later. So, that leaves us with either Pocket or Good Links.</p>
+
+<h2 id="pocket">Pocket</h2>
+
+<p>Pocket is a major player in this category of read-it-later apps. I have enjoye using it for many years. The mobile app was recently re-designed and has a more modern look. It really checks all of the boxes. It is avaiable on all my devices, it is easy to save articles, it provides a clean interface for reading, and it has an archive and tagging.</p>
+
+<p>Perhaps my favorite thing about Pocket actually has do with my favorite RSS reader. I wrote previously about Reeder being my favorite RSS reader. In Reeder, you can use swipe gestures for navigating and marking articles as read. In settings, you can assign a swipe gesture to add a link to Pocket. This is awesome. I can add articles to Pocket so fast and easily with the swipe gesture.</p>
+
+<p>Pocket also has a home view with suggestions of other articles I may be interested in. My personal preference is to find my own articles through RSS or browsing the web. I don’t like this “home” view and find that it gets in the way a bit for me to get to my saved articles.</p>
+
+<p>I am also an avid user of dark mode on my devices. On my iPhone, Pocket supports dark mode, but for some reason, the Mac version of Pocket doesn’t follow my dark mode settings. It is jarring to open Pocket on my Mac and have the screen be so bright and white, when I am use to dark mode everywhere else.</p>
+
+<p><img src="/assets/Pocket-Mac.png" alt="Pocket on Mac" /></p>
+
+<p><img src="/assets/Pocket1.PNG" alt="Pocket - iPhone 1" /></p>
+
+<p><img src="/assets/Pocket2.PNG" alt="Pocket - iPhone 2" /></p>
+
+<h2 id="good-links">Good Links</h2>
+
+<p>Good Links is a newer player in this space. Perhaps, because it is newer, the interface feels fresh and modern. I have been using tags more with Good Links to keep my saved articles more organized. Pocket also has tagging, but I didn’t use it as much. I tended to archive or delete articles more. The downside to this is that I accumulated over 1000 articles over the past several years. I can search, but I am enjoyed the visual reminder of using tags in Good Links. Tags can be added when saving a new article and with autofill I can find my previous tags very easily. Pocket looks nice on all my devices, including dark mode on the Mac.</p>
+
+<p>Both Pocket and Good Links have widgets to access recently saved articles or a random suggestion. Pocket uses a built-in web browser for reading articles that aren’t downloaded yet, or you can send links to Safari. Good Links opens links in Safari. You can set to open the links in the background so that they don’t take you out of Good Links. You can change this in settings.</p>
+
+<p>Good Links doesn’t have the tight integration in Reeder for RSS, but the share sheet works very well. It isn’t as fast though as swiping to send to Pocket.</p>
+
+<p><img src="/assets/Goodlinks-Mac.png" alt="Goodlinks - Mac" /></p>
+
+<p><img src="/assets/Goodlinks1.PNG" alt="Goodlinks - iPhone 1" /></p>
+
+<p><img src="/assets/Goodlinks2.PNG" alt="Goodlinks - iPhone 2" /></p>
+
+<h2 id="verdict">Verdict</h2>
+
+<p>The jury is still out on this one. I have been using Good Links and liking it, but it may be because it is a newer app. I link the interface and the tagging features. It also felt good to start a read-it-later from scratch without the 1000+ articles that were disorganized. I am sure I will revisit Pocket again in the future, but for now I am going to stick with Good Links.</p>
+
+<p>Competition is a good thing. Either way, I highly recommend using a read-it-later service.</p>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"> facebook</i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Favorite Read Later - Pocket vs Good Links&amp;url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa fa-twitter share-button"> twitter</i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"> pinterest</i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"> tumblr</i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"> reddit</i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html&amp;title=Favorite Read Later - Pocket vs Good Links&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"> linkedin</i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa fa-envelope-mas share-button"> mastodon</i>
+        </a>
+
+        <a href="mailto:?subject=Favorite Read Later - Pocket vs Good Links&amp;body=Check out this site http://localhost:4000/review/macos/ios/software/2023/12/19/Favorite-Read-Later-Service.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"> email</i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-twitter {
+    color: #55acee;
+}
+.fa-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-envelope-mas {
+    color: #7133ff;
+}
+.fa-envelope-mas:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="iOS" /><category term="Software" /><summary type="html"><![CDATA[I have been saving articles to read later since the early days of the iPhone with apps like Instapaper. At some point Apple added Reading List to Safari as a way of saving items to read later. These are more than bookmarks, a solid read it later service will download text and images, remove ads, and provide a way to read and save articles that can be accessed offline. Instapaper was my first read-it-later app, created by Marco Arment, and then later sold. It is still available, but has moved to subscription pricing. After instapaper, I switched over to using Pocket. I have used Pocket for many years, but just a few months ago I became aware of Good Links and have been testing and using Good Links most recently. Read-It-Later Ideals The best read-it-later service or app will have the following characteristics: Available on all of my devices, Mac, iPhone, and iPad. Easy to save articles. It should have Safari extensions and be available in the iOS share sheet. Easy to read and nice to look at. It should include ways to organize saved articles, with either folders or tags. Let’s get this out of the way first, I don’t use Reading List in Safari. I am not sure why it hasn’t stuck with me. It is available on all my devices, but I don’t find the interface that appealing. I prefer a dedicated app for reading things later. So, that leaves us with either Pocket or Good Links. Pocket Pocket is a major player in this category of read-it-later apps. I have enjoye using it for many years. The mobile app was recently re-designed and has a more modern look. It really checks all of the boxes. It is avaiable on all my devices, it is easy to save articles, it provides a clean interface for reading, and it has an archive and tagging. Perhaps my favorite thing about Pocket actually has do with my favorite RSS reader. I wrote previously about Reeder being my favorite RSS reader. In Reeder, you can use swipe gestures for navigating and marking articles as read. In settings, you can assign a swipe gesture to add a link to Pocket. This is awesome. I can add articles to Pocket so fast and easily with the swipe gesture. Pocket also has a home view with suggestions of other articles I may be interested in. My personal preference is to find my own articles through RSS or browsing the web. I don’t like this “home” view and find that it gets in the way a bit for me to get to my saved articles. I am also an avid user of dark mode on my devices. On my iPhone, Pocket supports dark mode, but for some reason, the Mac version of Pocket doesn’t follow my dark mode settings. It is jarring to open Pocket on my Mac and have the screen be so bright and white, when I am use to dark mode everywhere else. Good Links Good Links is a newer player in this space. Perhaps, because it is newer, the interface feels fresh and modern. I have been using tags more with Good Links to keep my saved articles more organized. Pocket also has tagging, but I didn’t use it as much. I tended to archive or delete articles more. The downside to this is that I accumulated over 1000 articles over the past several years. I can search, but I am enjoyed the visual reminder of using tags in Good Links. Tags can be added when saving a new article and with autofill I can find my previous tags very easily. Pocket looks nice on all my devices, including dark mode on the Mac. Both Pocket and Good Links have widgets to access recently saved articles or a random suggestion. Pocket uses a built-in web browser for reading articles that aren’t downloaded yet, or you can send links to Safari. Good Links opens links in Safari. You can set to open the links in the background so that they don’t take you out of Good Links. You can change this in settings. Good Links doesn’t have the tight integration in Reeder for RSS, but the share sheet works very well. It isn’t as fast though as swiping to send to Pocket. Verdict The jury is still out on this one. I have been using Good Links and liking it, but it may be because it is a newer app. I link the interface and the tagging features. It also felt good to start a read-it-later from scratch without the 1000+ articles that were disorganized. I am sure I will revisit Pocket again in the future, but for now I am going to stick with Good Links. Competition is a good thing. Either way, I highly recommend using a read-it-later service. Share this: facebook twitter pinterest tumblr reddit linkedin mastodon email]]></summary></entry><entry><title type="html">Automate Journaling Day One with Shortcuts</title><link href="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" rel="alternate" type="text/html" title="Automate Journaling Day One with Shortcuts" /><published>2023-11-26T05:47:12-07:00</published><updated>2023-11-26T05:47:12-07:00</updated><id>http://localhost:4000/productivity/2023/11/26/journaling-shortcuts</id><content type="html" xml:base="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"><![CDATA[<p>I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, <a href="https://dayoneapp.com">Day One</a>. I used to accomplish this only with AppleScript, with inspiration and help from <a href="https://brettterpstra.com">Brett Terpstra</a>. <!--more--> My old AppleScript relied on a command-line utility called <a href="https://hasseg.org/icalBuddy/">iCalBuddy</a>. I recently got a new computer and I had trouble getting iCalBuddy to work, so I decided to redo my automation using Apple Shortcuts. In the end, I think this is even better than my original script. It still relies on some AppleScript, and so it won’t run on iOS, but so far it has been rock solid.</p>
 
 <p>This shortcut finds my calendar events for today and puts them into a list, organized by calendar. It then looks at my to do list in <a href="https://culturedcode.com/things/">Things</a>, and makes a list of the tasks that I completed today. Finally, it accesses a CNN RSS feed to find today’s top headlines, puts the title in a list, with a link to the article.</p>
 
