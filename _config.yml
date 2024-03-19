@@ -96,6 +96,15 @@ plainwhite:
     - post
     - page
 
+# fonts:
+#  use_google_fonts: false # if true will use external google_fonts url below
+#  google_fonts_url: "https://fonts.googleapis.com/css2?&family=Schibsted+Grotesk:wght@400;500&family=Open+Sans:wght@300;400;500;600;700&family=Fira+Mono&display=swap"
+#  use_self_hosted_fonts: true # font files must be placed in /assets/fonts folder and the @font-face definitions must be added to /assets/css/fonts.css
+#  heading: "Roboto"
+#  base: "Roboto"
+#  monospace: "Roboto Mono"
+#  logo: "Roboto"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
