@@ -2,7 +2,7 @@
 layout: post
 title: Rename Multiple Files in Finder
 date:   2024-03-18 07:33:46 -0700
-categories: Productivity, QuickTip, macOS
+categories: Productivity QuickTip macOS
 excerpt_separator: <!--more-->
 ---
 
