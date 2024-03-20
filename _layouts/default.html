@@ -144,7 +144,9 @@
       </nav>
       {%- endif -%}
       <p class="about-footer {{condensed_class}}">&copy;
-        {{ "now" | date: "%Y" }}</p>
+        {{ "now" | date: "%Y" }}
+       | <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe(RSS)</a>
+      </p>
       {%- if site.plainwhite.dark_mode -%}
       <div class="about-footer {{condensed_class}}">
         <p>Dark Mode
@@ -154,7 +156,7 @@
             <span class="slider round" onclick="toggleDarkMode()"></span>
           </label>
         </p>
-        <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe(RSS)</a>
+        
       </div>
       {%- endif -%}
       {% endcapture %}
