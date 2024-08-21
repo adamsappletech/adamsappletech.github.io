@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 I have relied on small utility apps for many years. One of these, [Renamer](https://renamer.com), was useful for renaming several files on my computer. I would drag several files into Rename and then I could prepend, append, or delete text all in one command. <!--more-->
 
-Recently, in macOS, the ability to rename several files at once and use find and replace was added right into the Finder. With multiple files selected, right-click on the list of files and choose "Rename." A small window appears that allows for search and replace of characters. [Renamer]([](https://renamer.com)) is more powerful, but this is a welcome addition to the Finder. 
+Recently, in macOS, the ability to rename several files at once and use find and replace was added right into the Finder. With multiple files selected, right-click on the list of files and choose "Rename." A small window appears that allows for search and replace of characters. [Renamer](https://renamer.com) is more powerful, but this is a welcome addition to the Finder. 
 
 ![][image-1]
 
