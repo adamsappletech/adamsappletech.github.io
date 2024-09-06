@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-20T19:35:34-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">My Minimal iPhone Home Screen</title><link href="http://localhost:4000/iphone/ios/2024/08/20/minimal.html" rel="alternate" type="text/html" title="My Minimal iPhone Home Screen" /><published>2024-08-20T06:35:13-06:00</published><updated>2024-08-20T06:35:13-06:00</updated><id>http://localhost:4000/iphone/ios/2024/08/20/minimal</id><content type="html" xml:base="http://localhost:4000/iphone/ios/2024/08/20/minimal.html"><![CDATA[<p>Lately I have been seeing advertisements for simple iPhone home screen interfaces. These layouts tout a minimal design with just text and a few simple icons for minimizing distractions. With Apple introducing more customization options, I decided to see if I could create a clean design using Shortcuts and custom icons. Apple is introducing more customization with iOS 18 this Fall, but I am using tools that have been available for some time, relying on Apple Shortcuts and using custom icons. <!--more--></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-06T10:58:23-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">macOS Name in 2025?</title><link href="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" rel="alternate" type="text/html" title="macOS Name in 2025?" /><published>2024-09-05T11:34:46-06:00</published><updated>2024-09-05T11:34:46-06:00</updated><id>http://localhost:4000/macos/2024/09/05/macOS%20Name%20in%202025</id><content type="html" xml:base="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html"><![CDATA[<p>I stumbled upon an interesting dialog box while working in Xcode and the Simulator this week. I was logging into one of my developer iCloud accounts to do some testing, and during the login process the following screen briefly appeared. <!--more--></p>
+
+<p><img src="/assets/macOS_San_Fernando.png" alt="macOS San Fernando" /></p>
+
+<p>Not only does this potentially reveal next year’s macOS name, but it also indicates a new feature coming to the simulator, the use of iCloud Drive. It is not unheard of for future product names to be discovered in code, but it is interesting that this appeared in the front facing user interface.</p>
+
+<p>Fun stuff.</p>
+
+<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"></i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=macOS Name in 2025?&amp;url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa-brands fa-x-twitter share-button"></i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"></i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"></i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html&amp;title=macOS Name in 2025?&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"></i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
+        </a>
+
+        <a href="mailto:?subject=macOS Name in 2025?&amp;body=Check out this site http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"></i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-x-twitter {
+    color: #55acee;
+}
+.fa-x-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-mastodon {
+    color: #7133ff;
+}
+.fa-mastodon:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="macOS" /><summary type="html"><![CDATA[I stumbled upon an interesting dialog box while working in Xcode and the Simulator this week. I was logging into one of my developer iCloud accounts to do some testing, and during the login process the following screen briefly appeared.]]></summary></entry><entry><title type="html">My Minimal iPhone Home Screen</title><link href="http://localhost:4000/iphone/ios/2024/08/20/minimal.html" rel="alternate" type="text/html" title="My Minimal iPhone Home Screen" /><published>2024-08-20T06:35:13-06:00</published><updated>2024-08-20T06:35:13-06:00</updated><id>http://localhost:4000/iphone/ios/2024/08/20/minimal</id><content type="html" xml:base="http://localhost:4000/iphone/ios/2024/08/20/minimal.html"><![CDATA[<p>Lately I have been seeing advertisements for simple iPhone home screen interfaces. These layouts tout a minimal design with just text and a few simple icons for minimizing distractions. With Apple introducing more customization options, I decided to see if I could create a clean design using Shortcuts and custom icons. Apple is introducing more customization with iOS 18 this Fall, but I am using tools that have been available for some time, relying on Apple Shortcuts and using custom icons. <!--more--></p>
 
 <p>I made two versions of my minimal design, a light version for daytime and a dark version for nighttime. I am using Focus Modes to switch between the designs and automating them to switch in the morning and the evening.</p>
 
@@ -181,7 +323,165 @@
       <p>iOS 18 is introducing custom tint color for icons and widgets, as well as large and small app icons. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="iPhone" /><category term="iOS" /><summary type="html"><![CDATA[Lately I have been seeing advertisements for simple iPhone home screen interfaces. These layouts tout a minimal design with just text and a few simple icons for minimizing distractions. With Apple introducing more customization options, I decided to see if I could create a clean design using Shortcuts and custom icons. Apple is introducing more customization with iOS 18 this Fall, but I am using tools that have been available for some time, relying on Apple Shortcuts and using custom icons.]]></summary></entry><entry><title type="html">Rename Multiple Files in Finder</title><link href="http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files.html" rel="alternate" type="text/html" title="Rename Multiple Files in Finder" /><published>2024-03-18T08:33:46-06:00</published><updated>2024-03-18T08:33:46-06:00</updated><id>http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files</id><content type="html" xml:base="http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files.html"><![CDATA[<p>I have relied on small utility apps for many years. One of these, <a href="https://renamer.com">Renamer</a>, was useful for renaming several files on my computer. I would drag several files into Rename and then I could prepend, append, or delete text all in one command. <!--more--></p>
+</div>]]></content><author><name></name></author><category term="iPhone" /><category term="iOS" /><summary type="html"><![CDATA[Lately I have been seeing advertisements for simple iPhone home screen interfaces. These layouts tout a minimal design with just text and a few simple icons for minimizing distractions. With Apple introducing more customization options, I decided to see if I could create a clean design using Shortcuts and custom icons. Apple is introducing more customization with iOS 18 this Fall, but I am using tools that have been available for some time, relying on Apple Shortcuts and using custom icons.]]></summary></entry><entry><title type="html">Caldigit Thunderbolt Dock - Awesome</title><link href="http://localhost:4000/review/hardware/2024/05/24/caldigit.html" rel="alternate" type="text/html" title="Caldigit Thunderbolt Dock - Awesome" /><published>2024-05-24T11:50:43-06:00</published><updated>2024-05-24T11:50:43-06:00</updated><id>http://localhost:4000/review/hardware/2024/05/24/caldigit</id><content type="html" xml:base="http://localhost:4000/review/hardware/2024/05/24/caldigit.html"><![CDATA[<p>One of the dreams of a modern geek is to be able to plug in a laptop computer with one cable and have everything connected on the desktop: monitors, keyboard, mouse, external hard drives, audio interfaces, midi devices, etc… I have had a variety of hubs and docks over the years. The closest have come to realizing this dream is having two cables, with a variety of adapters, until now. The Caldigit Thunderbolt Dock is a work of art. It is compact, rich with I/O ports, powerful, and elegant. <!--more--></p>
+
+<h2 id="ports">Ports</h2>
+
+<ul>
+  <li>3 x Thunderbolt 4 (40Gb/s)</li>
+  <li>3 x USB-C (10Gb/s)</li>
+  <li>5 x USB-A (10Gb/s)</li>
+  <li>1 x DisplayPort 1.4</li>
+  <li>1 x SD 4.0 (UHS-II)</li>
+  <li>1 x microSD 4.0 (UHS-II)</li>
+  <li>1 x 2.5 Gigabit Ethernet</li>
+  <li>1 x Front Combo Audio In/Out (3.5mm)</li>
+  <li>1 x Rear Audio Out (3.5mm)</li>
+  <li>1 x Rear Audio In (3.5mm)</li>
+  <li>1 x DC In (19.5V 11.80A)</li>
+</ul>
+
+<h2 id="power">Power</h2>
+
+<h2 id="design">Design</h2>
+
+<h2 id="reliability">Reliability</h2>
+
+<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"></i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Caldigit Thunderbolt Dock - Awesome&amp;url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa-brands fa-x-twitter share-button"></i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"></i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"></i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html&amp;title=Caldigit Thunderbolt Dock - Awesome&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"></i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/hardware/2024/05/24/caldigit.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
+        </a>
+
+        <a href="mailto:?subject=Caldigit Thunderbolt Dock - Awesome&amp;body=Check out this site http://localhost:4000/review/hardware/2024/05/24/caldigit.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"></i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-x-twitter {
+    color: #55acee;
+}
+.fa-x-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-mastodon {
+    color: #7133ff;
+}
+.fa-mastodon:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="Review" /><category term="Hardware" /><summary type="html"><![CDATA[One of the dreams of a modern geek is to be able to plug in a laptop computer with one cable and have everything connected on the desktop: monitors, keyboard, mouse, external hard drives, audio interfaces, midi devices, etc… I have had a variety of hubs and docks over the years. The closest have come to realizing this dream is having two cables, with a variety of adapters, until now. The Caldigit Thunderbolt Dock is a work of art. It is compact, rich with I/O ports, powerful, and elegant.]]></summary></entry><entry><title type="html">Rename Multiple Files in Finder</title><link href="http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files.html" rel="alternate" type="text/html" title="Rename Multiple Files in Finder" /><published>2024-03-18T08:33:46-06:00</published><updated>2024-03-18T08:33:46-06:00</updated><id>http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files</id><content type="html" xml:base="http://localhost:4000/productivity/quicktip/macos/2024/03/18/Rename-Files.html"><![CDATA[<p>I have relied on small utility apps for many years. One of these, <a href="https://renamer.com">Renamer</a>, was useful for renaming several files on my computer. I would drag several files into Rename and then I could prepend, append, or delete text all in one command. <!--more--></p>
 
 <p>Recently, in macOS, the ability to rename several files at once and use find and replace was added right into the Finder. With multiple files selected, right-click on the list of files and choose “Rename.” A small window appears that allows for search and replace of characters. <a href="https://renamer.com">Renamer</a> is more powerful, but this is a welcome addition to the Finder.</p>
 
@@ -1412,331 +1712,4 @@ excerpt_separator: &lt;!--more--&gt;
 </style>
 
 <script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.]]></summary></entry><entry><title type="html">Keychron Q5 Mechanical Keyboard</title><link href="http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" rel="alternate" type="text/html" title="Keychron Q5 Mechanical Keyboard" /><published>2023-04-07T06:20:17-06:00</published><updated>2023-04-07T06:20:17-06:00</updated><id>http://localhost:4000/review/hardware/2023/04/07/keychron-review</id><content type="html" xml:base="http://localhost:4000/review/hardware/2023/04/07/keychron-review.html"><![CDATA[<p>I grew up during the beginning of the personal computer era. The first computer in our house was an IBM PCjr and my dad used an IBM PC at work. The Macintosh had just been announced, but I was sheltered from Apple except for a few days using an Apple II at school. <!--more--> I can still remember the sound and feel of typing on these early IBM keyboards. They were loud and sounded like you were getting real work done on them. They felt solid and if you pushed the key down slowly, there was an audible click when the key triggered a response on screen. As time went on, keyboards became more compact and much quieter. The industry reached an extreme of low key travel and quiet keyboards with the Apple butterfly keyboard era, around 2016. These keyboards were quiet and sleek, but fatally flawed with accuracy and repair problems. Even more than the defective problems, the key travel on these keyboards were so slight that touch typing was difficult. Apple has since remedied the butterfly keyboard and the current keyboards on the MacBook Pros are excellent. They have more key travel and use the more reliable scissor-switch design. I am trying on one right now and it feels great and is rock solid reliable. Ironically, the butterfly keyboards piqued my interest in fully mechanical keyboards, ones that hearken back to the early 1980s and what I remember from using those IBM PC keyboards. Mechanical keyboard fans have always been around, but I feel lately the mechanical keyboard is enjoying increased popularity.</p>
-
-<p>I decided to take the plunge and settled on a <a href="https://www.keychron.com/products/keychron-q5-qmk-custom-mechanical-keyboard?variant=40010452041817">Keychron Q5</a> for my office setup. There are several competitors in this space including Das Keyboard, Logitech, and even the older Apple Extended Keyboard, which can be found on eBay.</p>
-
-<p><img src="/assets/keychron-top.jpeg" alt="Keychron 1" /></p>
-
-<h2 id="chassis">Chassis</h2>
-<p>I was shocked when then box arrived and I felt the weight of this keyboard. It is a solid full metal CNC machined body. When I unwrapped the keyboard and picked it up, I couldn’t get over how solid this keyboard feels. It will not slide around on your desk when typing. It is extremely well made, and could probably double as a weapon in a pinch. The base on the Q5 is somewhat high and so I have opted to add a <a href="https://www.keychron.com/products/keychron-keyboard-wooden-palm-rest">beautiful wooden wrist rest</a>, also from Keychron. Having a wrist rest has made the typing experience very comfortable for me. I would recommend having some wrist support, or opt for one of Keychron’s <a href="https://www.keychron.com/collections/low-profile-keyboard-collection">low profile keyboards</a> instead.</p>
-
-<h2 id="key-switches">Key Switches</h2>
-<p>If you haven’t delved into the world of key switches, you are in for a rabbit hole of options. Here is helpful guide and background about key switches at <a href="https://www.rtings.com/keyboard/learn/mechanical-switches">RTings.com</a>.</p>
-
-<blockquote>
-  <p>There are many different switch types available, all with a different feel and sound, so it can be hard to narrow down which is the best for you. It’s overwhelming, especially if you’re just getting started in the world of mechanical keyboards. At the end of the day, it all boils down to personal preference. Are you looking for the classic “click” that comes from a clicky switch or a feeling that’s similar to popping bubble wrap, which you get from a tactile switch? Or do you prefer a silent and smooth keypress that a linear switch offers?</p>
-</blockquote>
-
-<p>I wanted the clicky sound to remind me that I am using a mechanical keyboard. I was looking forward to the nostalgia of that early IBM PC keyboard. I decided to order the <a href="https://www.keychron.com/products/keychron-mechanical-switch-set?variant=39305107865689">Gateron G Pro Brown</a> option.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> I have been happy with the amount of clickyness and the tactile feel. One of the beauties of living a mechanical keyboard lifestyle is that you can order different sets of switches and fully customize the keyboard later, if you want to try a different switch. You can order new switches, keycaps, or both and get a completely new keyboard, look and feel.</p>
-
-<h2 id="layout">Layout</h2>
-<p>The Keychron Q5 fully supports both Mac and Windows and has a switch on the back to toggle between optimizing for either operating system. Most of Keychron’s keyboards are less than 100%, meaning that they don’t include a number keypad or dedicated home, end, or pg keys. I really enjoy having a dedicated number keypad. The Q5 is a 95% size keyboard. It has a full number keypad in a slightly more compact design. I have been happy with this tradeoff. Keychron’s most popular keyboards are even smaller than mine without a number keypad, but they do sell a few full 100% models as well. I think they Q5 at 95% has been an excellent compromise between number of keys and size of keyboard on my desk.</p>
-
-<h2 id="knob">Knob</h2>
-<p>Keychron offers a customizable knob in the top right corner of the keyboard. This is an add-on feature and I opted to have it. I use it for volume and if you press the knob in it will mute and unmute. I use the knob all of the time. Other use cases could include zoom your display or scrubbing audio or video in apps like Logic or Final Cut Pro.</p>
-
-<h2 id="programmable">Programmable</h2>
-<p>I have alluded to the ability to customize and program this keyboard such as changing the knob functionality. With the included software, the sky is the limit with the ability to reprogram this keyboard.</p>
-
-<blockquote>
-  <p>With full QMK and VIA support, you can easily program and remap each key on the keyboard. The open-source firmware means endless possibilities for keyboard layouts, shortcuts, backlight effects, even the knob, and more.</p>
-</blockquote>
-
-<p>I haven’t reprogrammed my setup yet, but the software was easy to install and get connected.</p>
-
-<p><img src="/assets/via-keychron.jpg" alt="VIA Software" /></p>
-
-<h2 id="verdict">Verdict</h2>
-<p>I love this keyboard. I can touch type as fast as I am able and not have to worry about missed keystrokes. It is a joy to type on and even if I am not technically working, it sure sounds like I am.</p>
-
-<p><img src="/assets/keychron-side.jpeg" alt="Keychron Side" /></p>
-
-<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
-
-<div id="share-bar">
-
-    <h4>Share this:</h4>
-
-    <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
-            <i class="fa fa-facebook-official share-button"></i>
-        </a>
-
-        <a href="https://twitter.com/intent/tweet?text=Keychron Q5 Mechanical Keyboard&amp;url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
-            <i class="fa-brands fa-x-twitter share-button"></i>
-        </a>
-
-        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
-            <i class="fa fa-pinterest-p share-button"></i>
-        </a>
-
-        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
-            <i class="fa fa-tumblr share-button"></i>
-        </a>
-
-        <a href="http://www.reddit.com/submit?url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
-            <i class="fa fa-reddit-alien share-button"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html&amp;title=Keychron Q5 Mechanical Keyboard&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
-            <i class="fa fa-linkedin share-button"></i>
-        </a>
-        
-        <a href="https://mastodonshare.com/?url=http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
-        </a>
-
-        <a href="mailto:?subject=Keychron Q5 Mechanical Keyboard&amp;body=Check out this site http://localhost:4000/review/hardware/2023/04/07/keychron-review.html" title="Share via Email">
-            <i class="fa fa-envelope share-button"></i>
-        </a>
-    </div>
-
-</div>
-<style type="text/css">
-/* Share Bar */
-#share-bar {
-    font-size: 20px;
-}
-/* Title */
-#share-bar h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-/* All buttons */
-.share-buttons {
-}
-/* Each button */
-.share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    border: 1px solid #D3D6D2;
-    padding: 5px 10px 5px 10px;
-}
-.share-button:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-/* Facebook button */
-.fa-facebook-official {
-    color: #3b5998;
-}
-.fa-facebook-official:hover {
-    background-color: #3b5998;
-}
-/* Twitter button */
-.fa-x-twitter {
-    color: #55acee;
-}
-.fa-x-twitter:hover {
-    background-color: #55acee;
-}
-/* Google-PLus button */
-.fa-google-plus {
-    color: #dd4b39;
-}
-.fa-google-plus:hover {
-    background-color: #dd4b39;
-}
-/* Pinterest button */
-.fa-pinterest-p {
-    color: #cb2027;
-}
-.fa-pinterest-p:hover {
-    background-color: #cb2027;
-}
-/* Tumblr button */
-.fa-tumblr {
-    color: #32506d;
-}
-.fa-tumblr:hover {
-    background-color: #32506d;
-}
-/* Reddit button */
-.fa-reddit-alien {
-    color: #ff4500;
-}
-.fa-reddit-alien:hover {
-    background-color: #ff4500;
-}
-/* LinkedIn button */
-.fa-linkedin {
-    color: #007bb5;
-}
-.fa-linkedin:hover {
-    background-color: #007bb5;
-}
-
-/* Mastodon button */
-.fa-mastodon {
-    color: #7133ff;
-}
-.fa-mastodon:hover {
-    background-color: #7133ff;
-}
-
-/* Email button */
-.fa-envelope {
-    color: #444444;
-}
-.fa-envelope:hover {
-    background-color: #444444;
-}
-    
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>The brown option is not the most clicky option. It is in between red (click) and blue (tactile). I have found it to be plenty clicky for my taste. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="Review" /><category term="Hardware" /><summary type="html"><![CDATA[I grew up during the beginning of the personal computer era. The first computer in our house was an IBM PCjr and my dad used an IBM PC at work. The Macintosh had just been announced, but I was sheltered from Apple except for a few days using an Apple II at school.]]></summary></entry><entry><title type="html">Mail Tasks to Things</title><link href="http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" rel="alternate" type="text/html" title="Mail Tasks to Things" /><published>2023-03-15T06:14:49-06:00</published><updated>2023-03-15T06:14:49-06:00</updated><id>http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things</id><content type="html" xml:base="http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html"><![CDATA[<p>My favorite to do list app is <a href="https://www.adamsapple.tech/2022/04/04/my-favorite-to-do-list-app-things/">Things</a>.  I like how easy it is to add things to the inbox. On the Mac, the Quick Entry window is awesome, but on iOS there isn’t a Quick Entry window unless you are already in the app. This is when you can use the <a href="https://culturedcode.com/things/support/articles/2908262/">Mail To Things</a> service. <!--more--> In Settings, you can setup a Mail To Things email address.</p>
-
-<p>You can then put that email address as a new contact in your address book. It is then easy to send anything via email into your inbox. The subject of the email becomes the title of the task, and the body of the email is added to the notes field.</p>
-
-<ul>
-  <li>Send to-dos to Things from other platforms, such as Windows or Android.</li>
-  <li>Forward an email to Things from your iPhone; Things will link back to the email so you can find it again later.</li>
-  <li>Give your @things.email address to a trusted partner or colleague so they can delegate to-dos to you.</li>
-  <li>Create powerful workflows with other apps or online services, such as <a href="https://ifttt.com">IFTTT</a>.</li>
-</ul>
-
-<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
-
-<div id="share-bar">
-
-    <h4>Share this:</h4>
-
-    <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
-            <i class="fa fa-facebook-official share-button"></i>
-        </a>
-
-        <a href="https://twitter.com/intent/tweet?text=Mail Tasks to Things&amp;url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
-            <i class="fa-brands fa-x-twitter share-button"></i>
-        </a>
-
-        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
-            <i class="fa fa-pinterest-p share-button"></i>
-        </a>
-
-        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
-            <i class="fa fa-tumblr share-button"></i>
-        </a>
-
-        <a href="http://www.reddit.com/submit?url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
-            <i class="fa fa-reddit-alien share-button"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html&amp;title=Mail Tasks to Things&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
-            <i class="fa fa-linkedin share-button"></i>
-        </a>
-        
-        <a href="https://mastodonshare.com/?url=http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
-        </a>
-
-        <a href="mailto:?subject=Mail Tasks to Things&amp;body=Check out this site http://localhost:4000/quicktip/2023/03/15/quicktip-mail-to-things.html" title="Share via Email">
-            <i class="fa fa-envelope share-button"></i>
-        </a>
-    </div>
-
-</div>
-<style type="text/css">
-/* Share Bar */
-#share-bar {
-    font-size: 20px;
-}
-/* Title */
-#share-bar h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-/* All buttons */
-.share-buttons {
-}
-/* Each button */
-.share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    border: 1px solid #D3D6D2;
-    padding: 5px 10px 5px 10px;
-}
-.share-button:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-/* Facebook button */
-.fa-facebook-official {
-    color: #3b5998;
-}
-.fa-facebook-official:hover {
-    background-color: #3b5998;
-}
-/* Twitter button */
-.fa-x-twitter {
-    color: #55acee;
-}
-.fa-x-twitter:hover {
-    background-color: #55acee;
-}
-/* Google-PLus button */
-.fa-google-plus {
-    color: #dd4b39;
-}
-.fa-google-plus:hover {
-    background-color: #dd4b39;
-}
-/* Pinterest button */
-.fa-pinterest-p {
-    color: #cb2027;
-}
-.fa-pinterest-p:hover {
-    background-color: #cb2027;
-}
-/* Tumblr button */
-.fa-tumblr {
-    color: #32506d;
-}
-.fa-tumblr:hover {
-    background-color: #32506d;
-}
-/* Reddit button */
-.fa-reddit-alien {
-    color: #ff4500;
-}
-.fa-reddit-alien:hover {
-    background-color: #ff4500;
-}
-/* LinkedIn button */
-.fa-linkedin {
-    color: #007bb5;
-}
-.fa-linkedin:hover {
-    background-color: #007bb5;
-}
-
-/* Mastodon button */
-.fa-mastodon {
-    color: #7133ff;
-}
-.fa-mastodon:hover {
-    background-color: #7133ff;
-}
-
-/* Email button */
-.fa-envelope {
-    color: #444444;
-}
-.fa-envelope:hover {
-    background-color: #444444;
-}
-    
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[My favorite to do list app is Things. I like how easy it is to add things to the inbox. On the Mac, the Quick Entry window is awesome, but on iOS there isn’t a Quick Entry window unless you are already in the app. This is when you can use the Mail To Things service.]]></summary></entry></feed>
+</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.]]></summary></entry></feed>

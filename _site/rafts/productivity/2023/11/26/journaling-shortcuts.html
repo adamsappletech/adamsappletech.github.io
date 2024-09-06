@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Automate Journaling Day One with Shortcuts | adamsapple</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Automate Journaling Day One with Shortcuts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra." />
+<meta property="og:description" content="I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra." />
+<link rel="canonical" href="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" />
+<meta property="og:url" content="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" />
+<meta property="og:site_name" content="adamsapple" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-26T05:47:12-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Automate Journaling Day One with Shortcuts" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-26T05:47:12-07:00","datePublished":"2023-11-26T05:47:12-07:00","description":"I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra.","headline":"Automate Journaling Day One with Shortcuts","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"},"url":"http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<title>Automate Journaling Day One with Shortcuts</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Automate Journaling Day One with Shortcuts | adamsapple</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Automate Journaling Day One with Shortcuts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra." />
+<meta property="og:description" content="I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra." />
+<link rel="canonical" href="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" />
+<meta property="og:url" content="http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" />
+<meta property="og:site_name" content="adamsapple" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-26T05:47:12-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Automate Journaling Day One with Shortcuts" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-26T05:47:12-07:00","datePublished":"2023-11-26T05:47:12-07:00","description":"I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, Day One. I used to accomplish this only with AppleScript, with inspiration and help from Brett Terpstra.","headline":"Automate Journaling Day One with Shortcuts","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"},"url":"http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script type="text/javascript" src="/assets/js/darkmode.js"></script>
+
+<link rel="alternate" type="application/atom+xml" title="adamsapple" href="/feed.xml">
+
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header condensed">
+      <div class="about-title">
+      <a href="/">
+        
+        <img src="/assets/adamsapple_thumbnail.png" alt="adamsapple" />
+        
+      </a>
+      <h2 id="title">
+        <a href="/">adamsapple</a>
+      </h2>
+      </div><p class="tagline">Technology tips for the Apple centric.</p></div>
+      
+      </div>
+      
+      <ul class="social about-footer condensed"></ul><nav class="navigation about-footer condensed">
+        <ul>
+          
+          <li>
+            <a href="/video">Video</a>
+          </li>
+          
+          <li>
+            <a href="/podcast">Podcast</a>
+          </li>
+          
+          <li>
+            <a href="/categories">Tags</a>
+          </li>
+          
+          <li>
+            <a href="/apps">Apps</a>
+          </li>
+          
+          <li>
+            <a href="/about">Contact</a>
+          </li>
+          
+        </ul>
+      </nav><p class="about-footer condensed">&copy;
+        2024
+       | <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe(RSS)</a>
+      </p><div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        
+      </div>
+    </section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/productivity/2023/11/26/journaling-shortcuts.html">
+    <h2 class="post-title">Automate Journaling Day One with Shortcuts</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date"><i class="icon-calendar"></i>Nov 26, 2023</div><ul class="post-categories"><li>Productivity</li></ul></div>
+  <div class="post">
+    <p>I am not a natural journal writer, and I am a nerd who likes to program as a hobby. So, it seems natural that I could combine these two traits and use Apple Shortcuts to automate a daily journal entry for me in my favorite journaling app, <a href="https://dayoneapp.com">Day One</a>. I used to accomplish this only with AppleScript, with inspiration and help from <a href="https://brettterpstra.com">Brett Terpstra</a>. <!--more--> My old AppleScript relied on a command-line utility called <a href="https://hasseg.org/icalBuddy/">iCalBuddy</a>. I recently got a new computer and I had trouble getting iCalBuddy to work, so I decided to redo my automation using Apple Shortcuts. In the end, I think this is even better than my original script. It still relies on some AppleScript, and so it won’t run on iOS, but so far it has been rock solid.</p>
+
+<p>This shortcut finds my calendar events for today and puts them into a list, organized by calendar. It then looks at my to do list in <a href="https://culturedcode.com/things/">Things</a>, and makes a list of the tasks that I completed today. Finally, it accesses a CNN RSS feed to find today’s top headlines, puts the title in a list, with a link to the article.</p>
+
+<p>I can then add a picture to the journal entry, or add a longer text reflection, if I want to personalize it further. I use Keyboard Maestro to run the Shortcut at a certain time each night. Day</p>
+
+<h2 id="shortcut">Shortcut</h2>
+
+<p>The Shortcut relies on the following:</p>
+
+<p>Day One actions:</p>
+
+<ul>
+  <li>Create New Entry</li>
+  <li>Append to Entry</li>
+</ul>
+
+<p>Calendar actions:</p>
+
+<ul>
+  <li>Find Calendar Events Where</li>
+</ul>
+
+<p>Things actions:</p>
+
+<ul>
+  <li>Find Items Where</li>
+</ul>
+
+<p>AppleScript Action:</p>
+
+<ul>
+  <li>Run AppleScript</li>
+</ul>
+
+<p>General Action:</p>
+
+<ul>
+  <li>Replace Text</li>
+</ul>
+
+<p><img src="/assets/journal-script-1.png" alt="Journal Script 1" /></p>
+
+<p><img src="/assets/journal-script-2.png" alt="Journal Script 2" /></p>
+
+<h2 id="applescript">AppleScript</h2>
+
+<p>Here is the AppleScript I use to get the daily headlines.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    property RSSURL : "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    on run {input, parameters}
+            set ASTID to AppleScript's text item delimiters
+            set AppleScript's text item delimiters to {("&lt;item&gt;" &amp; (ASCII character 13))}
+            try
+                    do shell script "curl -sS " &amp; quoted form of RSSURL
+                    set rssFeed to every text item of result
+                    set AppleScript's text item delimiters to ASTID
+                    
+                    if (count rssFeed) is greater than or equal to 6 then
+                            set rssFeed to items 2 thru 6 of rssFeed
+                    else
+                            set rssFeed to items 2 thru (count rssFeed) of rssFeed
+                    end if
+            on error errorMsg number errorNum
+                    set AppleScript's text item delimiters to ASTID
+                    display dialog "Error (" &amp; errorNum &amp; "):" &amp; return &amp; return &amp; errorMsg buttons "Cancel" default button 1 with icon caution
+            end try
+            
+            
+            delay 2
+            set newsList to {}
+            repeat with thisPiece in rssFeed
+                    set newsList's end to (text 8 thru -9 of (first paragraph of thisPiece))
+                    set newsList's end to (text 14 thru -8 of (third paragraph of thisPiece))
+            end repeat
+            return newsList
+    end run
+</code></pre></div></div>
+
+<p>Writing a meaningful, personalized, journal entry each day is likely better for your mental health, but if you are like me and find it difficult to journal daily, but want a daily record, this shortcut may be helpful to you. It reminds me to reflect on my day, and on important days I do remember to go back and write the more meaningful reflection.</p>
+
+<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"></i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Automate Journaling Day One with Shortcuts&amp;url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa-brands fa-x-twitter share-button"></i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"></i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"></i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html&amp;title=Automate Journaling Day One with Shortcuts&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"></i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
+        </a>
+
+        <a href="mailto:?subject=Automate Journaling Day One with Shortcuts&amp;body=Check out this site http://localhost:4000/productivity/2023/11/26/journaling-shortcuts.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"></i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-x-twitter {
+    color: #55acee;
+}
+.fa-x-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-mastodon {
+    color: #7133ff;
+}
+.fa-mastodon:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+
+  </div></div>
+
+    </section>
+    <footer class="condensed">
+      <ul class="social about-footer condensed"></ul><nav class="navigation about-footer condensed">
+        <ul>
+          
+          <li>
+            <a href="/video">Video</a>
+          </li>
+          
+          <li>
+            <a href="/podcast">Podcast</a>
+          </li>
+          
+          <li>
+            <a href="/categories">Tags</a>
+          </li>
+          
+          <li>
+            <a href="/apps">Apps</a>
+          </li>
+          
+          <li>
+            <a href="/about">Contact</a>
+          </li>
+          
+        </ul>
+      </nav><p class="about-footer condensed">&copy;
+        2024
+       | <a class="btn btn-rss" href="/feed.xml" target="_blank">Subscribe(RSS)</a>
+      </p><div class="about-footer condensed">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        
+      </div>
+    </footer>
+  </main>
+  
+  <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+  
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+</body>
+
+</html>
