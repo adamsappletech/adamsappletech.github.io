@@ -3,10 +3,10 @@ layout: post
 title:  Caldigit Thunderbolt Dock - Awesome
 date:   2024-05-24 10:50:43 -0700
 categories: Review Hardware 
-excerpt_separator: <!--more-->
+excerpt\_separator: <!--more-->
 ---
 
-One of the dreams of a modern geek is to be able to plug in a laptop computer with one cable and have everything connected on the desktop: monitors, keyboard, mouse, external hard drives, audio interfaces, midi devices, etc... I have had a variety of hubs and docks over the years. The closest have come to realizing this dream is having two cables, with a variety of adapters, until now. The Caldigit Thunderbolt Dock is a work of art. It is compact, rich with I/O ports, powerful, and elegant. <!--more-->
+One of the dreams of a modern geek is to be able to plug in a laptop computer with one cable and have everything connected on the desktop: monitors, keyboard, mouse, external hard drives, audio interfaces, midi devices, etc... I have had a variety of hubs and docks over the years. The closest have come to realizing this dream is having two cables, with a variety of adapters, until now. The Caldigit Thunderbolt Dock is a work of art. It is compact, rich with I/O ports, powerful, and elegant. (Now updated for Thunderbolt 5.)  <!--more-->
 
 ## Ports
 
@@ -30,7 +30,7 @@ One of the dreams of a modern geek is to be able to plug in a laptop computer wi
 
 
 
-## Reliability 
+## Reliability
 
 
 

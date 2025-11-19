@@ -2,11 +2,22 @@
   
     {
 
+      "title"    : "App Updates - iOS 26 and Liquid Glass",
+      "url"      : "/software/ios/2025/11/18/app-updates.html",
+      "category" : "Software, iOS",
+      "tags"     : "",
+      "date"     : "2025-11-18 08:17:58 -0700",
+      "description" : ""
+
+    } ,
+  
+    {
+
       "title"    : "macOS Name in 2025?",
       "url"      : "/macos/2024/09/05/macOS-Name-in-2025.html",
       "category" : "macOS",
       "tags"     : "",
-      "date"     : "2024-09-05 11:34:46 -0600",
+      "date"     : "2024-09-05 09:34:46 -0600",
       "description" : ""
 
     } ,
@@ -18,17 +29,6 @@
       "category" : "iPhone, iOS",
       "tags"     : "",
       "date"     : "2024-08-20 06:35:13 -0600",
-      "description" : ""
-
-    } ,
-  
-    {
-
-      "title"    : "Caldigit Thunderbolt Dock - Awesome",
-      "url"      : "/review/hardware/2024/05/24/caldigit.html",
-      "category" : "Review, Hardware",
-      "tags"     : "",
-      "date"     : "2024-05-24 11:50:43 -0600",
       "description" : ""
 
     } ,
