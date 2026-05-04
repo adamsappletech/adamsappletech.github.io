@@ -120,10 +120,10 @@ Focus modes take some time and attention to get set up at first, but as I have u
 {% include comments.html %}
 
 
-[^1]: I use Things for my to do list app, and I have my work-related tasks tagged with @work. The Things widget can be filtered by tag, so this Home Screen only shows my work-related tasks. 
+[^1]: I use [Things](https://apps.apple.com/us/app/things-3/id904237743) for my to do list app, and I have my work-related tasks tagged with @work. The Things widget can be filtered by tag, so this Home Screen only shows my work-related tasks. 
 [^2]: I really could use just one Home Screen for my Personal Focus. My second Home Screen is more for development. I keep all of my personally-coded apps and widgets on this second screen. 
-[^3]: I wrote the app PracticeMeter to track my daily practicing and practice goals. 
-[^4]: Just Press Record. 
+[^3]: I wrote the app [PracticeMeter](https://apps.apple.com/us/app/practicemeter/id1555398807) to track my daily practicing and practice goals. 
+[^4]: [Just Press Record](https://apps.apple.com/us/app/just-press-record/id1033342465). 
 
 
 [image-1]: /assets/DoNotDisturb-focus-phone-1.png
