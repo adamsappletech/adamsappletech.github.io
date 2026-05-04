@@ -59,10 +59,10 @@ comments:
 # Make sure all variables are set properly. Check below link for detail.
 # https://giscus.vercel.app/
 giscus:
-  repo:                "adamsappletech/adamsappletech.github.io"
-  repo-id:             "R_kgDOK5uboQ"
+  repo:                "adamballif/adamballifpedagogy"
+  repo-id:             "R_kgDORKk0VQ"
   category:            "General"
-  category-id:         "DIC_kwDOK5uboc4CbzPX"
+  category-id:         "DIC_kwDORKk0Vc4C2H20"
   mapping:             "pathname"
   reaction-enabled:    "1"
   theme:               "dark_dimmed"

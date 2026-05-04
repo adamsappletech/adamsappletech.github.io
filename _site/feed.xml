@@ -1,4 +1,269 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-18T21:02:15-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">App Updates - iOS 26 and Liquid Glass</title><link href="http://localhost:4000/software/ios/2025/11/18/app-updates.html" rel="alternate" type="text/html" title="App Updates - iOS 26 and Liquid Glass" /><published>2025-11-18T08:17:58-07:00</published><updated>2025-11-18T08:17:58-07:00</updated><id>http://localhost:4000/software/ios/2025/11/18/app-updates</id><content type="html" xml:base="http://localhost:4000/software/ios/2025/11/18/app-updates.html"><![CDATA[<p>Fall brings new iPhones and a new version of iOS. This year Apple’s software platforms move from incremented numbers, to the year 26. iOS 26 brings with a design overhaul with Liquid Glass. I have five apps on the App Store and it has been a busy time updating to the new modern design. I also decided to rewrite my PrivateMusicStudio2 app and modernize this app for my private teaching into a better version called <a href="https://apps.apple.com/us/app/privatelessonsapp/id6747320440">PrivateLessons</a>. Here are all of the updates to my personal apps.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-03T23:53:12-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">adamsapple</title><subtitle>Technology tips for the Apple centric.</subtitle><entry><title type="html">Focus Modes on iPhone</title><link href="http://localhost:4000/ios/software/2026/04/14/focus-modes.html" rel="alternate" type="text/html" title="Focus Modes on iPhone" /><published>2026-04-14T13:12:50-06:00</published><updated>2026-04-14T13:12:50-06:00</updated><id>http://localhost:4000/ios/software/2026/04/14/focus-modes</id><content type="html" xml:base="http://localhost:4000/ios/software/2026/04/14/focus-modes.html"><![CDATA[<p>Focus modes are powerful tools for automating settings and custom home screens on the iPhone. With a Focus Mode, your iPhone home screen and apps can change when you arrive at work and then change again when you arrive home. You can customize who can notify you and which apps can send notifications based on what you should be focusing on. When your focus changes, your other devices can also automatically sync your focus mode. I have my Apple Watch, iPad, and Mac all change focus modes at the same time.</p>
+
+<p>I have the following Focus Modes:</p>
+
+<ul>
+  <li>Do Not Disturb</li>
+  <li>Work</li>
+  <li>Personal</li>
+  <li>Church</li>
+  <li>Practice</li>
+  <li>Golf</li>
+  <li>Reading</li>
+  <li>Driving</li>
+</ul>
+
+<p>There is a limit of 10 Focus Modes and I am right about there. The beauty of these modes is that they can be automated to start and stop based on specific locations or other app triggers. There is something about seeing a different wallpaper and set of apps on my home screen they helps my brain know what I should be focused on at any given time.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>In Settings - Focus is where you can set these up. You can choose which lock screen and which home screens should be used with each mode, as well as a list of contacts are who are allowed or not allowed to bother you, as well as a list of apps that are allowed to send you notifications. This is where you can also configure when the focus mode should activate or de-activate. You can also change modes from control center or with Siri.</p>
+
+<p>The dock remains consistent across focus modes.</p>
+
+<ul>
+  <li>Phone</li>
+  <li>Email - Outlook app currently</li>
+  <li>Browser - Quiche browser currently</li>
+  <li>Messages</li>
+</ul>
+
+<p>Here are screenshots, for both phone and watch, and my thoughts about how I use each of these modes:</p>
+
+<h2 id="do-not-disturb">Do Not Disturb</h2>
+
+<p>Do Not Disturb comes as a built in Focus Mode. This one is great for silencing all of the noise and eliminating distractions. I use at at night when I don’t want any more text messages, and I also use it for concerts.</p>
+
+<p><img src="/assets/DoNotDisturb-focus-phone-1.png" alt="Do Not Disturb - Phone 1" />
+<img src="/assets/DoNotDisturb-focus-phone-2.png" alt="Do Not Disturb - Phone 2" />
+<img src="/assets/DoNotDisturb-focus-watch.png" alt="Do Not Disturb - Watch" /></p>
+
+<h2 id="work">Work</h2>
+
+<p>Work is built around the apps I use for teaching college music courses and private clarinet lessons. It activates based on location when I arrive at work. I use two pages of home screens, one page for my schedule, to do items<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, and apps for classroom teaching, and one page for clarinet practice and private music lessons.</p>
+
+<p><img src="/assets/Work-focus-phone-1.png" alt="Work - Phone 1" />
+<img src="/assets/Work-focus-phone-2.png" alt="Work - Phone 2" />
+<img src="/assets/Work-focus-watch.png" alt="Work - Watch" /></p>
+
+<h2 id="personal">Personal</h2>
+
+<p>My Personal focus mode activates when I arrive at home. I also use two home screens of my most-used apps and widgets.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> I make good use of widget stacks. I liken to have a pile of widgets that I can swipe between. I cycle between my calendar, to do list, battery status, and a few favorite shortcuts. My Personal Focus Home Screen also includes:</p>
+
+<ul>
+  <li>Podcast App Widget</li>
+  <li>GoodLinks Recent Items Widget</li>
+  <li>Unread RSS app</li>
+  <li>Reader - Read it later app</li>
+  <li>Bear and Obsidian Notes</li>
+  <li>Minical - calendar app</li>
+  <li>Things</li>
+  <li>Photos</li>
+  <li>Drafts - quick capture for notes</li>
+</ul>
+
+<p><img src="/assets/Personal-focus-phone-1.png" alt="Personal - Phone 1" />
+<img src="/assets/Personal-focus-phone-2.png" alt="Personal - Phone 2" />
+<img src="/assets/Personal-focus-watch.png" alt="Personal - Watch" /></p>
+
+<h2 id="church">Church</h2>
+
+<p>My church focus mode activates when I arrive at my church building. It is a one-page home screen, with a custom wallpaper with my church’s logo. My church home screen includes a widget stack with my calendar and to do list, filtered to only show tasks that are church tasks. I then just have a few apps for scriptures, hymns, and note taking apps.</p>
+
+<p><img src="/assets/Church-focus-phone.png" alt="Church - Phone" />
+<img src="/assets/Church-focus-watch.png" alt="Church - Watch" /></p>
+
+<h2 id="practice">Practice</h2>
+
+<p>My practice focus mode is to help me focus for clarinet practicing. It is only one home screen of apps. I have two widgets to show my weekly practice and daily practice hours.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> The apps on my practice screen include a metronome, tuner, and an app for quick record.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
+
+<p><img src="/assets/Practice-focus-phone.png" alt="Practice - Phone" />
+<img src="/assets/Practice-focus-watch.png" alt="Practice - Watch" /></p>
+
+<h2 id="golf">Golf</h2>
+
+<p>For playing golf I have a one-screen focus mode filled only with widgets. I use my own app for tracking my golf scores. I have two widgets from GolfScore showing my stats for the game. I also have a weather widget and the activity widget to show my workout rings.</p>
+
+<p><img src="/assets/Golf-focus-phone.png" alt="Golf - Phone" />
+<img src="/assets/Golf-focus-watch.png" alt="Golf - Watch" /></p>
+
+<h2 id="reading">Reading</h2>
+
+<p>Reading is a natural fit for a focus mode. I have one home screen that activates when I switch to my reading focus, which includes widgets for Kindle, Libby, and Apple Books, as well as apps for my read-it-later services, GoodLinks, and church reading.</p>
+
+<p><img src="/assets/Reading-focus-phone.png" alt="Reading - Phone" />
+<img src="/assets/Reading-focus-watch.png" alt="Reading - Watch" /></p>
+
+<h2 id="driving">Driving</h2>
+
+<p>Driving is a built-in focus mode that activates automatically when I connect to CarPlay. It reduces distractions while driving. I do have a specific home screen activate, but it isn’t designed for specific apps. I have selected a wallpaper that stands out to me to indicate that I am driving.</p>
+
+<p><img src="/assets/Driving-focus-phone.png" alt="Driving - Phone" />
+<img src="/assets/Driving-focus-watch.png" alt="Driving - Watch" /></p>
+
+<h2 id="trial-modes">Trial Modes</h2>
+
+<p>I have also experimented with these focus modes, but I don’t use them often:</p>
+
+<ul>
+  <li>Music</li>
+  <li>Recording</li>
+</ul>
+
+<p>Focus modes take some time and attention to get set up at first, but as I have used them I find them very valuable in giving me the apps that I need when I need them. They help my brain know what I should be working on and when they automatically trigger it feels like magic.</p>
+
+<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
+
+<div id="share-bar">
+
+    <h4>Share this:</h4>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+            <i class="fa fa-facebook-official share-button"></i>
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Focus Modes on iPhone&amp;url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
+            <i class="fa-brands fa-x-twitter share-button"></i>
+        </a>
+
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
+            <i class="fa fa-pinterest-p share-button"></i>
+        </a>
+
+        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
+            <i class="fa fa-tumblr share-button"></i>
+        </a>
+
+        <a href="http://www.reddit.com/submit?url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
+            <i class="fa fa-reddit-alien share-button"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html&amp;title=Focus Modes on iPhone&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+            <i class="fa fa-linkedin share-button"></i>
+        </a>
+        
+        <a href="https://mastodonshare.com/?url=http://localhost:4000/ios/software/2026/04/14/focus-modes.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
+        </a>
+
+        <a href="mailto:?subject=Focus Modes on iPhone&amp;body=Check out this site http://localhost:4000/ios/software/2026/04/14/focus-modes.html" title="Share via Email">
+            <i class="fa fa-envelope share-button"></i>
+        </a>
+    </div>
+
+</div>
+<style type="text/css">
+/* Share Bar */
+#share-bar {
+    font-size: 20px;
+}
+/* Title */
+#share-bar h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* All buttons */
+.share-buttons {
+}
+/* Each button */
+.share-button {
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+/* Facebook button */
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-facebook-official:hover {
+    background-color: #3b5998;
+}
+/* Twitter button */
+.fa-x-twitter {
+    color: #55acee;
+}
+.fa-x-twitter:hover {
+    background-color: #55acee;
+}
+/* Google-PLus button */
+.fa-google-plus {
+    color: #dd4b39;
+}
+.fa-google-plus:hover {
+    background-color: #dd4b39;
+}
+/* Pinterest button */
+.fa-pinterest-p {
+    color: #cb2027;
+}
+.fa-pinterest-p:hover {
+    background-color: #cb2027;
+}
+/* Tumblr button */
+.fa-tumblr {
+    color: #32506d;
+}
+.fa-tumblr:hover {
+    background-color: #32506d;
+}
+/* Reddit button */
+.fa-reddit-alien {
+    color: #ff4500;
+}
+.fa-reddit-alien:hover {
+    background-color: #ff4500;
+}
+/* LinkedIn button */
+.fa-linkedin {
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background-color: #007bb5;
+}
+
+/* Mastodon button */
+.fa-mastodon {
+    color: #7133ff;
+}
+.fa-mastodon:hover {
+    background-color: #7133ff;
+}
+
+/* Email button */
+.fa-envelope {
+    color: #444444;
+}
+.fa-envelope:hover {
+    background-color: #444444;
+}
+    
+</style>
+
+<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I use Things for my to do list app, and I have my work-related tasks tagged with @work. The Things widget can be filtered by tag, so this Home Screen only shows my work-related tasks. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>I really could use just one Home Screen for my Personal Focus. My second Home Screen is more for development. I keep all of my personally-coded apps and widgets on this second screen. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>I wrote the app PracticeMeter to track my daily practicing and practice goals. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Just Press Record. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="iOS" /><category term="Software" /><summary type="html"><![CDATA[Focus modes are powerful tools for automating settings and custom home screens on the iPhone. With a Focus Mode, your iPhone home screen and apps can change when you arrive at work and then change again when you arrive home. You can customize who can notify you and which apps can send notifications based on what you should be focusing on. When your focus changes, your other devices can also automatically sync your focus mode. I have my Apple Watch, iPad, and Mac all change focus modes at the same time. I have the following Focus Modes: Do Not Disturb Work Personal Church Practice Golf Reading Driving There is a limit of 10 Focus Modes and I am right about there. The beauty of these modes is that they can be automated to start and stop based on specific locations or other app triggers. There is something about seeing a different wallpaper and set of apps on my home screen they helps my brain know what I should be focused on at any given time. Setup In Settings - Focus is where you can set these up. You can choose which lock screen and which home screens should be used with each mode, as well as a list of contacts are who are allowed or not allowed to bother you, as well as a list of apps that are allowed to send you notifications. This is where you can also configure when the focus mode should activate or de-activate. You can also change modes from control center or with Siri. The dock remains consistent across focus modes. Phone Email - Outlook app currently Browser - Quiche browser currently Messages Here are screenshots, for both phone and watch, and my thoughts about how I use each of these modes: Do Not Disturb Do Not Disturb comes as a built in Focus Mode. This one is great for silencing all of the noise and eliminating distractions. I use at at night when I don’t want any more text messages, and I also use it for concerts. Work Work is built around the apps I use for teaching college music courses and private clarinet lessons. It activates based on location when I arrive at work. I use two pages of home screens, one page for my schedule, to do items1, and apps for classroom teaching, and one page for clarinet practice and private music lessons. Personal My Personal focus mode activates when I arrive at home. I also use two home screens of my most-used apps and widgets.2 I make good use of widget stacks. I liken to have a pile of widgets that I can swipe between. I cycle between my calendar, to do list, battery status, and a few favorite shortcuts. My Personal Focus Home Screen also includes: Podcast App Widget GoodLinks Recent Items Widget Unread RSS app Reader - Read it later app Bear and Obsidian Notes Minical - calendar app Things Photos Drafts - quick capture for notes Church My church focus mode activates when I arrive at my church building. It is a one-page home screen, with a custom wallpaper with my church’s logo. My church home screen includes a widget stack with my calendar and to do list, filtered to only show tasks that are church tasks. I then just have a few apps for scriptures, hymns, and note taking apps. Practice My practice focus mode is to help me focus for clarinet practicing. It is only one home screen of apps. I have two widgets to show my weekly practice and daily practice hours.3 The apps on my practice screen include a metronome, tuner, and an app for quick record.4 Golf For playing golf I have a one-screen focus mode filled only with widgets. I use my own app for tracking my golf scores. I have two widgets from GolfScore showing my stats for the game. I also have a weather widget and the activity widget to show my workout rings. Reading Reading is a natural fit for a focus mode. I have one home screen that activates when I switch to my reading focus, which includes widgets for Kindle, Libby, and Apple Books, as well as apps for my read-it-later services, GoodLinks, and church reading. Driving Driving is a built-in focus mode that activates automatically when I connect to CarPlay. It reduces distractions while driving. I do have a specific home screen activate, but it isn’t designed for specific apps. I have selected a wallpaper that stands out to me to indicate that I am driving. Trial Modes I have also experimented with these focus modes, but I don’t use them often: Music Recording Focus modes take some time and attention to get set up at first, but as I have used them I find them very valuable in giving me the apps that I need when I need them. They help my brain know what I should be working on and when they automatically trigger it feels like magic. Share this: I use Things for my to do list app, and I have my work-related tasks tagged with @work. The Things widget can be filtered by tag, so this Home Screen only shows my work-related tasks. &#8617; I really could use just one Home Screen for my Personal Focus. My second Home Screen is more for development. I keep all of my personally-coded apps and widgets on this second screen. &#8617; I wrote the app PracticeMeter to track my daily practicing and practice goals. &#8617; Just Press Record. &#8617;]]></summary></entry><entry><title type="html">App Updates - iOS 26 and Liquid Glass</title><link href="http://localhost:4000/software/ios/2025/11/18/app-updates.html" rel="alternate" type="text/html" title="App Updates - iOS 26 and Liquid Glass" /><published>2025-11-18T08:17:58-07:00</published><updated>2025-11-18T08:17:58-07:00</updated><id>http://localhost:4000/software/ios/2025/11/18/app-updates</id><content type="html" xml:base="http://localhost:4000/software/ios/2025/11/18/app-updates.html"><![CDATA[<p>Fall brings new iPhones and a new version of iOS. This year Apple’s software platforms move from incremented numbers, to the year 26. iOS 26 brings a design overhaul with Liquid Glass. I have five apps on the App Store and it has been a busy time updating to the new modern design. I also decided to rewrite my PrivateMusicStudio2 app and modernize this app for my private teaching into a better version called <a href="https://apps.apple.com/us/app/privatelessonsapp/id6747320440">PrivateLessons</a>. Here are all of the updates to my personal apps.</p>
 
 <!--more-->
 
@@ -179,7 +444,7 @@ Available on iPhone and Apple Watch.</p>
 </style>
 
 <script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Software" /><category term="iOS" /><summary type="html"><![CDATA[Fall brings new iPhones and a new version of iOS. This year Apple’s software platforms move from incremented numbers, to the year 26. iOS 26 brings with a design overhaul with Liquid Glass. I have five apps on the App Store and it has been a busy time updating to the new modern design. I also decided to rewrite my PrivateMusicStudio2 app and modernize this app for my private teaching into a better version called PrivateLessons. Here are all of the updates to my personal apps.]]></summary></entry><entry><title type="html">macOS Name in 2025?</title><link href="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" rel="alternate" type="text/html" title="macOS Name in 2025?" /><published>2024-09-05T09:34:46-06:00</published><updated>2024-09-05T09:34:46-06:00</updated><id>http://localhost:4000/macos/2024/09/05/macOS%20Name%20in%202025</id><content type="html" xml:base="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html"><![CDATA[<p>I stumbled upon an interesting dialog box while working in Xcode and the Simulator this week. I was logging into one of my developer iCloud accounts to do some testing, and during the login process the following screen briefly appeared. <!--more--></p>
+</script>]]></content><author><name></name></author><category term="Software" /><category term="iOS" /><summary type="html"><![CDATA[Fall brings new iPhones and a new version of iOS. This year Apple’s software platforms move from incremented numbers, to the year 26. iOS 26 brings a design overhaul with Liquid Glass. I have five apps on the App Store and it has been a busy time updating to the new modern design. I also decided to rewrite my PrivateMusicStudio2 app and modernize this app for my private teaching into a better version called PrivateLessons. Here are all of the updates to my personal apps.]]></summary></entry><entry><title type="html">macOS Name in 2025?</title><link href="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html" rel="alternate" type="text/html" title="macOS Name in 2025?" /><published>2024-09-05T09:34:46-06:00</published><updated>2024-09-05T09:34:46-06:00</updated><id>http://localhost:4000/macos/2024/09/05/macOS%20Name%20in%202025</id><content type="html" xml:base="http://localhost:4000/macos/2024/09/05/macOS-Name-in-2025.html"><![CDATA[<p>I stumbled upon an interesting dialog box while working in Xcode and the Simulator this week. I was logging into one of my developer iCloud accounts to do some testing, and during the login process the following screen briefly appeared. <!--more--></p>
 
 <p><img src="/assets/macOS_San_Fernando.png" alt="macOS San Fernando" /></p>
 
@@ -1592,147 +1857,4 @@ excerpt_separator: &lt;!--more--&gt;
 </style>
 
 <script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[I am a Pro Tools power user. When I am recording or producing a recording session, Pro Tools is my DAW of choice. It is the industry standard and incredibly powerful. However, sometimes I need to trim an audio file or do some light editing, and for those times Pro Tools is overkill.]]></summary></entry><entry><title type="html">Typing Contractions on iPhone</title><link href="http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" rel="alternate" type="text/html" title="Typing Contractions on iPhone" /><published>2023-06-16T06:34:00-06:00</published><updated>2023-06-16T06:34:00-06:00</updated><id>http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone</id><content type="html" xml:base="http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html"><![CDATA[<p>When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.</p>
-
-<!--more-->
-<p>When typing contractions on iOS, you can add a double letter at the end of the word, and the autocorrect engine will type the appropriate apostrophe for you. For example, if you want to type don’t, type dontt. When you hit enter it will autocorrect to don’t, saving you time from changing keyboards to find the apostrophe. I am finding that it even works on macOS. As I type cantt with this new method, macOS displays the possible autocorrect in a small popup, when I hit the space bar it autocorrects to the correct can’t.</p>
-
-<p>This tip works for all of the contractions that I can think of, including: can’t, don’t, won’t, didn’t, isn’t, etc…</p>
-
-<p><img src="/assets/iOS_contractions.gif" alt="iPhone Demo" /></p>
-
-<script src="https://kit.fontawesome.com/a5d27f88eb.js" crossorigin="anonymous"></script>
-
-<div id="share-bar">
-
-    <h4>Share this:</h4>
-
-    <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
-            <i class="fa fa-facebook-official share-button"></i>
-        </a>
-
-        <a href="https://twitter.com/intent/tweet?text=Typing Contractions on iPhone&amp;url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter">
-            <i class="fa-brands fa-x-twitter share-button"></i>
-        </a>
-
-        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest">
-            <i class="fa fa-pinterest-p share-button"></i>
-        </a>
-
-        <a href="http://www.tumblr.com/share/link?url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr">
-            <i class="fa fa-tumblr share-button"></i>
-        </a>
-
-        <a href="http://www.reddit.com/submit?url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit">
-            <i class="fa fa-reddit-alien share-button"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html&amp;title=Typing Contractions on iPhone&amp;summary=&amp;source=adamsapple" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
-            <i class="fa fa-linkedin share-button"></i>
-        </a>
-        
-        <a href="https://mastodonshare.com/?url=http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Mastodon"> <i class="fa-brands fa-mastodon share-button"></i>
-        </a>
-
-        <a href="mailto:?subject=Typing Contractions on iPhone&amp;body=Check out this site http://localhost:4000/quicktip/2023/06/16/typing-contractions-iphone.html" title="Share via Email">
-            <i class="fa fa-envelope share-button"></i>
-        </a>
-    </div>
-
-</div>
-<style type="text/css">
-/* Share Bar */
-#share-bar {
-    font-size: 20px;
-}
-/* Title */
-#share-bar h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-/* All buttons */
-.share-buttons {
-}
-/* Each button */
-.share-button {
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    border: 1px solid #D3D6D2;
-    padding: 5px 10px 5px 10px;
-}
-.share-button:hover {
-    opacity: 1;
-    color: #ffffff;
-}
-/* Facebook button */
-.fa-facebook-official {
-    color: #3b5998;
-}
-.fa-facebook-official:hover {
-    background-color: #3b5998;
-}
-/* Twitter button */
-.fa-x-twitter {
-    color: #55acee;
-}
-.fa-x-twitter:hover {
-    background-color: #55acee;
-}
-/* Google-PLus button */
-.fa-google-plus {
-    color: #dd4b39;
-}
-.fa-google-plus:hover {
-    background-color: #dd4b39;
-}
-/* Pinterest button */
-.fa-pinterest-p {
-    color: #cb2027;
-}
-.fa-pinterest-p:hover {
-    background-color: #cb2027;
-}
-/* Tumblr button */
-.fa-tumblr {
-    color: #32506d;
-}
-.fa-tumblr:hover {
-    background-color: #32506d;
-}
-/* Reddit button */
-.fa-reddit-alien {
-    color: #ff4500;
-}
-.fa-reddit-alien:hover {
-    background-color: #ff4500;
-}
-/* LinkedIn button */
-.fa-linkedin {
-    color: #007bb5;
-}
-.fa-linkedin:hover {
-    background-color: #007bb5;
-}
-
-/* Mastodon button */
-.fa-mastodon {
-    color: #7133ff;
-}
-.fa-mastodon:hover {
-    background-color: #7133ff;
-}
-
-/* Email button */
-.fa-envelope {
-    color: #444444;
-}
-.fa-envelope:hover {
-    background-color: #444444;
-}
-    
-</style>
-
-<script src="https://giscus.app/client.js" data-repo="adamsappletech/adamsappletech.github.io" data-repo-id="R_kgDOK5uboQ" data-category="General" data-category-id="DIC_kwDOK5uboc4CbzPX" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="QuickTip" /><summary type="html"><![CDATA[When trying to type fast on iPhone, autocorrect can be your friend. Autocorrect can be annoying when it changes words that you want to ones that you don’t, but with this quick tip you can make autocorrect work for you.]]></summary></entry></feed>
+</script>]]></content><author><name></name></author><category term="Review" /><category term="macOS" /><category term="Software" /><summary type="html"><![CDATA[I am a Pro Tools power user. When I am recording or producing a recording session, Pro Tools is my DAW of choice. It is the industry standard and incredibly powerful. However, sometimes I need to trim an audio file or do some light editing, and for those times Pro Tools is overkill.]]></summary></entry></feed>
