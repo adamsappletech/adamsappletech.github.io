@@ -40,7 +40,7 @@ Do Not Disturb comes as a built in Focus Mode. This one is great for silencing a
 
 ![Do Not Disturb - Phone 1][image-1]{: width="250" }
 ![Do Not Disturb - Phone 2][image-2]{: width="250" }
-![Do Not Disturb - Watch][image-3]{: width="100" }
+![Do Not Disturb - Watch][image-3]{: width="150" }
 
 ## Work
 
@@ -48,7 +48,7 @@ Work is built around the apps I use for teaching college music courses and priva
 
 ![Work - Phone 1][image-4]{: width="250" }
 ![Work - Phone 2][image-5]{: width="250" }
-![Work - Watch][image-6]{: width="100" }
+![Work - Watch][image-6]{: width="150" }
 
 ## Personal
 
@@ -66,42 +66,42 @@ My Personal focus mode activates when I arrive at home. I also use two home scre
 
 ![Personal - Phone 1][image-7]{: width="250" }
 ![Personal - Phone 2][image-8]{: width="250" }
-![Personal - Watch][image-9]{: width="100" }
+![Personal - Watch][image-9]{: width="150" }
 
 ## Church
 
 My church focus mode activates when I arrive at my church building. It is a one-page home screen, with a custom wallpaper with my church’s logo. My church home screen includes a widget stack with my calendar and to do list, filtered to only show tasks that are church tasks. I then just have a few apps for scriptures, hymns, and note taking apps. 
 
 ![Church - Phone][image-10]{: width="250" }
-![Church - Watch][image-11]{: width="100" }
+![Church - Watch][image-11]{: width="150" }
 
 ## Practice
 
 My practice focus mode is to help me focus for clarinet practicing. It is only one home screen of apps. I have two widgets to show my weekly practice and daily practice hours.[^3] The apps on my practice screen include a metronome, tuner, and an app for quick record.[^4] 
 
 ![Practice - Phone][image-12]{: width="250" }
-![Practice - Watch][image-13]{: width="100" }
+![Practice - Watch][image-13]{: width="150" }
 
 ## Golf
 
 For playing golf I have a one-screen focus mode filled only with widgets. I use my own app for tracking my golf scores. I have two widgets from GolfScore showing my stats for the game. I also have a weather widget and the activity widget to show my workout rings. 
 
 ![Golf - Phone][image-14]{: width="250" }
-![Golf - Watch][image-15]{: width="100" }
+![Golf - Watch][image-15]{: width="150" }
 
 ## Reading
 
 Reading is a natural fit for a focus mode. I have one home screen that activates when I switch to my reading focus, which includes widgets for Kindle, Libby, and Apple Books, as well as apps for my read-it-later services, GoodLinks, and church reading. 
 
 ![Reading - Phone][image-16]{: width="250" }
-![Reading - Watch][image-17]{: width="100" }
+![Reading - Watch][image-17]{: width="150" }
 
 ## Driving 
 
 Driving is a built-in focus mode that activates automatically when I connect to CarPlay. It reduces distractions while driving. I do have a specific home screen activate, but it isn’t designed for specific apps. I have selected a wallpaper that stands out to me to indicate that I am driving. 
 
 ![Driving - Phone][image-18]{: width="250" }
-![Driving - Watch][image-19]{: width="100" }
+![Driving - Watch][image-19]{: width="150" }
 
 ## Trial Modes
 
