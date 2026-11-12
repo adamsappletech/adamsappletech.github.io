@@ -1,18 +1,33 @@
 /*
- * Sidebar fix for short screens (e.g. phones in landscape).
- * Landscape phones are wider than the theme's 768px mobile breakpoint, so they
- * get the fixed, vertically centred desktop sidebar. On a short screen that
- * content overflows above the top edge, cutting off the logo. Here we anchor
- * it to the top, shrink the logo a bit, and let the sidebar scroll on its own.
+ * Sidebar fix: keep the logo from being cut off on short screens
+ * (phones in landscape, full-screen browsers like Quiche, zoomed pages).
+ *
+ * The theme's desktop sidebar is fixed, one screen tall, and vertically
+ * centred. When its contents are taller than the screen, centring pushes the
+ * top (logo) and bottom (dark-mode switch) off-screen, with no way to scroll.
+ *
+ * Instead we use "safe" centring via auto margins: content is centred when it
+ * fits, and starts at the top when it doesn't. The sidebar can also scroll on
+ * its own. This works at any screen height, so it doesn't depend on how a
+ * particular browser reports its size.
  */
-@media screen and (min-width: 769px) and (max-height: 600px) {
+@media screen and (min-width: 769px) {
   main .about {
     justify-content: flex-start;
     height: 100vh;
+    height: 100dvh; /* visible height, for browsers with toolbars that come and go */
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 20px 0 15vh; /* keeps the theme's slightly-above-centre look */
     overflow-y: auto;
+    overscroll-behavior: contain;
   }
+  main .about > :first-child { margin-top: auto; }
+  main .about > :last-child { margin-bottom: auto; }
+}
+
+/* On short screens, also make the header more compact. */
+@media screen and (min-width: 769px) and (max-height: 600px) {
+  main .about { padding-bottom: 20px; }
   main .about img { max-width: 90px; }
   main .about h2 { margin-top: 10px; }
   main .about .tagline { font-size: 18px; }
