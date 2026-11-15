@@ -40,25 +40,25 @@ I have posted previously about all of [my focus modes](https://adamsapple.tech/i
 
 ### Personal
 
-![Personal Focus - folded 1][image-1]{: width="250" }
-![Personal Focus - folded 2][image-2]{: width="250" }
-![Personal Focus - unfolded][image-3]{: width="250" }
+![Personal Focus - folded 1][image-1]{: width="200" }
+![Personal Focus - folded 2][image-2]{: width="200" }
+![Personal Focus - unfolded][image-3]{: width="350" }
 
 ### Work
 
-![Work Focus - folded 1][image-4]{: width="250" }
-![Work Focus - folded 2][image-5]{: width="250" }
-![Work Focus - unfolded][image-6]{: width="250" }
+![Work Focus - folded 1][image-4]{: width="200" }
+![Work Focus - folded 2][image-5]{: width="200" }
+![Work Focus - unfolded][image-6]{: width="350" }
 
 ### Church
 
-![Church Focus - folded ][image-7]{: width="250" }
-![Church focus - unfolded][image-8]{: width="250" }
+![Church Focus - folded ][image-7]{: width="200" }
+![Church focus - unfolded][image-8]{: width="350" }
 
 ### Reading
 
-![Reading Focus - folded][image-9]{: width="250" }
-![Reading Focus - unfolded][image-10]{: width="250" }
+![Reading Focus - folded][image-9]{: width="200" }
+![Reading Focus - unfolded][image-10]{: width="350" }
 
 ## Conclusion
 
