@@ -26,7 +26,7 @@ I am still getting used to the camera system. I have never had a camera control 
 
 ## Ergonomics
 
-When folded, the device is easy to hold, but a bit heavy. When unfolded it is not as easy to hold. I am getting more used to it. I like that the bezels are incredibly thin and the screen goes to the edge, but that does make holding it a challenge. Sometimes I inadvertantly put the apps into wiggle mode because I have rested a finger on the home screen. I added a [MagSafe Ring]([](https://www.amazon.com/dp/B0H2BS2DHP?ref=ppx_yo2ov_dt_b_fed_asin_title)), which gives me something to hold onto and also doubles as a stand. I actually really like this inexpensive accessory and it makes holding the device much easier. I need to try out tent and book mode more. Primarily I only use the device in fully open or closed modes. 
+When folded, the device is easy to hold, but a bit heavy. When unfolded it is not as easy to hold. I am getting more used to it. I like that the bezels are incredibly thin and the screen goes to the edge, but that does make holding it a challenge. Sometimes I inadvertantly put the apps into wiggle mode because I have rested a finger on the home screen. I added a [MagSafe Ring](https://www.amazon.com/dp/B0H2BS2DHP?ref=ppx_yo2ov_dt_b_fed_asin_title), which gives me something to hold onto and also doubles as a stand. I actually really like this inexpensive accessory and it makes holding the device much easier. I need to try out tent and book mode more. Primarily I only use the device in fully open or closed modes. 
 
 Pinning two apps side by side when unfolded is a creative way to be productive. I have pinned my calendar (Fantastical) and my to do list (Things). 
 
