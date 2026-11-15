@@ -30,7 +30,7 @@ When folded, the device is easy to hold, but a bit heavy. When unfolded it is no
 
 Pinning two apps side by side when unfolded is a creative way to be productive. I have pinned my calendar (Fantastical) and my to do list (Things). 
 
-![Fantastical and Things][image-11]{: width="250" }
+![Fantastical and Things][image-11]{: width="350" }
 
 Touch ID is definitely slower than Face ID, but I wear an Apple Watch each day and unlocking with the watch is fast. In some ways I prefer Touch ID. I wear glasses, but sometimes I like to use my phone when my glasses are off. With my previous iPhone with Face ID, I would have to put my glasses back on whenever I needed to enter a password or unlock the phone. 
 
