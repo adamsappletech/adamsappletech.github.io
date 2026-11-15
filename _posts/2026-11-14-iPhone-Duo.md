@@ -30,7 +30,7 @@ When folded, the device is easy to hold, but a bit heavy. When unfolded it is no
 
 Pinning two apps side by side when unfolded is a creative way to be productive. I have pinned my calendar (Fantastical) and my to do list (Things). 
 
-![Fantastical and Things][image-11]
+![Fantastical and Things][image-11]{: width="250" }
 
 Touch ID is definitely slower than Face ID, but I wear an Apple Watch each day and unlocking with the watch is fast. In some ways I prefer Touch ID. I wear glasses, but sometimes I like to use my phone when my glasses are off. With my previous iPhone with Face ID, I would have to put my glasses back on whenever I needed to enter a password or unlock the phone. 
 
@@ -40,25 +40,25 @@ I have posted previously about all of [my focus modes](https://adamsapple.tech/i
 
 ### Personal
 
-![Personal Focus - folded 1][image-1]
-![Personal Focus - folded 2][image-2]
-![Personal Focus - unfolded][image-3]
+![Personal Focus - folded 1][image-1]{: width="250" }
+![Personal Focus - folded 2][image-2]{: width="250" }
+![Personal Focus - unfolded][image-3]{: width="250" }
 
 ### Work
 
-![Work Focus - folded 1][image-4]
-![Work Focus - folded 2][image-5]
-![Work Focus - unfolded][image-6]
+![Work Focus - folded 1][image-4]{: width="250" }
+![Work Focus - folded 2][image-5]{: width="250" }
+![Work Focus - unfolded][image-6]{: width="250" }
 
 ### Church
 
-![Church Focus - folded ][image-7]
-![Church focus - unfolded][image-8]
+![Church Focus - folded ][image-7]{: width="250" }
+![Church focus - unfolded][image-8]{: width="250" }
 
 ### Reading
 
-![Reading Focus - folded][image-9]
-![Reading Focus - unfolded][image-10]
+![Reading Focus - folded][image-9]{: width="250" }
+![Reading Focus - unfolded][image-10]{: width="250" }
 
 ## Conclusion
 
